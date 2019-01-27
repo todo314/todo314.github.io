@@ -22,11 +22,6 @@
 		<h1>Naoto Ohsaka (Ph.D.)</h1>
 		<a href="./photo.jpg">Photo</a><br>
 		<a href="./cv.pdf">Curriculum Vitae</a><br>
-		<!--
-		Ph.D. student<br>
-		Department of Computer Science, Graduate School of Information Science and Technology,<br>
-		The University of Tokyo, Bunkyo-ku, Tokyo, Japan.<br>
-		-->
 		Email: naoto.ohsaka (at) gmail.com<br>
 		<hr>
 
@@ -48,17 +43,21 @@
 		Sumio Fujita,
 		<a href="http://research.nii.ac.jp/~k_keniti/">Ken-ichi Kawarabayashi.</a><br>
 		<a href="http://www.dexa.org/dexa2018">29th International Conference on Database and Expert Systems Applications (DEXA 2018)</a>. <br>
-		<!--
-		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#dexa_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
-		<a href="">
+		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#dexa18_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
+		<a href="https://link.springer.com/chapter/10.1007/978-3-319-98809-2_26">
 			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
 		</a>
-		-->
 		</li>
-		<!--
 		<div id="dexa18_abst" class="collapse"><i>
+		We consider and formulate problems of PageRank score boosting motivated by applications such as effective web advertising.
+		More precisely, given a graph and target vertices, one is required to find a fixed-size set of missing edges that maximizes the minimum PageRank score among the targets.
+		We provide theoretical analyses to show that all of them are NP-hard.
+		To overcome the hardness, we develop heuristic-based algorithms for them.
+		We finally perform experiments on several real-world networks to verify the effectiveness of the proposed algorithms compared to baselines.
+		Specifically, our algorithm achieves 100 times improvements of the minimum PageRank score among selected 100 vertices by adding only dozens of edges.
 		</i></div>
-		-->
+
+
 
 
 		<li>
@@ -69,30 +68,28 @@
 		<a href="http://webhome.cs.uvic.ca/~thomo/">Alex Thomo.</a><br>
 		<a href="http://ssdbm2018.inf.unibz.it/">30th International Conference on Scientific and Statistical Database Management (SSDBM 2018)</a>. <br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#ssdbm18_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
-		<!--
-		<a href="">
+		<a href="https://dl.acm.org/citation.cfm?id=3221291">
 			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
 		</a>
-		-->
 		</li>
 		<div id="ssdbm18_abst" class="collapse"><i>
 		Algorithmic problems of computing influence estimation and influence
-maximization have been actively researched for decades. We
-developed a novel algorithm, NoSingles, based on the Reverse Influence
-Sampling method proposed by Borgs et al. in 2013. NoSingles
-solves the problem of influence maximization in large graphs using
-much smaller space than the existing state-of-the-art algorithms
-while preserving the theoretical guarantee of the approximation
-of $$(1-1/e-\epsilon)$$ of the optimum, for any $$ \epsilon > 0 $$. The NoSingles data
-structure is saved on the hard drive of the machine, and can be used
-repeatedly for playing out ``what if'' scenarios (e.g. trying different
-combination of seeds and calculating the influence spread). We
-also introduce a variation of NoSingles algorithm, which further
-decreases the running time, while preserving the approximation
-guarantee. We support our claims with extensive experiments on
-large real-world graphs. Savings in required space allow to successfully
-run NoSingles on a consumer-grade laptop for graphs with
-tens of millions of vertices and hundreds of millions of edges
+		maximization have been actively researched for decades. We
+		developed a novel algorithm, NoSingles, based on the Reverse Influence
+		Sampling method proposed by Borgs et al. in 2013. NoSingles
+		solves the problem of influence maximization in large graphs using
+		much smaller space than the existing state-of-the-art algorithms
+		while preserving the theoretical guarantee of the approximation
+		of $$(1-1/e-\epsilon)$$ of the optimum, for any $$ \epsilon > 0 $$. The NoSingles data
+		structure is saved on the hard drive of the machine, and can be used
+		repeatedly for playing out ``what if'' scenarios (e.g. trying different
+		combination of seeds and calculating the influence spread). We
+		also introduce a variation of NoSingles algorithm, which further
+		decreases the running time, while preserving the approximation
+		guarantee. We support our claims with extensive experiments on
+		large real-world graphs. Savings in required space allow to successfully
+		run NoSingles on a consumer-grade laptop for graphs with
+		tens of millions of vertices and hundreds of millions of edges
 		</i></div>
 
 		<li>
@@ -329,7 +326,7 @@ tens of millions of vertices and hundreds of millions of edges
 		</div>
 
 		<div id="footer" class="navbar">
-			<p class="muted pull-right">Last modified: 2018/5/31</p>
+			<p class="muted pull-right">Last modified: 2019/1/28</p>
 		</div>
 
 		<script src="js/bootstrap.min.js"></script>
