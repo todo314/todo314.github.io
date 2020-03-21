@@ -23,6 +23,9 @@
 		<a href="./photo.jpg">Photo</a><br>
 		<a href="./cv.pdf">Curriculum Vitae</a><br>
 		Email: naoto.ohsaka (at) gmail.com<br>
+		Google Scholar author ID: <a href="https://scholar.google.co.jp/citations?user=Qgkc9DgAAAAJ">Qgkc9DgAAAAJ</a><br>
+		ORCID: <a href="https://orcid.org/0000-0001-9584-4764">https://orcid.org/0000-0001-9584-4764</a><br>
+
 		<hr>
 
 		<h2>Research Interests</h2>
@@ -36,17 +39,28 @@
 
 
 		<li>
-		<span class="label label-info">New!!</span>  The Solution Distribution of Influence Maximization: A High-level Experimental Study on Three Algorithmic Approaches.<br>
+		<span class="label label-info">New!!</span> The Solution Distribution of Influence Maximization: A High-level Experimental Study on Three Algorithmic Approaches.<br>
 		<u>Naoto Ohsaka</u>.<br>
 		<a href="https://sigmod2020.org/">ACM SIGMOD International Conference on Management of Data 2020 (SIGMOD 2020)</a>. <br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#sigmod20_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
 		</li>
 		<div id="sigmod20_abst" class="collapse"><i>
-		Coming soon...
+		Influence maximization is among the most fundamental algorithmic problems in social influence analysis.
+		Over the last decade, a great effort has been devoted to developing efficient algorithms for influence maximization, so that identifying the ``best'' algorithm has become a demanding task.
+		In SIGMOD'17, Arora, Galhotra, and Ranu reported benchmark results on eleven existing algorithms and demonstrated that there is no single state-of-the-art offering the best trade-off between computational efficiency and solution quality.
+		<br/>
+		In this paper, we report a high-level experimental study on three well-established algorithmic approaches for influence maximization, referred to as Oneshot, Snapshot, and Reverse Influence Sampling (RIS).
+		Different from Arora et al., our experimental methodology is so designed that we examine the distribution of random solutions, characterize the relation between the sample number and the actual solution quality, and avoid implementation dependencies.
+		Our main findings are as follows:
+		1. For a sufficiently large sample number, we obtain a unique solution regardless of algorithms.
+		2. The average solution quality of Oneshot, Snapshot, and RIS improves at the same rate up to scaling of sample number.
+		3. Oneshot requires more samples than Snapshot, and Snapshot requires fewer but larger samples than RIS.
+		We discuss the time efficiency when conditioning Oneshot, Snapshot, and RIS to be of identical accuracy.
+ 		Our conclusion is that Oneshot is suitable only if the size of available memory is limited, and RIS is more efficient than Snapshot for large networks; Snapshot is preferable for small, low-probability networks.
 		</i></div>
 
 		<li>
-		<span class="label label-info">New!!</span>  A Predictive Optimization Framework for Hierarchical Demand Matching.<br>
+		<span class="label label-info">New!!</span> A Predictive Optimization Framework for Hierarchical Demand Matching.<br>
 		<u>Naoto Ohsaka</u>,
 		<a href="https://t-sakai-kure.github.io/">Tomoya Sakai</a>,
 		<a href="https://jpn.nec.com/rd/people/akihiro_yabe.html">Akihiro Yabe.</a><br>
@@ -127,7 +141,7 @@
 		There are many classical problems in P whose time complexities have not been improved over the past decades.
 		Recent studies of ``Hardness in P'' have revealed that, for several of such problems, the current fastest algorithm is the best possible under some complexity assumptions.
 		To bypass this difficulty, Fomin et al. (SODA 2017) introduced the concept of fully polynomial FPT algorithms.
-		For a problem with the current best time complexity $$O(n^c)$$, the goal is to design an algorithm running in $$k^{O(1)}n^{c'}$$ time for a parameter $$k$$ and a constant $$c'<c$$. <br>
+		For a problem with the current best time complexity $$O(n^c)$$, the goal is to design an algorithm running in $$k^{O(1)}n^{c'}$$ time for a parameter $$k$$ and a constant $$c' < c$$. <br>
 		In this paper, we investigate the complexity of graph problems in P parameterized by tree-depth, a graph parameter related to tree-width.
 		We show that a simple divide-and-conquer method can solve many graph problems, including
 		Weighted Matching, Negative Cycle Detection, Minimum Weight Cycle, Replacement Paths, and 2-hop Cover,
@@ -346,7 +360,7 @@
 		</div>
 
 		<div id="footer" class="navbar">
-			<p class="muted pull-right">Last modified: 2020/1/10</p>
+			<p class="muted pull-right">Last modified: 2020/3/21</p>
 		</div>
 
 		<script src="js/bootstrap.min.js"></script>
