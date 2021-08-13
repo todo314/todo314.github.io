@@ -51,7 +51,12 @@
 		</a>
 		</li>
 		<div id="uai21_abst" class="collapse"><i>
-		Coming soon...
+		We study a new optimization problem called submodular maximization under submodular cover (SMSC), which requires to find a fixed-size set such that one monotone submodular function $f$ is maximized subject to that another monotone submodular function $g$ is maximized approximately.
+		SMSC is preferable to submodular function maximization when one wants to maximize two objective functions simultaneously.
+		We propose an optimization framework for SMSC, which guarantees a constant-factor approximation.
+		Our algorithm's key idea is to construct a new instance of submodular function maximization from a given instance of SMSC, which can be approximated efficiently.
+		Besides, if we are given an approximation oracle for submodular function maximization, our algorithm provably produces nearly optimal solutions.
+		We experimentally evaluate the proposed algorithm in terms of sensor placement and movie recommendation using real-world data.
 		</i></div>
 
 		<li>
@@ -517,13 +522,6 @@
 		
 		<hr>
 		
-		<h2>Awards</h2>
-		<ul>
-		<li>
-		DBSJ Kambayashi Young Researcher Award
-		</li>
-		</ul>
-
 		<h2>Programming Contests</h2>
 		<ul>
 		<li>
@@ -559,7 +557,7 @@
 		</div>
 
 		<div id="footer" class="navbar">
-			<p class="muted pull-right">Last modified: July 22, 2021</p>
+			<p class="muted pull-right">Last modified: August 13, 2021</p>
 		</div>
 
 		<script src="js/bootstrap.min.js"></script>
