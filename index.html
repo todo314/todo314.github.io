@@ -42,6 +42,35 @@
 		<ol>
 
 		<li>
+		<span class="label label-info">New!!</span> On the Convex Combination of Determinantal Point Processes.<br>
+		Tatsuya Matsuoka, <u>Naoto Ohsaka</u>, Akihiro Yabe<br>
+		<a href="http://www.acml-conf.org/2021/">13th Asian Conference on Machine Learning (ACML 2021)</a>. <br>
+		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#acml21dpp_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
+		</li>
+		<div id="acml21dpp_abst" class="collapse"><i>
+		Determinantal point processes (DPPs) are attractive probabilistic models for expressing item quality and set diversity simultaneously.
+		Although DPPs are widely-applicable to many subset selection tasks, there exist simple small-size probability distributions that any DPP cannot express.
+		To overcome this drawback while keeping good properties of DPPs, in this paper we investigate the expressive power of convex combinations of DPPs.
+		We provide upper and lower bounds for the number of DPPs required for exactly expressing any probability distribution.
+		For the approximation error, we give an upper bound on the Kullback--Leibler divergence $n-\lfloor \log t\rfloor +\epsilon$ for any $\epsilon >0$ of approximate distribution from a given joint probability distribution, where $t$ is the number of DPPs.
+		Our numerical simulation on an online retail dataset empirically verifies that a convex combination of only two DPPs can outperform a nonsymmetric DPP in terms of the Kullback--Leibler divergence.
+		By combining a polynomial number of DPPs, we can express probability distributions induced by bounded-degree pseudo-Boolean functions, which include weighted coverage functions of bounded occurrence.
+		</i></div>
+
+		<li>
+		<span class="label label-info">New!!</span> Maximization of Monotone $k$-Submodular Functions with Bounded Curvature and Non-$k$-Submodular Functions.<br>
+		Tatsuya Matsuoka, <u>Naoto Ohsaka</u>.<br>
+		<a href="http://www.acml-conf.org/2021/">13th Asian Conference on Machine Learning (ACML 2021)</a>. <br>
+		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#acml21ksfm_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
+		</li>
+		<div id="acml21ksfm_abst" class="collapse"><i>
+		The concept of k-submodularity is an extension of submodularity, of which maximization has various applications, such as influence maximization and sensor placement.
+		In such situations, to model complicated real problems, we want to deal with multiple factors, such as, more detailed parameter representing a property of a given function or a constraint which should be imposed for a given function, simultaneously.
+		Besides, it is preferable that an algorithm for the modeling problem is simple. In this paper, for both monotone k-submodular function maximization with bounded curvature and monotone weakly k-submodular function maximization, we give approximation ratio analysis on greedy-type algorithms on the problem with the matroid constraint and that with the individual size constraint.
+		Furthermore, we give an approximation ratio analysis on another type of the relaxation of k-submodular functions, approximately k-submodular functions, with the matroid constraint.
+		</i></div>
+
+		<li>
 		Approximation Algorithm for Submodular Maximization under Submodular Cover.<br>
 		<u>Naoto Ohsaka</u>, Tatsuya Matsuoka.<br>
 		<a href="https://www.auai.org/uai2021/">37th Conference on Uncertainty in Artificial Intelligence (UAI 2021)</a>. <br>
@@ -588,7 +617,7 @@
 		</div>
 
 		<div id="footer" class="navbar">
-			<p class="muted pull-right">Last modified: September 3, 2021</p>
+			<p class="muted pull-right">Last modified: September 29, 2021</p>
 		</div>
 
 		<script src="js/bootstrap.min.js"></script>
