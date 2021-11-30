@@ -42,6 +42,40 @@
 		<ol>
 
 		<li>
+		<span class="label label-info">New!!</span>  Reconfiguration Problems on Submodular Functions.<br>
+		<u>Naoto Ohsaka</u>, Tatsuya Matsuoka<br>
+		<a href="https://www.wsdm-conference.org/2022/">15th ACM International Conference on Web Search and Data Mining (WSDM 2022)</a>. <br>
+		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#wsdm22_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
+		<a href="https://arxiv.org/abs/2111.14030">
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>ArXiv</span>
+		</a>
+		</li>
+		<div id="wsdm22_abst" class="collapse"><i>
+		Reconfiguration problems require finding a step-by-step transformation between a pair of feasible solutions for a particular problem.
+		The primary concern in Theoretical Computer Science has been revealing their computational complexity for classical problems.
+
+		This paper presents an initial study on reconfiguration problems derived from a submodular function, which has more of a flavor of Data Mining.
+		Our submodular reconfiguration problems request to find a solution sequence connecting two input solutions such that each solution has an objective value above a threshold in a submodular function $f: 2^{[n]} \to \mathbb{R}_+$ and is obtained from the previous one by applying a simple transformation rule.
+		We formulate three reconfiguration problems:
+		Monotone Submodular Reconfiguration (MSReco), which applies to influence maximization, and two versions of Unconstrained Submodular Reconfiguration (USReco), which apply to determinantal point processes.
+		Our contributions are summarized as follows:
+		<ul>
+		<li>
+		We prove that MSReco and USReco are both $\textsf{PSPACE}$-complete.
+		</li>
+		<li>
+		We design a $\frac{1}{2}$-approximation algorithm for MSReco and a $\frac{1}{n}$-approximation algorithm for (one version of) USReco.
+		</li>
+		<li>
+		We devise inapproximability results that approximating the optimum value of MSReco within a $(1-\frac{1+\epsilon}{n^2})$-factor is $\textsf{PSPACE}$-hard, and we cannot find a $(\frac{5}{6}+\epsilon)$-approximation for USReco.
+		</li>
+		<li>
+		We conduct numerical study on the reconfiguration version of influence maximization and determinantal point processes using real-world social network and movie rating data.
+		</li>
+		</ul>
+		</i></div>
+
+		<li>
 		<span class="label label-info">New!!</span> On the Convex Combination of Determinantal Point Processes.<br>
 		Tatsuya Matsuoka, <u>Naoto Ohsaka</u>, Akihiro Yabe<br>
 		<a href="http://www.acml-conf.org/2021/">13th Asian Conference on Machine Learning (ACML 2021)</a>. <br>
@@ -516,7 +550,45 @@
 		<ol>
 
 		<li>
-		<span class="label label-info">New!!</span> Some Inapproximability Results of MAP Inference and Exponentiated Determinantal Point Processes.<br>
+		<span class="label label-info">New!!</span> Computational Complexity of Normalizing Constants for the Product of Determinantal Point Processes.<br>
+		<u>Naoto Ohsaka</u>, Tatsuya Matsuoka<br>
+		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#pidpp_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
+		<a href="https://arxiv.org/abs/2111.14148">
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>ArXiv</span>
+		</a>
+		</li>
+		<div id="pidpp_abst" class="collapse"><i>
+		We consider the product of determinantal point processes (DPPs), a point process whose probability mass is proportional to the product of principal minors of multiple matrices, as a natural, promising generalization of DPPs.
+		We study the computational complexity of computing its normalizing constant, which is among the most essential probabilistic inference tasks.
+		Our complexity-theoretic results (almost) rule out the existence of efficient algorithms for this task unless the input matrices are forced to have favorable structures.
+		In particular, we prove the following:
+		<ul>
+		<li>
+		Computing $\sum_S\det(\mathbf{A}_{S,S})^p$ exactly for every (fixed) positive even integer $p$ is $\textsf{UP}$-hard and $\textsf{Mod}_3\textsf{P}$-hard, which gives a negative answer to an open question posed by Kulesza and Taskar (2012).
+		</li>
+		<li>
+		$\sum_S\det(\mathbf{A}_{S,S})\det(\mathbf{B}_{S,S})\det(\mathbf{C}_{S,S})$ is $\textsf{NP}$-hard to approximate within a factor of $2^{O(|\mathcal{I}|^{1-\epsilon})}$ or $2^{\mathcal{O}(n^{1/\epsilon})}$ for any $\epsilon>0$, where $|\mathcal{I}|$ is the input size and $n$ is the order of the input matrix.
+		This result is stronger than the #P-hardness for the case of two matrices derived by Gillenwater (2014).
+		</li>
+		<li>
+		There exists a $k^{\mathcal{O}(k)}n^{\mathcal{O}(1)}$-time algorithm for computing $\sum_S\det(\mathbf{A}_{S,S})\det(\mathbf{B}_{S,S})$, where $k$ is the maximum rank of $\mathbf{A}$ and $\mathbf{B}$ or the treewidth of the graph formed by nonzero entries of $\mathbf{A}$ and $\mathbf{B}$. Such parameterized algorithms are said to be fixed-parameter tractable.
+		</li>
+		</ul>
+		These results can be extended to the fixed-size case.
+		Further, we present two applications of fixed-parameter tractable algorithms given a matrix $\mathbf{A}$ of treewidth $w$:
+		<ul>
+		<li>
+		We can compute a $2^{\frac{n}{2p-1}}$-approximation to $\sum_S\det({\bf A}_{S,S})^p$ for any fractional number $p>1$ in $w^{\mathcal{O}(wp)}n^{\mathcal{O}(1)}$ time.
+		</li>
+		<li>
+		We can find a $2^{\sqrt n}$-approximation to unconstrained maximum a posteriori inference in $w^{\mathcal{O}(w\sqrt n)}n^{\mathcal{O}(1)}$ time.
+		</li>
+
+		</ul>
+		</i></div>
+
+		<li>
+		Some Inapproximability Results of MAP Inference and Exponentiated Determinantal Point Processes.<br>
 		<u>Naoto Ohsaka</u>.<br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#mapapprox_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
 		<a href="https://arxiv.org/abs/2109.00727">
@@ -544,7 +616,7 @@
 		</i></div>
 
 		<li>
-		<span class="label label-info">New!!</span> On Reconfigurability of Target Sets.<br>
+		On Reconfigurability of Target Sets.<br>
 		<u>Naoto Ohsaka</u>.<br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#tsreconf_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
 		<a href="https://arxiv.org/abs/2107.09885">
@@ -617,7 +689,7 @@
 		</div>
 
 		<div id="footer" class="navbar">
-			<p class="muted pull-right">Last modified: September 29, 2021</p>
+			<p class="muted pull-right">Last modified: November 30, 2021</p>
 		</div>
 
 		<script src="js/bootstrap.min.js"></script>
