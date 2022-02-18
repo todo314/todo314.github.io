@@ -54,20 +54,12 @@
 		We study the computational complexity of two hard problems on determinantal point processes (DPPs).
 		One is maximum a posteriori (MAP) inference, i.e., to find a principal submatrix having the maximum determinant.
 		The other is probabilistic inference on exponentiated DPPs (E-DPPs), which can sharpen or weaken the diversity preference of DPPs with an exponent parameter $p$.
-		We prove the following complexity-theoretic hardness results that explain the difficulty in approximating MAP inference and the normalizing constant for E-DPPs.
-		<ul>
-		<li>
-		Unconstrained MAP inference for an $n \times n$ matrix is $\textsf{NP}$-hard to approximate within a factor of $2^{\beta n}$, where $\beta = 10^{-10^{13}} $.
-		This result improves upon  a $(\frac{9}{8}-\epsilon)$-factor inapproximability given by Kulesza and Taskar (2012).
-		</li>
-		<li>
-		Log-determinant maximization is $\textsf{NP}$-hard to approximate within a factor of $\frac{5}{4}$ for the unconstrained case and within a factor of $1+10^{-10^{13}}$ for the size-constrained monotone case.
-		</li>
-		<li>
-		The normalizing constant for E-DPPs of any (fixed) constant exponent $p \geq \beta^{-1} = 10^{10^{13}}$ is $\textsf{NP}$-hard to approximate within a factor of $2^{\beta pn}$.
-		This gives a(nother) negative answer to open questions posed by Kulesza andTaskar (2012); Ohsaka and Matsuoka (2020).
-		</li>
-		</ul>
+		We present several complexity-theoretic hardness results that explain the difficulty in approximating MAP inference and the normalizing constant for E-DPPs.
+		We first prove that unconstrained MAP inference for an $n \times n$ matrix is $\textsf{NP}$-hard to approximate within a factor of $2^{\beta n}$, where $\beta = 10^{-10^{13}} $.
+		This result improves upon the best-known inapproximability factor of $(\frac{9}{8}-\epsilon)$, and rules out the existence of any polynomial-factor approximation algorithm assuming $\textsf{P} \neq \textsf{NP}$.
+		We then show that log-determinant maximization is $\textsf{NP}$-hard to approximate within a factor of $\frac{5}{4}$ for the unconstrained case and within a factor of $1+10^{-10^{13}}$ for the size-constrained monotone case.
+		In particular, log-determinant maximization does not admit a polynomial-time approximation scheme unless $\textsf{P} = \textsf{NP}$.
+		As a corollary of the first result, we demonstrate that the normalizing constant for E-DPPs of any (fixed) constant exponent $p \geq \beta^{-1} = 10^{10^{13}}$ is $\textsf{NP}$-hard to approximate within a factor of $2^{\beta pn}$, which is in contrast to the case of $p \leq 1$ admitting a fully polynomial-time randomized approximation scheme.
 		</i></div>
 
 		<li>
