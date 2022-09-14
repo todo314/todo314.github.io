@@ -45,10 +45,20 @@
 		<span class="label label-info">New!!</span>  On the Parameterized Intractability of Determinant Maximization.<br>
 		<u>Naoto Ohsaka</u>.<br>
 		<a href="https://isa.hanyang.ac.kr/isaac2022/">33rd International Symposium on Algorithms and Computation (ISAAC 2022)</a>. <br>
-		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#mapapprox_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
+		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#isaac23_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
 		</li>
-		<div id="mapapprox_abst" class="collapse"><i>
-		Comming soon...
+		<div id="isaac23_abst" class="collapse"><i>
+		In the $\textsc{Determinant Maximization}$ problem, given an $n \times n$ positive semi-definite matrix $\mathbf{A}$ in $\mathcal{Q}^{n \times n}$ and an integer $k$, we are required to find a $k \times k$ principal submatrix of $\mathbf{A}$ having the maximum determinant.
+		This problem is known to be $\textsf{NP}$-hard and further proven to be $\textsf{W[1]}$-hard with respect to $k$ by Koutis; i.e., a $f(k)n^{\mathcal{O}(1)}$-time algorithm is unlikely to exist for any computable function $f$.
+		However, there is still room to explore its parameterized complexity in the restricted case, in the hope of overcoming the general-case parameterized intractability.
+		In this study, we rule out the fixed-parameter tractability of $\textsc{Determinant Maximization}$ even if an input matrix is extremely sparse or low rank, or an approximate solution is acceptable.
+		We first prove that $\textsc{Determinant Maximization}$ is $\textsf{NP}$-hard and $\textsf{W[1]}$-hard even if an input matrix is an arrowhead matrix; i.e., the underlying graph formed by nonzero entries is a star, implying that the structural sparsity is not helpful.
+		By contrast, we show that $\textsc{Determinant Maximization}$ is solvable in polynomial time on tridiagonal matrices.
+		Thereafter, we demonstrate the $\textsf{W[1]}$-hardness with respect to the rank $r$ of an input matrix.
+		Our result is stronger than Koutis' result in the sense that any $k \times k$ principal submatrix is singular whenever $k > r$.
+		We finally give evidence that it is $\textsf{W[1]}$-hard to approximate $\textsc{Determinant Maximization}$ parameterized by $k$ within a factor of $2^{-c\sqrt{k}}$ for some universal constant $c > 0$.
+		Our hardness result is conditional on the Parameterized Inapproximability Hypothesis posed by Lokshtanov, Ramanujan, Saurab, and Zehavi, which asserts that a gap version of $\textsc{Binary Constraint Satisfaction Problem}$ is $\textsf{W[1]}$-hard.
+		To complement this result, we develop an $\varepsilon$-additive approximation algorithm that runs in $\varepsilon^{-r^2} \cdot r^{\mathcal{O}(r^3)} \cdot n^{\mathcal{O}(1)}$ time for the rank $r$ of an input matrix, provided that the diagonal entries are bounded.
 		</i></div>
 
 		<li>
@@ -704,7 +714,7 @@
 		</div>
 
 		<div id="footer" class="navbar">
-			<p class="muted pull-right">Last modified: September 1st, 2022</p>
+			<p class="muted pull-right">Last modified: September 14th, 2022</p>
 		</div>
 
 		<script src="js/bootstrap.min.js"></script>
