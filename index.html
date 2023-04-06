@@ -33,13 +33,46 @@
 		<hr>
 
 		<h2>Research Interests</h2>
-		Combinatorial reconfiguration; Hardness of approximation; Graph algorithms; Network diffusion; Determinantal point processes; Recommender systems
-		
+		<ul>
+			<li>Theoretical computer science: combinatorial reconfiguration, hardness of approximation, parameterized complexity.</li>
+			<li>Applications: graph algorithms, network diffusion, determinantal point processes, recommender systems.</li>
+		</ul>
+
 		<hr>
 
 		<h2>Publications</h2>
 
 		<ol>
+
+
+		<li>
+		<span class="label label-info">New!!</span> A Critical Reexamination of Intra-List Distance and Dispersion.<br>
+		<u>
+			Naoto Ohsaka</u> and
+			<a href="https://riktor.github.io/">Riku Togashi</a>.
+		<br>
+		<a href="https://sigir.org/sigir2023">46th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR 2023)</a>. <br>
+		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#sigir23_ild_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
+		</li>
+		<div id="sigir23_ild_abst" class="collapse">
+			Coming soon...
+		</div>
+
+
+		<li>
+		<span class="label label-info">New!!</span> Curse of “Low” Dimensionality in Recommender Systems.<br>
+		<u>
+			Naoto Ohsaka</u> and
+			<a href="https://riktor.github.io/">Riku Togashi</a>
+			(equal contribution).
+		<br>
+		<a href="https://sigir.org/sigir2023">46th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR 2023)</a>. <br>
+		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#sigir23_lowdim_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
+		</li>
+		<div id="sigir23_lowdim_abst" class="collapse">
+			Coming soon...
+		</div>
+
 
 		<li>
 		<span class="label label-info">New!!</span> Gap Preserving Reductions Between Reconfiguration Problems.<br>
@@ -78,7 +111,7 @@
 		<u>Naoto Ohsaka</u>.<br>
 		<a href="https://www.sciencedirect.com/journal/theoretical-computer-science">Theoretical Computer Science</a>. <br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#tcs22tsreco_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
-		<a href="https://authors.elsevier.com/a/1gD3i15DaIAtHj">
+		<a href="https://doi.org/10.1016/j.tcs.2022.11.036">
 			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
 		</a>
 		<a href="https://arxiv.org/abs/2107.09885">
@@ -91,7 +124,7 @@
 			A vertex set $S$ is called a <i>target set</i> if all vertices of $G$ would be activated when initially activating vertices of $S$.
 			In the Target Set Reconfiguration problem, given two target sets $X$ and $Y$ of the same size, we are required to determine whether $X$ can be transformed into $Y$ by repeatedly swapping one vertex in the current set with another vertex not in the current set preserving every intermediate set as a target set.
 			In this paper, we investigate the complexity of Target Set Reconfiguration in restricted cases.
-			On the hardness side, we prove that Target Set Reconfiguration is $\textsf{PSPACE}$-complete on bipartite planar graphs of degree $3$ and $4$ and of threshold $2$, bipartite $3$-regular graphs and planar $3$-regular graphs of threshold $1$ and $2$, and split graphs, which is in contrast to the fact that a special case called Vertex Cover Reconfiguration is in $\textsf{P}$ for the last graph class.
+			On the hardness side, we prove that Target Set Reconfiguration is <b>PSPACE</b>-complete on bipartite planar graphs of degree $3$ and $4$ and of threshold $2$, bipartite $3$-regular graphs and planar $3$-regular graphs of threshold $1$ and $2$, and split graphs, which is in contrast to the fact that a special case called Vertex Cover Reconfiguration is in <b>P</b> for the last graph class.
 			On the positive side, we present a polynomial-time algorithm for Target Set Reconfiguration on graphs of maximum degree $2$ and trees.
 			The latter result can be thought of as a generalization of that for Vertex Cover Reconfiguration.
 		</div>
@@ -114,15 +147,15 @@
 		</li>
 		<div id="isaac22_abst" class="collapse">
 			In the Determinant Maximization problem, given an $n \times n$ positive semi-definite matrix $\mathbf{A}$ in $\mathbb{Q}^{n \times n}$ and an integer $k$, we are required to find a $k \times k$ principal submatrix of $\mathbf{A}$ having the maximum determinant.
-			This problem is known to be $\textsf{NP}$-hard and further proven to be $\textsf{W[1]}$-hard with respect to $k$ by Koutis; i.e., a $f(k)n^{\mathcal{O}(1)}$-time algorithm is unlikely to exist for any computable function $f$.
+			This problem is known to be <b>NP</b>-hard and further proven to be <b>W[1]</b>-hard with respect to $k$ by Koutis; i.e., a $f(k)n^{\mathcal{O}(1)}$-time algorithm is unlikely to exist for any computable function $f$.
 			However, there is still room to explore its parameterized complexity in the <i>restricted case</i>, in the hope of overcoming the general-case parameterized intractability.
 			In this study, we rule out the fixed-parameter tractability of Determinant Maximization even if an input matrix is extremely sparse or low rank, or an approximate solution is acceptable.
-			We first prove that Determinant Maximization is $\textsf{NP}$-hard and $\textsf{W[1]}$-hard even if an input matrix is an <i>arrowhead matrix</i>; i.e., the underlying graph formed by nonzero entries is a star, implying that the structural sparsity is not helpful.
+			We first prove that Determinant Maximization is <b>NP</b>-hard and <b>W[1]</b>-hard even if an input matrix is an <i>arrowhead matrix</i>; i.e., the underlying graph formed by nonzero entries is a star, implying that the structural sparsity is not helpful.
 			By contrast, we show that Determinant Maximization is solvable in polynomial time on <i>tridiagonal matrices</i>.
-			Thereafter, we demonstrate the $\textsf{W[1]}$-hardness with respect to the <i>rank</i> $r$ of an input matrix.
+			Thereafter, we demonstrate the <b>W[1]</b>-hardness with respect to the <i>rank</i> $r$ of an input matrix.
 			Our result is stronger than Koutis' result in the sense that any $k \times k$ principal submatrix is singular whenever $k > r$.
-			We finally give evidence that it is $\textsf{W[1]}$-hard to approximate Determinant Maximization parameterized by $k$ within a factor of $2^{-c\sqrt{k}}$ for some universal constant $c > 0$.
-			Our hardness result is conditional on the <i>Parameterized Inapproximability Hypothesis</i> posed by Lokshtanov, Ramanujan, Saurab, and Zehavi, which asserts that a gap version of Binary Constraint Satisfaction Problem is $\textsf{W[1]}$-hard.
+			We finally give evidence that it is <b>W[1]</b>-hard to approximate Determinant Maximization parameterized by $k$ within a factor of $2^{-c\sqrt{k}}$ for some universal constant $c > 0$.
+			Our hardness result is conditional on the <i>Parameterized Inapproximability Hypothesis</i> posed by Lokshtanov, Ramanujan, Saurab, and Zehavi, which asserts that a gap version of Binary Constraint Satisfaction Problem is <b>W[1]</b>-hard.
 			To complement this result, we develop an $\varepsilon$-additive approximation algorithm that runs in $\varepsilon^{-r^2} \cdot r^{\mathcal{O}(r^3)} \cdot n^{\mathcal{O}(1)}$ time for the rank $r$ of an input matrix, provided that the diagonal entries are bounded.
 		</div>
 
@@ -132,7 +165,7 @@
 		<u>Naoto Ohsaka</u>.<br>
 		<a href="https://www.jair.org">Journal of Artificial Intelligence Research</a>. <br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#mapapprox_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
-		<a href="https://jair.org/index.php/jair/article/view/13288">
+		<a href="https://doi.org/10.1613/jair.1.13288">
 			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
 		</a>
 		<a href="https://arxiv.org/abs/2109.00727">
@@ -144,11 +177,11 @@
 			One is maximum a posteriori (MAP) inference, i.e., to find a principal submatrix having the maximum determinant.
 			The other is probabilistic inference on exponentiated DPPs (E-DPPs), which can sharpen or weaken the diversity preference of DPPs with an exponent parameter $p$.
 			We present several complexity-theoretic hardness results that explain the difficulty in approximating MAP inference and the normalizing constant for E-DPPs.
-			We first prove that unconstrained MAP inference for an $n \times n$ matrix is $\textsf{NP}$-hard to approximate within a factor of $2^{\beta n}$, where $\beta = 10^{-10^{13}} $.
-			This result improves upon the best-known inapproximability factor of $(\frac{9}{8}-\epsilon)$, and rules out the existence of any polynomial-factor approximation algorithm assuming $\textsf{P} \neq \textsf{NP}$.
-			We then show that log-determinant maximization is $\textsf{NP}$-hard to approximate within a factor of $\frac{5}{4}$ for the unconstrained case and within a factor of $1+10^{-10^{13}}$ for the size-constrained monotone case.
-			In particular, log-determinant maximization does not admit a polynomial-time approximation scheme unless $\textsf{P} = \textsf{NP}$.
-			As a corollary of the first result, we demonstrate that the normalizing constant for E-DPPs of any (fixed) constant exponent $p \geq \beta^{-1} = 10^{10^{13}}$ is $\textsf{NP}$-hard to approximate within a factor of $2^{\beta pn}$, which is in contrast to the case of $p \leq 1$ admitting a fully polynomial-time randomized approximation scheme.
+			We first prove that unconstrained MAP inference for an $n \times n$ matrix is <b>NP</b>-hard to approximate within a factor of $2^{\beta n}$, where $\beta = 10^{-10^{13}} $.
+			This result improves upon the best-known inapproximability factor of $(\frac{9}{8}-\epsilon)$, and rules out the existence of any polynomial-factor approximation algorithm assuming <b>P</b> ≠ <b>NP</b>.
+			We then show that log-determinant maximization is <b>NP</b>-hard to approximate within a factor of $\frac{5}{4}$ for the unconstrained case and within a factor of $1+10^{-10^{13}}$ for the size-constrained monotone case.
+			In particular, log-determinant maximization does not admit a polynomial-time approximation scheme unless <b>P</b> = <b>NP</b>.
+			As a corollary of the first result, we demonstrate that the normalizing constant for E-DPPs of any (fixed) constant exponent $p \geq \beta^{-1} = 10^{10^{13}}$ is <b>NP</b>-hard to approximate within a factor of $2^{\beta pn}$, which is in contrast to the case of $p \leq 1$ admitting a fully polynomial-time randomized approximation scheme.
 		</div>
 
 
@@ -157,7 +190,7 @@
 		<u>Naoto Ohsaka</u>, Tatsuya Matsuoka<br>
 		<a href="https://www.wsdm-conference.org/2022/">15th ACM International Conference on Web Search and Data Mining (WSDM 2022)</a>. <br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#wsdm22_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
-		<a href="https://dl.acm.org/doi/10.1145/3488560.3498382">
+		<a href="https://doi.org/10.1145/3488560.3498382">
 			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
 		</a>
 		<a href="https://arxiv.org/abs/2111.14030">
@@ -174,9 +207,9 @@
 			Monotone Submodular Reconfiguration (MSReco), which applies to influence maximization, and two versions of Unconstrained Submodular Reconfiguration (USReco), which apply to determinantal point processes.
 			Our contributions are summarized as follows:
 			<ul>
-				<li>We prove that MSReco and USReco are both $\textbf{PSPACE}$-complete.</li>
+				<li>We prove that MSReco and USReco are both <b>PSPACE</b>-complete.</li>
 				<li>We design a $\frac{1}{2}$-approximation algorithm for MSReco and a $\frac{1}{n}$-approximation algorithm for (one version of) USReco.</li>
-				<li>We devise inapproximability results that approximating the optimum value of MSReco within a $(1-\frac{1+\epsilon}{n^2})$-factor is $\textbf{PSPACE}$-hard, and we cannot find a $(\frac{5}{6}+\epsilon)$-approximation for USReco.</li>
+				<li>We devise inapproximability results that approximating the optimum value of MSReco within a $(1-\frac{1+\epsilon}{n^2})$-factor is <b>PSPACE</b>-hard, and we cannot find a $(\frac{5}{6}+\epsilon)$-approximation for USReco.</li>
 				<li>We conduct numerical study on the reconfiguration version of influence maximization and determinantal point processes using real-world social network and movie rating data.</li>
 			</ul>
 		</div>
@@ -200,7 +233,6 @@
 			Our numerical simulation on an online retail dataset empirically verifies that a convex combination of only two DPPs can outperform a nonsymmetric DPP in terms of the Kullback--Leibler divergence.
 			By combining a polynomial number of DPPs, we can express probability distributions induced by bounded-degree pseudo-Boolean functions, which include weighted coverage functions of bounded occurrence.
 		</div>
-
 
 		<li>
 		Maximization of Monotone $k$-Submodular Functions with Bounded Curvature and Non-$k$-Submodular Functions.<br>
@@ -241,7 +273,7 @@
 		<u>Naoto Ohsaka</u>.<br>
 		<a href="https://www.journals.elsevier.com/information-processing-letters">Information Processing Letters</a>. <br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#fastreach_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
-		<a href="https://www.sciencedirect.com/science/article/abs/pii/S0020019021000521">
+		<a href="https://doi.org/10.1016/j.ipl.2021.106137">
 			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
 		</a>
 		<a href="https://arxiv.org/abs/2103.04595">
@@ -262,7 +294,7 @@
 		<u>Naoto Ohsaka</u>.<br>
 		<a href="https://www.journals.elsevier.com/operations-research-letters">Operations Research Letters</a>. <br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#orl21_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
-		<a href="https://www.sciencedirect.com/science/article/abs/pii/S0167637721000316">
+		<a href="https://doi.org/10.1016/j.orl.2021.02.004">
 			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
 		</a>
 		<a href="https://arxiv.org/abs/2102.12646">
@@ -330,7 +362,7 @@
 		<u>Naoto Ohsaka</u>.<br>
 		<a href="https://www.siam.org/conferences/cm/conference/sdm21">2021 SIAM International Conference on Data Mining (SDM 2021)</a>. <br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#sdm21_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
-		<a href="https://epubs.siam.org/doi/abs/10.1137/1.9781611976700.42">
+		<a href="https://doi.org/10.1137/1.9781611976700.42">
 			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
 		</a>
 		<a href="https://arxiv.org/abs/2101.06233">
@@ -386,7 +418,7 @@
 		<u>Naoto Ohsaka</u>.<br>
 		<a href="https://sigmod2020.org/">ACM SIGMOD International Conference on Management of Data 2020 (SIGMOD 2020)</a>. <br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#sigmod20_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
-		<a href="https://dl.acm.org/doi/10.1145/3318464.3380564">
+		<a href="https://doi.org/10.1145/3318464.3380564">
 			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
 		</a>
 		<a href="https://arxiv.org/abs/2003.09816">
@@ -415,7 +447,7 @@
 		<a href="https://jpn.nec.com/rd/people/akihiro_yabe.html">Akihiro Yabe.</a><br>
 		<a href="https://www.siam.org/conferences/cm/conference/sdm20">2020 SIAM International Conference on Data Mining (SDM 2020)</a>. <br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#sdm20_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
-		<a href="https://epubs.siam.org/doi/10.1137/1.9781611976236.20">
+		<a href="https://doi.org/10.1137/1.9781611976236.20">
 			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
 		</a>
 		</li>
@@ -438,7 +470,7 @@
 		<a href="http://research.nii.ac.jp/~k_keniti/">Ken-ichi Kawarabayashi.</a><br>
 		<a href="http://www.dexa.org/dexa2018">29th International Conference on Database and Expert Systems Applications (DEXA 2018)</a>. <br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#dexa18_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
-		<a href="https://link.springer.com/chapter/10.1007/978-3-319-98809-2_26">
+		<a href="https://doi.org/10.1007/978-3-319-98809-2_26">
 			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
 		</a>
 		</li>
@@ -459,7 +491,7 @@
 		<a href="http://webhome.cs.uvic.ca/~thomo/">Alex Thomo.</a><br>
 		<a href="http://ssdbm2018.inf.unibz.it/">30th International Conference on Scientific and Statistical Database Management (SSDBM 2018)</a>. <br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#ssdbm18_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
-		<a href="https://dl.acm.org/citation.cfm?id=3221291">
+		<a href="https://doi.org/10.1145/3221269.3221291">
 			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
 		</a>
 		</li>
@@ -480,7 +512,7 @@
 		<u>Naoto Ohsaka.</u><br>
 		<a href="https://stacs2018.sciencesconf.org/">35th International Symposium on Theoretical Aspects of Computer Science (STACS 2018)</a>. <br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#stacs18_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
-		<a href="http://drops.dagstuhl.de/opus/volltexte/2018/8525/pdf/LIPIcs-STACS-2018-41.pdf">
+		<a href="https://doi.org/10.4230/LIPIcs.STACS.2018.41">
 			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
 		</a>
 		</li>
@@ -507,7 +539,7 @@
 		<a href="http://research.nii.ac.jp/~k_keniti/">Ken-ichi Kawarabayashi.</a><br>
 		<a href="http://sigmod2017.org/">ACM SIGMOD International Conference on Management of Data 2017 (SIGMOD 2017)</a>. <br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#cmin_sigmod17_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
-		<a href="https://dl.acm.org/citation.cfm?id=3064045">
+		<a href="https://doi.org/10.1145/3035918.3064045">
 			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
 		</a>
 		<a href="https://www.slideshare.net/todo314/coarsening-massive-influence-networks-for-scalable-diffusion-analysis-sigmod17">
@@ -540,7 +572,7 @@
 		<a href="http://research.nii.ac.jp/~yyoshida/">Yuichi Yoshida.</a><br>
 		<a href="http://www.www2017.com.au/">International Conference on World Wide Web (WWW 2017)</a>.<br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#portfolio_www17_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
-		<a href="http://papers.www2017.com.au.s3-website-ap-southeast-2.amazonaws.com/proceedings/p977.pdf">
+		<a href="https://doi.org/10.1145/3038912.3052628">
 			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
 		</a>
 		<a href="https://www.slideshare.net/todo314/portfolio-optimization-for-influence-spread-www17">
@@ -564,7 +596,7 @@
 		<a href="http://www.graco.c.u-tokyo.ac.jp/labs/kakimura/">Naonori Kakimura</a>, and
 		<a href="http://research.nii.ac.jp/~k_keniti/">Ken-ichi Kawarabayashi.</a><br>
 		<a href="http://www.ecmlpkdd2016.org/">European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD 2016)</a>.<br>
-		<a href="http://link.springer.com/chapter/10.1007/978-3-319-46128-1_9">
+		<a href="https://doi.org/10.1007/978-3-319-46128-1_9">
 			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
 		</a>
 		<a href="https://www.slideshare.net/todo314/maximizing-timedecaying-influence-in-social-networks-ecmlpkdd16">
@@ -612,7 +644,7 @@
 		<a href="http://www.prefield.com/">Takanori Maehara</a>, and 
 		<a href="http://research.nii.ac.jp/~k_keniti/">Ken-ichi Kawarabayashi.</a><br>
 		<a href="http://www.kdd.org/kdd2015/">ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (SIGKDD 2015)</a>.<br>
-		<a href="http://dl.acm.org/citation.cfm?id=2783297">
+		<a href="https://doi.org/10.1145/2783258.2783297">
 			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
 		</a>
 		<a href="https://www.slideshare.net/todo314/efficient-pagerank-tracking-in-evolving-networks-kdd15">
@@ -645,7 +677,7 @@
 		<a href="http://tokyo-ct.net/usr/kitakosi/">Daisuke Kitakoshi</a>, and
 		Masato Suzuki.<br>
 		IEEE International Conference on Granular Computing (GrC 2011).<br>
-		<a href="http://ieeexplore.ieee.org/document/6122650/">
+		<a href="https://doi.org/10.1109/GRC.2011.6122650">
 			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
 		</a>
 		<!--
@@ -671,35 +703,34 @@
 			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>ArXiv</span>
 		</a>
 		</li>
-		<div id="pidpp_abst" class="collapse"><i>
-		We consider the product of determinantal point processes (DPPs), a point process whose probability mass is proportional to the product of principal minors of multiple matrices, as a natural, promising generalization of DPPs.
-		We study the computational complexity of computing its normalizing constant, which is among the most essential probabilistic inference tasks.
-		Our complexity-theoretic results (almost) rule out the existence of efficient algorithms for this task unless the input matrices are forced to have favorable structures.
-		In particular, we prove the following:
-		<ul>
-		<li>
-		Computing $\sum_S\det(\mathbf{A}_{S,S})^p$ exactly for every (fixed) positive even integer $p$ is $\textsf{UP}$-hard and $\textsf{Mod}_3\textsf{P}$-hard, which gives a negative answer to an open question posed by Kulesza and Taskar (2012).
-		</li>
-		<li>
-		$\sum_S\det(\mathbf{A}_{S,S})\det(\mathbf{B}_{S,S})\det(\mathbf{C}_{S,S})$ is $\textsf{NP}$-hard to approximate within a factor of $2^{O(|\mathcal{I}|^{1-\epsilon})}$ or $2^{\mathcal{O}(n^{1/\epsilon})}$ for any $\epsilon>0$, where $|\mathcal{I}|$ is the input size and $n$ is the order of the input matrix.
-		This result is stronger than the #P-hardness for the case of two matrices derived by Gillenwater (2014).
-		</li>
-		<li>
-		There exists a $k^{\mathcal{O}(k)}n^{\mathcal{O}(1)}$-time algorithm for computing $\sum_S\det(\mathbf{A}_{S,S})\det(\mathbf{B}_{S,S})$, where $k$ is the maximum rank of $\mathbf{A}$ and $\mathbf{B}$ or the treewidth of the graph formed by nonzero entries of $\mathbf{A}$ and $\mathbf{B}$. Such parameterized algorithms are said to be fixed-parameter tractable.
-		</li>
-		</ul>
-		These results can be extended to the fixed-size case.
-		Further, we present two applications of fixed-parameter tractable algorithms given a matrix $\mathbf{A}$ of treewidth $w$:
-		<ul>
-		<li>
-		We can compute a $2^{\frac{n}{2p-1}}$-approximation to $\sum_S\det({\bf A}_{S,S})^p$ for any fractional number $p>1$ in $w^{\mathcal{O}(wp)}n^{\mathcal{O}(1)}$ time.
-		</li>
-		<li>
-		We can find a $2^{\sqrt n}$-approximation to unconstrained maximum a posteriori inference in $w^{\mathcal{O}(w\sqrt n)}n^{\mathcal{O}(1)}$ time.
-		</li>
-
-		</ul>
-		</i></div>
+		<div id="pidpp_abst" class="collapse">
+			We consider the product of determinantal point processes (DPPs), a point process whose probability mass is proportional to the product of principal minors of multiple matrices, as a natural, promising generalization of DPPs.
+			We study the computational complexity of computing its normalizing constant, which is among the most essential probabilistic inference tasks.
+			Our complexity-theoretic results (almost) rule out the existence of efficient algorithms for this task unless the input matrices are forced to have favorable structures.
+			In particular, we prove the following:
+			<ul>
+				<li>
+				Computing $\sum_S\det(\mathbf{A}_{S,S})^p$ exactly for every (fixed) positive even integer $p$ is $\textsf{UP}$-hard and $\textsf{Mod}_3\textsf{P}$-hard, which gives a negative answer to an open question posed by Kulesza and Taskar (2012).
+				</li>
+				<li>
+				$\sum_S\det(\mathbf{A}_{S,S})\det(\mathbf{B}_{S,S})\det(\mathbf{C}_{S,S})$ is $\textsf{NP}$-hard to approximate within a factor of $2^{O(|\mathcal{I}|^{1-\epsilon})}$ or $2^{\mathcal{O}(n^{1/\epsilon})}$ for any $\epsilon>0$, where $|\mathcal{I}|$ is the input size and $n$ is the order of the input matrix.
+				This result is stronger than the #P-hardness for the case of two matrices derived by Gillenwater (2014).
+				</li>
+				<li>
+				There exists a $k^{\mathcal{O}(k)}n^{\mathcal{O}(1)}$-time algorithm for computing $\sum_S\det(\mathbf{A}_{S,S})\det(\mathbf{B}_{S,S})$, where $k$ is the maximum rank of $\mathbf{A}$ and $\mathbf{B}$ or the treewidth of the graph formed by nonzero entries of $\mathbf{A}$ and $\mathbf{B}$. Such parameterized algorithms are said to be fixed-parameter tractable.
+				</li>
+			</ul>
+			These results can be extended to the fixed-size case.
+			Further, we present two applications of fixed-parameter tractable algorithms given a matrix $\mathbf{A}$ of treewidth $w$:
+			<ul>
+				<li>
+				We can compute a $2^{\frac{n}{2p-1}}$-approximation to $\sum_S\det({\bf A}_{S,S})^p$ for any fractional number $p>1$ in $w^{\mathcal{O}(wp)}n^{\mathcal{O}(1)}$ time.
+				</li>
+				<li>
+				We can find a $2^{\sqrt n}$-approximation to unconstrained maximum a posteriori inference in $w^{\mathcal{O}(w\sqrt n)}n^{\mathcal{O}(1)}$ time.
+				</li>
+			</ul>
+		</div>
 
 
 		</ol>
@@ -757,7 +788,7 @@
 		</div>
 
 		<div id="footer" class="navbar">
-			<p class="muted pull-right">Last modified: March 13th, 2023</p>
+			<p class="muted pull-right">Last modified: April 6th, 2023</p>
 		</div>
 
 		<script src="js/bootstrap.min.js"></script>
