@@ -20,7 +20,7 @@
     <div class="container">
 		<h1>Welcome to my homepage !!</h1>
 		<h1>Naoto Ohsaka</h1>
-		<div><a href="./photo.jpg">Photo</a></div>
+		<div><a href="./photo.jpg">Photo (May, 2017)</a></div>
 		<div><a href="./cv.pdf">Curriculum Vitae</a></div>
 		<div>Email: naoto.ohsaka (at) gmail.com</div>
 		<div>Google Scholar author ID: <a href="https://scholar.google.co.jp/citations?user=Qgkc9DgAAAAJ">Qgkc9DgAAAAJ</a></div>
@@ -58,7 +58,16 @@
 		</a>
 		</li>
 		<div id="sigir23_ild_abst" class="collapse">
-			Coming soon...
+			Diversification of recommendation results is a promising approach for coping with the uncertainty associated with users' information needs.
+			Of particular importance in diversified recommendation is to define and optimize an appropriate diversity objective.
+			In this study, we revisit the most popular diversity objective called <i>intra-list distance (ILD)</i>, defined as the average pairwise distance between selected items, and a similar but lesser known objective called <i>dispersion</i>, which is the minimum pairwise distance.
+			Owing to their simplicity and flexibility, ILD and dispersion have been used in a plethora of diversified recommendation research.
+			Nevertheless, <i>we do not actually know</i> what kind of items are preferred by them.
+			We present a critical reexamination of ILD and dispersion from theoretical and experimental perspectives.
+			Our theoretical results reveal that these objectives have potential drawbacks:
+			ILD may select <i>duplicate</i> items that are very close to each other, whereas dispersion may overlook <i>distant</i> item pairs.
+			As a competitor to ILD and dispersion, we design a diversity objective called Gaussian ILD, which can <i>interpolate</i> between ILD and dispersion by tuning the bandwidth parameter.
+			We verify our theoretical results by experimental results using real-world data and confirm the extreme behavior of ILD and dispersion in practice.
 		</div>
 
 
@@ -76,7 +85,13 @@
 		</a>
 		</li>
 		<div id="sigir23_lowdim_abst" class="collapse">
-			Coming soon...
+			Beyond accuracy, there are a variety of aspects to the quality of recommender systems, such as diversity, fairness, and robustness.
+			We argue that many of the prevalent problems in recommender systems are partly due to <i>low-dimensionality</i> of user and item embeddings, particularly when dot-product models, such as matrix factorization, are used.
+			In this study, we showcase empirical evidence suggesting the necessity of sufficient dimensionality for user/item embeddings to achieve diverse, fair, and robust recommendation.
+			We then present theoretical analyses of the expressive power of dot-product models.
+			Our theoretical results demonstrate that the number of possible rankings expressible under dot-product models is exponentially bounded by the dimension of item factors.
+			We empirically found that the low-dimensionality contributes to a popularity bias, widening the gap between the rank positions of popular and long-tail items;
+			we also give a theoretical justification for this phenomenon. 
 		</div>
 
 
@@ -738,10 +753,42 @@
 			</ul>
 		</div>
 
+		<li>
+		On Approximate Reconfigurability of Label Cover.<br>
+		<u>Naoto Ohsaka</u>.<br>
+		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#lcreconf_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
+		<a href="https://arxiv.org/abs/2304.08746">
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>ArXiv</span>
+		</a>
+		</li>
+		<div id="lcreconf_abst" class="collapse">
+			Given a two-prover game $G$ and its two satisfying labelings $\psi_\mathsf{s}$ and $\psi_\mathsf{t}$,
+			the Label Cover Reconfiguration problem asks whether $\psi_\mathsf{s}$ can be transformed into $\psi_\mathsf{t}$ by repeatedly changing the value of a vertex while preserving any intermediate labeling satisfying $G$.
+			We consider an optimization variant of Label Cover Reconfiguration by relaxing the feasibility of labelings, referred to as Maxmin Label Cover Reconfiguration:
+			we are allowed to transform by passing through any non-satisfying labelings, but required to maximize the minimum fraction of satisfied edges during transformation from $\psi_\mathsf{s}$ to $\psi_\mathsf{t}$.
+			Since the parallel repetition theorem of Raz (SIAM J. Comput., 1998), which implies <b>NP</b>-hardness of Label Cover within any constant factor, produces strong inapproximability results for many <b>NP</b>-hard problems,
+			one may think of using Maxmin Label Cover Reconfiguration to derive inapproximability results for reconfiguration problems.
+			We prove the following results on Maxmin Label Cover Reconfiguration, which display different trends from those of Label Cover and the parallel repetition theorem:
+			<ul>
+			<li>
+				Maxmin Label Cover Reconfiguration can be approximated within a factor of nearly $\frac{1}{4}$ for restricted graph classes, including slightly dense graphs and balanced bipartite graphs.
+			</li>
+			<li>
+				A naive parallel repetition of Maxmin Label Cover Reconfiguration does not decrease the optimal objective value.
+			</li>
+			<li>
+				Label Cover Reconfiguration on projection games can be decided in polynomial time.
+			</li>
+			</ul>
+			The above results suggest that a reconfiguration analogue of the parallel repetition theorem is unlikely.
+		</div>
+
 
 		</ol>
 
+
 		<hr>
+
 
 		<h2>Talks</h2>
 		<ul>
@@ -794,7 +841,7 @@
 		</div>
 
 		<div id="footer" class="navbar">
-			<p class="muted pull-right">Last modified: May 24th, 2023</p>
+			<p class="muted pull-right">Last modified: June 8th, 2023</p>
 		</div>
 
 		<script src="js/bootstrap.min.js"></script>
