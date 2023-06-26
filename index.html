@@ -46,6 +46,29 @@
 
 
 		<li>
+		<span class="label label-info">New!!</span> Fast and Examination-agnostic Reciprocal Recommendation in Matching Markets.<br>
+		Yoji Tomita,
+		<a href="https://riktor.github.io/">Riku Togashi</a>,
+		Yuriko Hashizume,
+		<u>Naoto Ohsaka</u>.<br>
+		<a href="https://recsys.acm.org/recsys23">17th ACM Conference on Recommender Systems (RecSys 2023)</a>. <br>
+		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#tumatch_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
+		<a href="https://arxiv.org/abs/2306.09060">
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>ArXiv</span>
+		</a>
+		</li>
+		<div id="tumatch_abst" class="collapse">
+			In matching markets such as job posting and online dating platforms, the recommender system plays a critical role in the success of the platform.
+			Unlike standard recommender systems that suggest items to users, reciprocal recommender systems (RRSs) that suggest other users must take into account the mutual interests of users.
+			In addition, ensuring that recommendation opportunities do not disproportionately favor popular users is essential for the total number of matches and for fairness among users.
+			Existing recommendation methods in matching markets, however, face computational challenges on large-scale platforms and depend on specific examination functions in the position-based model (PBM).
+			In this paper, we introduce the reciprocal recommendation method based on the matching with transferable utility (TU matching) model in the context of ranking recommendations in matching markets and propose a fast and examination-model-free algorithm.
+			Furthermore, we evaluate our approach on experiments with synthetic data and real-world data from an online dating platform in Japan.
+			Our method performs better than or as well as existing methods in terms of the total number of matches and works well even in a large-scale dataset for which one existing method does not work.
+		</div>
+
+
+		<li>
 		<span class="label label-info">New!!</span> A Critical Reexamination of Intra-List Distance and Dispersion.<br>
 		<u>
 			Naoto Ohsaka</u> and
@@ -96,7 +119,7 @@
 
 
 		<li>
-		<span class="label label-info">New!!</span> Gap Preserving Reductions Between Reconfiguration Problems.<br>
+		Gap Preserving Reductions Between Reconfiguration Problems.<br>
 		<u>Naoto Ohsaka</u>.<br>
 		<a href="https://www.conferences.uni-hamburg.de/event/272/page/153-home">40th International Symposium on Theoretical Aspects of Computer Science (STACS 2023)</a>. <br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#stacs23_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
@@ -783,6 +806,25 @@
 			The above results suggest that a reconfiguration analogue of the parallel repetition theorem is unlikely.
 		</div>
 
+		<li>
+		Safe Collaborative Filtering.<br>
+		<a href="https://riktor.github.io/">Riku Togashi</a>,
+		<a href="https://sites.google.com/site/homepageoka/tatsushi-oka">Tatsushi Oka</a>,
+		<u>Naoto Ohsaka</u>,
+		Tetsuro Morimura.<br>
+		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#safer_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
+		<a href="https://arxiv.org/abs/2306.05292">
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>ArXiv</span>
+		</a>
+		</li>
+		<div id="safer_abst" class="collapse">
+			Excellent tail performance is crucial for modern machine learning tasks, such as algorithmic fairness, class imbalance, and risk-sensitive decision making, as it ensures the effective handling of challenging samples within a dataset.
+			Tail performance is also a vital determinant of success for personalised recommender systems to reduce the risk of losing users with low satisfaction.
+			This study introduces a "safe" collaborative filtering method that prioritises recommendation quality for less-satisfied users rather than focusing on the average performance.
+			Our approach minimises the conditional value at risk (CVaR), which represents the average risk over the tails of users' loss.
+			To overcome computational challenges for web-scale recommender systems, we develop a robust yet practical algorithm that extends the most scalable method, implicit alternating least squares (iALS).
+			Empirical evaluation on real-world datasets demonstrates the excellent tail performance of our approach while maintaining competitive computational efficiency.
+		</div>
 
 		</ol>
 
@@ -841,7 +883,7 @@
 		</div>
 
 		<div id="footer" class="navbar">
-			<p class="muted pull-right">Last modified: June 8th, 2023</p>
+			<p class="muted pull-right">Last modified: June 26th, 2023</p>
 		</div>
 
 		<script src="js/bootstrap.min.js"></script>
