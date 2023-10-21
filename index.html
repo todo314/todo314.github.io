@@ -48,11 +48,58 @@
 		<li>
 		<span class="label label-info">New!!</span> Gap Amplification for Reconfiguration Problems.<br>
 		<u>Naoto Ohsaka</u>.<br>
-		<a href="https://www.siam.org/conferences/cm/conference/soda24">34th ACM-SIAM Symposium on Discrete Algorithms (SODA 2024)</a>. <br>
+		<a href="https://www.siam.org/conferences/cm/conference/soda24">35th Annual ACM-SIAM Symposium on Discrete Algorithms (SODA 2024)</a>. <br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#soda2024_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
 		</li>
 		<div id="soda2024_abst" class="collapse">
-		Coming soon...
+			<i>Combinatorial reconfiguration</i> is an emerging field of theoretical computer science that studies the reachability
+			between a pair of feasible solutions for a particular combinatorial problem.
+			We study the hardness of accomplishing
+			“approximate” reconfigurability,
+			which affords to relax the feasibility of solutions.
+			For example,
+			in Minmax Set Cover Reconfiguration,
+			given a pair of covers $\mathcal{C}_\mathsf{s}$ and $\mathcal{C}_\mathsf{t}$ for a set system $\mathcal{F}$,
+			we aim to transform $\mathcal{C}_\mathsf{s}$ into $\mathcal{C}_\mathsf{t}$
+			by repeatedly adding or removing a single set of $\mathcal{F}$ so as to
+			minimize the <i>maximum size</i> of covers during transformation.
+			The recent study by Ohsaka (STACS 2023) gives
+			evidence that a host of reconfiguration problems
+			are <b>PSPACE</b>-hard to approximate assuming the <i>Reconfiguration Inapproximability Hypothesis</i> (RIH),
+			which postulates that a gap version of Maxmin CSP Reconfiguration is <b>PSPACE</b>-hard.
+			One limitation of this approach is that
+			inapproximability factors are not explicitly shown, so that
+			even a $1.00 \cdots 001$-approximation algorithm for Minmax Set Cover Reconfiguration
+			may not be ruled out, whereas it admits $2$-approximation as per
+			Ito, Demaine, Harvey, Papadimitriou, Sideri, Uehara, and Uno (Theor. Comput. Sci., 2011).
+			<br/>
+			In this paper, we demonstrate <i>gap amplification</i> for reconfiguration problems.
+			In particular,
+			we prove an explicit factor of <b>PSPACE</b>-hardness of approximation 
+			for three popular reconfiguration problems only assuming RIH.
+			Our main result is that under RIH,
+			Maxmin Binary CSP Reconfiguration is <b>PSPACE</b>-hard to approximate within a factor of $0.9942$.
+			Moreover, the same result holds even if the constraint graph
+			is restricted to $(d,\lambda)$-expander for arbitrarily small $\frac{\lambda}{d}$.
+			The crux of its proof is
+			an alteration of the gap amplification technique due to Dinur (J. ACM, 2007),
+			which amplifies the $1$ vs. $1-\epsilon$ gap for arbitrarily small $\epsilon > 0$
+			up to the $1$ vs. $1-0.0058$ gap.
+			As an application of the main result, we demonstrate that
+			Minmax Set Cover Reconfiguration and
+			Minmax Dominating Set Reconfiguration
+			are <b>PSPACE</b>-hard to approximate within a factor of $1.0029$ under RIH.
+			Our proof is based on
+			a gap-preserving reduction from Label Cover to Set Cover
+			due to Lund and Yannakakis (J. ACM, 1994).
+			However, unlike Lund--Yannakakis' reduction,
+			the expander mixing lemma is essential to use.
+			We highlight that all results hold unconditionally
+			as long as “<b>PSPACE</b>-hard” is replaced by “<b>NP</b>-hard,” and
+			are the first explicit inapproximability results for reconfiguration problems without resorting to the parallel repetition theorem.
+			We finally complement the main result by showing that
+			it is <b>NP</b>-hard to approximate Maxmin Binary CSP Reconfiguration
+			within a factor better than $\frac{3}{4}$.
 		</div>
 
 
@@ -894,7 +941,7 @@
 		</div>
 
 		<div id="footer" class="navbar">
-			<p class="muted pull-right">Last modified: October 11th, 2023</p>
+			<p class="muted pull-right">Last modified: October 21st, 2023</p>
 		</div>
 
 		<script src="js/bootstrap.min.js"></script>
