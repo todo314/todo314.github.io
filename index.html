@@ -34,7 +34,7 @@
 
 		<h2>Research Interests</h2>
 		<ul>
-			<li>Theoretical computer science: combinatorial reconfiguration, hardness of approximation, parameterized complexity.</li>
+			<li>Theoretical computer science: combinatorial reconfiguration, hardness of approximation, probabilistically checkable proofs.</li>
 			<li>Applications: graph algorithms, network diffusion, determinantal point processes, recommender systems.</li>
 		</ul>
 
@@ -46,69 +46,69 @@
 
 
 		<li>
-		<span class="label label-info">New!!</span> Gap Amplification for Reconfiguration Problems.<br>
+		<span class="label label-info">New!!</span> On the Parameterized Intractability of Determinant Maximization.<br>
 		<u>Naoto Ohsaka</u>.<br>
-		<a href="https://www.siam.org/conferences/cm/conference/soda24">35th Annual ACM-SIAM Symposium on Discrete Algorithms (SODA 2024)</a>. <br>
-		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#soda2024_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
-		<a href="https://arxiv.org/abs/2310.14160">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>ArXiv</span>
+		<a href="https://link.springer.com/journal/453">Algorithmica</a> (Special issue of ISAAC 2022). <br>
+		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#algorithmica24_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
+		<!--
+		<a href="https://doi.org/--.----">
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
+		</a>
+		-->
+		<a href="https://arxiv.org/abs/2209.12519">
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>arXiv</span>
 		</a>
 		</li>
-		<div id="soda2024_abst" class="collapse">
-			<i>Combinatorial reconfiguration</i> is an emerging field of theoretical computer science that studies the reachability
-			between a pair of feasible solutions for a particular combinatorial problem.
-			We study the hardness of accomplishing
-			“approximate” reconfigurability,
-			which affords to relax the feasibility of solutions.
-			For example,
-			in Minmax Set Cover Reconfiguration,
-			given a pair of covers $\mathcal{C}_\mathsf{s}$ and $\mathcal{C}_\mathsf{t}$ for a set system $\mathcal{F}$,
-			we aim to transform $\mathcal{C}_\mathsf{s}$ into $\mathcal{C}_\mathsf{t}$
-			by repeatedly adding or removing a single set of $\mathcal{F}$ so as to
-			minimize the <i>maximum size</i> of covers during transformation.
-			The recent study by Ohsaka (STACS 2023) gives
-			evidence that a host of reconfiguration problems
-			are <b>PSPACE</b>-hard to approximate assuming the <i>Reconfiguration Inapproximability Hypothesis</i> (RIH),
-			which postulates that a gap version of Maxmin CSP Reconfiguration is <b>PSPACE</b>-hard.
-			One limitation of this approach is that
-			inapproximability factors are not explicitly shown, so that
-			even a $1.00 \cdots 001$-approximation algorithm for Minmax Set Cover Reconfiguration
-			may not be ruled out, whereas it admits $2$-approximation as per
-			Ito, Demaine, Harvey, Papadimitriou, Sideri, Uehara, and Uno (Theor. Comput. Sci., 2011).
-			<br/>
-			In this paper, we demonstrate <i>gap amplification</i> for reconfiguration problems.
-			In particular,
-			we prove an explicit factor of <b>PSPACE</b>-hardness of approximation 
-			for three popular reconfiguration problems only assuming RIH.
-			Our main result is that under RIH,
-			Maxmin Binary CSP Reconfiguration is <b>PSPACE</b>-hard to approximate within a factor of $0.9942$.
-			Moreover, the same result holds even if the constraint graph
-			is restricted to $(d,\lambda)$-expander for arbitrarily small $\frac{\lambda}{d}$.
-			The crux of its proof is
-			an alteration of the gap amplification technique due to Dinur (J. ACM, 2007),
-			which amplifies the $1$ vs. $1-\epsilon$ gap for arbitrarily small $\epsilon > 0$
-			up to the $1$ vs. $1-0.0058$ gap.
-			As an application of the main result, we demonstrate that
-			Minmax Set Cover Reconfiguration and
-			Minmax Dominating Set Reconfiguration
-			are <b>PSPACE</b>-hard to approximate within a factor of $1.0029$ under RIH.
-			Our proof is based on
-			a gap-preserving reduction from Label Cover to Set Cover
-			due to Lund and Yannakakis (J. ACM, 1994).
-			However, unlike Lund--Yannakakis' reduction,
-			the expander mixing lemma is essential to use.
-			We highlight that all results hold unconditionally
-			as long as “<b>PSPACE</b>-hard” is replaced by “<b>NP</b>-hard,” and
-			are the first explicit inapproximability results for reconfiguration problems without resorting to the parallel repetition theorem.
-			We finally complement the main result by showing that
-			it is <b>NP</b>-hard to approximate Maxmin Binary CSP Reconfiguration
-			within a factor better than $\frac{3}{4}$.
+		<div id="algorithmica24_abst" class="collapse">
+			In the Determinant Maximization problem, given an $n \times n$ positive semi-definite matrix $\mathbf{A}$ in $\mathbb{Q}^{n \times n}$ and an integer $k$, we are required to find a $k \times k$ principal submatrix of $\mathbf{A}$ having the maximum determinant.
+			This problem is known to be <b>NP</b>-hard and further proven to be <b>W[1]</b>-hard with respect to $k$ by Koutis; i.e., a $f(k)n^{\mathcal{O}(1)}$-time algorithm is unlikely to exist for any computable function $f$.
+			However, there is still room to explore its parameterized complexity in the <i>restricted case</i>, in the hope of overcoming the general-case parameterized intractability.
+			In this study, we rule out the fixed-parameter tractability of Determinant Maximization even if an input matrix is extremely sparse or low rank, or an approximate solution is acceptable.
+			We first prove that Determinant Maximization is <b>NP</b>-hard and <b>W[1]</b>-hard even if an input matrix is an <i>arrowhead matrix</i>; i.e., the underlying graph formed by nonzero entries is a star, implying that the structural sparsity is not helpful.
+			By contrast, we show that Determinant Maximization is solvable in polynomial time on <i>tridiagonal matrices</i>.
+			Thereafter, we demonstrate the <b>W[1]</b>-hardness with respect to the <i>rank</i> $r$ of an input matrix.
+			Our result is stronger than Koutis' result in the sense that any $k \times k$ principal submatrix is singular whenever $k > r$.
+			We finally give evidence that it is <b>W[1]</b>-hard to approximate Determinant Maximization parameterized by $k$ within a factor of $2^{-c\sqrt{k}}$ for some universal constant $c > 0$.
+			Our hardness result is conditional on the <i>Parameterized Inapproximability Hypothesis</i> posed by Lokshtanov, Ramanujan, Saurab, and Zehavi, which asserts that a gap version of Binary Constraint Satisfaction Problem is <b>W[1]</b>-hard.
+			To complement this result, we develop an $\varepsilon$-additive approximation algorithm that runs in $\varepsilon^{-r^2} \cdot r^{\mathcal{O}(r^3)} \cdot n^{\mathcal{O}(1)}$ time for the rank $r$ of an input matrix, provided that the diagonal entries are bounded.
 		</div>
 
 
 		<li>
-		<span class="label label-info">New!!</span> Fast and Examination-agnostic Reciprocal Recommendation in Matching Markets.<br>
-		Yoji Tomita,
+		<span class="label label-info">New!!</span> Gap Amplification for Reconfiguration Problems.<br>
+		<u>Naoto Ohsaka</u>.<br>
+		<a href="https://www.siam.org/conferences/cm/conference/soda24">35th Annual ACM-SIAM Symposium on Discrete Algorithms (SODA 2024)</a>. <br>
+		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#soda2024_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
+		<a href="https://doi.org/10.1137/1.9781611977912.54">
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
+		</a>
+		<a href="https://arxiv.org/abs/2310.14160">
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>arXiv</span>
+		</a>
+		</li>
+		<div id="soda2024_abst" class="collapse">
+			<i>Combinatorial reconfiguration</i> is an emerging field of theoretical computer science that studies the reachability between a pair of feasible solutions for a particular combinatorial problem.
+			We study the hardness of accomplishing “approximate” reconfigurability, which affords to relax the feasibility of solutions.
+			For example, in Minmax Set Cover Reconfiguration, given a pair of covers $\mathcal{C}_\mathsf{s}$ and $\mathcal{C}_\mathsf{t}$ for a set system $\mathcal{F}$, we aim to transform $\mathcal{C}_\mathsf{s}$ into $\mathcal{C}_\mathsf{t}$ by repeatedly adding or removing a single set of $\mathcal{F}$ so as to minimize the <i>maximum size</i> of covers during transformation.
+			The recent study by Ohsaka (STACS 2023) gives evidence that a host of reconfiguration problems are <b>PSPACE</b>-hard to approximate assuming the <i>Reconfiguration Inapproximability Hypothesis</i> (RIH), which postulates that a gap version of Maxmin CSP Reconfiguration is <b>PSPACE</b>-hard.
+			One limitation of this approach is that inapproximability factors are not explicitly shown, so that even a $1.00 \cdots 001$-approximation algorithm for Minmax Set Cover Reconfiguration may not be ruled out, whereas it admits $2$-approximation as per Ito, Demaine, Harvey, Papadimitriou, Sideri, Uehara, and Uno (Theor. Comput. Sci., 2011).
+			<br>
+			In this paper, we demonstrate <i>gap amplification</i> for reconfiguration problems.
+			In particular, we prove an explicit factor of <b>PSPACE</b>-hardness of approximation for three popular reconfiguration problems only assuming RIH.
+			Our main result is that under RIH, Maxmin Binary CSP Reconfiguration is <b>PSPACE</b>-hard to approximate within a factor of $0.9942$.
+			Moreover, the same result holds even if the constraint graph is restricted to $(d,\lambda)$-expander for arbitrarily small $\frac{\lambda}{d}$.
+			The crux of its proof is an alteration of the gap amplification technique due to Dinur (J. ACM, 2007), which amplifies the $1$ vs. $1-\epsilon$ gap for arbitrarily small $\epsilon > 0$ up to the $1$ vs. $1-0.0058$ gap.
+			As an application of the main result, we demonstrate that Minmax Set Cover Reconfiguration and Minmax Dominating Set Reconfiguration are <b>PSPACE</b>-hard to approximate within a factor of $1.0029$ under RIH.
+			Our proof is based on a gap-preserving reduction from Label Cover to Set Cover due to Lund and Yannakakis (J. ACM, 1994).
+			However, unlike Lund--Yannakakis' reduction, the expander mixing lemma is essential to use.
+			We highlight that all results hold unconditionally as long as “<b>PSPACE</b>-hard” is replaced by “<b>NP</b>-hard,” and are the first explicit inapproximability results for reconfiguration problems without resorting to the parallel repetition theorem.
+			We finally complement the main result by showing that it is <b>NP</b>-hard to approximate Maxmin Binary CSP Reconfiguration within a factor better than $\frac{3}{4}$.
+		</div>
+
+
+		<li>
+		Fast and Examination-agnostic Reciprocal Recommendation in Matching Markets.<br>
+		<a href="https://miiitomi.github.io/">Yoji Tomita</a>,
 		<a href="https://riktor.github.io/">Riku Togashi</a>,
 		Yuriko Hashizume,
 		<u>Naoto Ohsaka</u>.<br>
@@ -118,7 +118,7 @@
 			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
 		</a>
 		<a href="https://arxiv.org/abs/2306.09060">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>ArXiv</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>arXiv</span>
 		</a>
 		</li>
 		<div id="tumatch_abst" class="collapse">
@@ -144,7 +144,7 @@
 			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
 		</a>
 		<a href="https://arxiv.org/abs/2305.13801">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>ArXiv</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>arXiv</span>
 		</a>
 		</li>
 		<div id="sigir23_ild_abst" class="collapse">
@@ -174,7 +174,7 @@
 			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
 		</a>
 		<a href="https://arxiv.org/abs/2305.13597">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>ArXiv</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>arXiv</span>
 		</a>
 		</li>
 		<div id="sigir23_lowdim_abst" class="collapse">
@@ -197,7 +197,7 @@
 			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
 		</a>
 		<a href="https://arxiv.org/abs/2212.04207">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>ArXiv</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>arXiv</span>
 		</a>
 		<a href="./slide/reconfapprox_stacs23_slide.pdf">
 			<span class="btn btn-success btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Slide</span>
@@ -229,7 +229,7 @@
 			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
 		</a>
 		<a href="https://arxiv.org/abs/2107.09885">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>ArXiv</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>arXiv</span>
 		</a>
 		</li>
 		<div id="tcs22tsreco_abst" class="collapse">
@@ -253,7 +253,7 @@
 			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
 		</a>
 		<a href="https://arxiv.org/abs/2209.12519">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>ArXiv</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>arXiv</span>
 		</a>
 		<a href="./slide/detmax_isaac22_slide.pdf">
 			<span class="btn btn-success btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Slide</span>
@@ -277,13 +277,13 @@
 		<li>
 		Some Inapproximability Results of MAP Inference and Exponentiated Determinantal Point Processes.<br>
 		<u>Naoto Ohsaka</u>.<br>
-		<a href="https://www.jair.org">Journal of Artificial Intelligence Research</a>. <br>
+		<a href="https://www.jair.org">Journal of Artificial Intelligence Research</a> (Full version of AISTATS 2021). <br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#mapapprox_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
 		<a href="https://doi.org/10.1613/jair.1.13288">
 			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
 		</a>
 		<a href="https://arxiv.org/abs/2109.00727">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>ArXiv</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>arXiv</span>
 		</a>
 		</li>
 		<div id="mapapprox_abst" class="collapse">
@@ -308,7 +308,7 @@
 			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
 		</a>
 		<a href="https://arxiv.org/abs/2111.14030">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>ArXiv</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>arXiv</span>
 		</a>
 		</li>
 		<div id="wsdm22_abst" class="collapse">
@@ -391,7 +391,7 @@
 			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
 		</a>
 		<a href="https://arxiv.org/abs/2103.04595">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>ArXiv</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>arXiv</span>
 		</a>
 		</li>
 		<div id="fastreach_abst" class="collapse">
@@ -412,7 +412,7 @@
 			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
 		</a>
 		<a href="https://arxiv.org/abs/2102.12646">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>ArXiv</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>arXiv</span>
 		</a>
 		</li>
 		<div id="orl21_abst" class="collapse">
@@ -480,7 +480,7 @@
 			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
 		</a>
 		<a href="https://arxiv.org/abs/2101.06233">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>ArXiv</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>arXiv</span>
 		</a>
 		</li>
 		<div id="sdm21_abst" class="collapse">
@@ -536,7 +536,7 @@
 			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
 		</a>
 		<a href="https://arxiv.org/abs/2003.09816">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>ArXiv</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>arXiv</span>
 		</a>
 		</li>
 		<div id="sigmod20_abst" class="collapse">
@@ -814,7 +814,7 @@
 		<u>Naoto Ohsaka</u>, Tatsuya Matsuoka<br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#pidpp_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
 		<a href="https://arxiv.org/abs/2111.14148">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>ArXiv</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>arXiv</span>
 		</a>
 		</li>
 		<div id="pidpp_abst" class="collapse">
@@ -846,12 +846,13 @@
 			</ul>
 		</div>
 
+
 		<li>
 		On Approximate Reconfigurability of Label Cover.<br>
 		<u>Naoto Ohsaka</u>.<br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#lcreconf_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
 		<a href="https://arxiv.org/abs/2304.08746">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>ArXiv</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>arXiv</span>
 		</a>
 		</li>
 		<div id="lcreconf_abst" class="collapse">
@@ -876,6 +877,7 @@
 			The above results suggest that a reconfiguration analogue of the parallel repetition theorem is unlikely.
 		</div>
 
+
 		<li>
 		Safe Collaborative Filtering.<br>
 		<a href="https://riktor.github.io/">Riku Togashi</a>,
@@ -884,7 +886,7 @@
 		Tetsuro Morimura.<br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#safer_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
 		<a href="https://arxiv.org/abs/2306.05292">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>ArXiv</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>arXiv</span>
 		</a>
 		</li>
 		<div id="safer_abst" class="collapse">
@@ -895,6 +897,26 @@
 			To overcome computational challenges for web-scale recommender systems, we develop a robust yet practical algorithm that extends the most scalable method, implicit alternating least squares (iALS).
 			Empirical evaluation on real-world datasets demonstrates the excellent tail performance of our approach while maintaining competitive computational efficiency.
 		</div>
+
+
+		<li>
+		Probabilistically Checkable Reconfiguration Proofs and Inapproximability of Reconfiguration Problems.<br>
+		<a href="https://researchmap.jp/shuichi.hirahara">Shuichi Hirahara</a>,
+		<u>Naoto Ohsaka</u>.<br>
+		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#pcrp_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
+		<a href="https://arxiv.org/abs/2401.00474">
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>arXiv</span>
+		</a>
+		</li>
+		<div id="pcrp_abst" class="collapse">
+			Motivated by the inapproximability of reconfiguration problems, we present a new PCP-type characterization of <b>PSPACE</b>, which we call a <i>probabilistically checkable reconfiguration proof</i> (PCRP):
+			Any <b>PSPACE</b> computation can be encoded into an exponentially long sequence of polynomially long proofs such that every adjacent pair of the proofs differs in at most one bit, and every proof can be probabilistically checked by reading a constant number of bits.
+			<br>
+			Using the new characterization,  we prove <b>PSPACE</b>-completeness of approximate versions of many reconfiguration problems, such as the Maxmin $3$-SAT Reconfiguration problem.
+			This resolves the open problem posed by Ito, Demaine, Harvey, Papadimitriou, Sideri, Uehara, and Uno (ISAAC 2008; Theor. Comput. Sci. 2011) as well as the Reconfiguration Inapproximability Hypothesis by Ohsaka (STACS 2023) affirmatively.
+			We also present <b>PSPACE</b>-completeness of approximating the Maxmin Clique Reconfiguration problem to within a factor of $n^\epsilon$ for some constant $\epsilon > 0$.
+		</div>
+
 
 		</ol>
 
@@ -953,7 +975,7 @@
 		</div>
 
 		<div id="footer" class="navbar">
-			<p class="muted pull-right">Last modified: October 24th, 2023</p>
+			<p class="muted pull-right">Last modified: January 14th, 2024</p>
 		</div>
 
 		<script src="js/bootstrap.min.js"></script>
