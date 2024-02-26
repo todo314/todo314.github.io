@@ -58,12 +58,12 @@
 		</a>
 		</li>
 		<div id="pcrp_abst" class="collapse">
-			Motivated by the inapproximability of reconfiguration problems, we present a new PCP-type characterization of <b>PSPACE</b>, which we call a <i>probabilistically checkable reconfiguration proof</i> (PCRP):
-			Any <b>PSPACE</b> computation can be encoded into an exponentially long sequence of polynomially long proofs such that every adjacent pair of the proofs differs in at most one bit, and every proof can be probabilistically checked by reading a constant number of bits.
+			Motivated by the inapproximability of reconfiguration problems, we present a new PCP-type characterization of $\mathsf{PSPACE}$, which we call a <i>probabilistically checkable reconfiguration proof</i> (PCRP):
+			Any $\mathsf{PSPACE}$ computation can be encoded into an exponentially long sequence of polynomially long proofs such that every adjacent pair of the proofs differs in at most one bit, and every proof can be probabilistically checked by reading a constant number of bits.
 			<br>
-			Using the new characterization,  we prove <b>PSPACE</b>-completeness of approximate versions of many reconfiguration problems, such as the Maxmin $3$-SAT Reconfiguration problem.
+			Using the new characterization,  we prove $\mathsf{PSPACE}$-completeness of approximate versions of many reconfiguration problems, such as the $\textsc{Maxmin 3-SAT Reconfiguration}$ problem.
 			This resolves the open problem posed by Ito, Demaine, Harvey, Papadimitriou, Sideri, Uehara, and Uno (ISAAC 2008; Theor. Comput. Sci. 2011) as well as the Reconfiguration Inapproximability Hypothesis by Ohsaka (STACS 2023) affirmatively.
-			We also present <b>PSPACE</b>-completeness of approximating the Maxmin Clique Reconfiguration problem to within a factor of $n^\varepsilon$ for some constant $\varepsilon > 0$.
+			We also present $\mathsf{PSPACE}$-completeness of approximating the $\textsc{Maxmin Clique Reconfiguration}$ problem to within a factor of $n^\varepsilon$ for some constant $\varepsilon > 0$.
 		</div>
 
 
@@ -139,20 +139,20 @@
 		<div id="soda2024_abst" class="collapse">
 			<i>Combinatorial reconfiguration</i> is an emerging field of theoretical computer science that studies the reachability between a pair of feasible solutions for a particular combinatorial problem.
 			We study the hardness of accomplishing “approximate” reconfigurability, which affords to relax the feasibility of solutions.
-			For example, in Minmax Set Cover Reconfiguration, given a pair of covers $\mathcal{C}_\mathsf{s}$ and $\mathcal{C}_\mathsf{t}$ for a set system $\mathcal{F}$, we aim to transform $\mathcal{C}_\mathsf{s}$ into $\mathcal{C}_\mathsf{t}$ by repeatedly adding or removing a single set of $\mathcal{F}$ so as to minimize the <i>maximum size</i> of covers during transformation.
-			The recent study by Ohsaka (STACS 2023) gives evidence that a host of reconfiguration problems are <b>PSPACE</b>-hard to approximate assuming the <i>Reconfiguration Inapproximability Hypothesis</i> (RIH), which postulates that a gap version of Maxmin CSP Reconfiguration is <b>PSPACE</b>-hard.
-			One limitation of this approach is that inapproximability factors are not explicitly shown, so that even a $1.00 \cdots 001$-approximation algorithm for Minmax Set Cover Reconfiguration may not be ruled out, whereas it admits $2$-approximation as per Ito, Demaine, Harvey, Papadimitriou, Sideri, Uehara, and Uno (Theor. Comput. Sci., 2011).
+			For example, in $\textsf{Minmax Set Cover Reconfiguration}$, given a pair of covers $\mathcal{C}_\mathsf{s}$ and $\mathcal{C}_\mathsf{t}$ for a set system $\mathcal{F}$, we aim to transform $\mathcal{C}_\mathsf{s}$ into $\mathcal{C}_\mathsf{t}$ by repeatedly adding or removing a single set of $\mathcal{F}$ so as to minimize the <i>maximum size</i> of covers during transformation.
+			The recent study by Ohsaka (STACS 2023) gives evidence that a host of reconfiguration problems are <b>PSPACE</b>-hard to approximate assuming the <i>Reconfiguration Inapproximability Hypothesis</i> (RIH), which postulates that a gap version of $\textsf{Maxmin CSP Reconfiguration}$ is <b>PSPACE</b>-hard.
+			One limitation of this approach is that inapproximability factors are not explicitly shown, so that even a $1.00 \cdots 001$-approximation algorithm for $\textsf{Minmax Set Cover Reconfiguration}$ may not be ruled out, whereas it admits $2$-approximation as per Ito, Demaine, Harvey, Papadimitriou, Sideri, Uehara, and Uno (Theor. Comput. Sci., 2011).
 			<br>
 			In this paper, we demonstrate <i>gap amplification</i> for reconfiguration problems.
 			In particular, we prove an explicit factor of <b>PSPACE</b>-hardness of approximation for three popular reconfiguration problems only assuming RIH.
-			Our main result is that under RIH, Maxmin Binary CSP Reconfiguration is <b>PSPACE</b>-hard to approximate within a factor of $0.9942$.
+			Our main result is that under RIH, $\textsf{Maxmin Binary CSP Reconfiguration}$ is <b>PSPACE</b>-hard to approximate within a factor of $0.9942$.
 			Moreover, the same result holds even if the constraint graph is restricted to $(d,\lambda)$-expander for arbitrarily small $\frac{\lambda}{d}$.
 			The crux of its proof is an alteration of the gap amplification technique due to Dinur (J. ACM, 2007), which amplifies the $1$ vs. $1-\varepsilon$ gap for arbitrarily small $\varepsilon > 0$ up to the $1$ vs. $1-0.0058$ gap.
-			As an application of the main result, we demonstrate that Minmax Set Cover Reconfiguration and Minmax Dominating Set Reconfiguration are <b>PSPACE</b>-hard to approximate within a factor of $1.0029$ under RIH.
+			As an application of the main result, we demonstrate that $\textsf{Minmax Set Cover Reconfiguration}$ and $\textsf{Minmax Dominating Set Reconfiguration}$ are <b>PSPACE</b>-hard to approximate within a factor of $1.0029$ under RIH.
 			Our proof is based on a gap-preserving reduction from Label Cover to Set Cover due to Lund and Yannakakis (J. ACM, 1994).
 			However, unlike Lund--Yannakakis' reduction, the expander mixing lemma is essential to use.
 			We highlight that all results hold unconditionally as long as “<b>PSPACE</b>-hard” is replaced by “<b>NP</b>-hard,” and are the first explicit inapproximability results for reconfiguration problems without resorting to the parallel repetition theorem.
-			We finally complement the main result by showing that it is <b>NP</b>-hard to approximate Maxmin Binary CSP Reconfiguration within a factor better than $\frac{3}{4}$.
+			We finally complement the main result by showing that it is <b>NP</b>-hard to approximate $\textsf{Maxmin Binary CSP Reconfiguration}$ within a factor better than $\frac{3}{4}$.
 		</div>
 
 
@@ -906,16 +906,16 @@
 		</li>
 		<div id="lcreconf_abst" class="collapse">
 			Given a two-prover game $G$ and its two satisfying labelings $\psi_\mathsf{s}$ and $\psi_\mathsf{t}$,
-			the Label Cover Reconfiguration problem asks whether $\psi_\mathsf{s}$ can be transformed into $\psi_\mathsf{t}$ by repeatedly changing the value of a vertex while preserving any intermediate labeling satisfying $G$.
-			We consider an optimization variant of Label Cover Reconfiguration by relaxing the feasibility of labelings, referred to as Maxmin Label Cover Reconfiguration:
+			the $\textsc{Label Cover Reconfiguration}$ problem asks whether $\psi_\mathsf{s}$ can be transformed into $\psi_\mathsf{t}$ by repeatedly changing the value of a vertex while preserving any intermediate labeling satisfying $G$.
+			We consider an optimization variant of $\textsc{Label Cover Reconfiguration}$ by relaxing the feasibility of labelings, referred to as $\textsc{Maxmin Label Cover Reconfiguration}$:
 			we are allowed to transform by passing through any non-satisfying labelings, but required to maximize the minimum fraction of satisfied edges during transformation from $\psi_\mathsf{s}$ to $\psi_\mathsf{t}$.
 			Since the parallel repetition theorem of Raz (SIAM J. Comput., 1998), which implies <b>NP</b>-hardness of Label Cover within any constant factor, produces strong inapproximability results for many <b>NP</b>-hard problems,
-			one may think of using Maxmin Label Cover Reconfiguration to derive inapproximability results for reconfiguration problems.
-			We prove the following results on Maxmin Label Cover Reconfiguration, which display different trends from those of Label Cover and the parallel repetition theorem:
+			one may think of using $\textsc{Maxmin Label Cover Reconfiguration}$ to derive inapproximability results for reconfiguration problems.
+			We prove the following results on $\textsc{Maxmin Label Cover Reconfiguration}$, which display different trends from those of $\textsc{Label Cover}$ and the parallel repetition theorem:
 			<ul>
-			<li>Maxmin Label Cover Reconfiguration can be approximated within a factor of nearly $\frac{1}{4}$ for restricted graph classes, including slightly dense graphs and balanced bipartite graphs.</li>
-			<li>A naive parallel repetition of Maxmin Label Cover Reconfiguration does not decrease the optimal objective value.</li>
-			<li>Label Cover Reconfiguration on projection games can be decided in polynomial time.</li>
+			<li>$\textsc{Maxmin Label Cover Reconfiguration}$ can be approximated within a factor of nearly $\frac{1}{4}$ for restricted graph classes, including slightly dense graphs and balanced bipartite graphs.</li>
+			<li>A naive parallel repetition of $\textsc{Maxmin Label Cover Reconfiguration}$ does not decrease the optimal objective value.</li>
+			<li>$\textsc{Label Cover Reconfiguration}$ on projection games can be decided in polynomial time.</li>
 			</ul>
 			The above results suggest that a reconfiguration analogue of the parallel repetition theorem is unlikely.
 		</div>
@@ -957,12 +957,12 @@
 		</a>
 		</li>
 		<div id="SetCoverReconf_abst" class="collapse">
-			In the Minmax Set Cover Reconfiguration problem, given a set system $\mathcal{F}$ over a universe and its two covers $\mathcal{C}^\mathsf{start}$ and $\mathcal{C}^\mathsf{goal}$ of size $k$, we wish to transform $\mathcal{C}^\mathsf{start}$ into $\mathcal{C}^\mathsf{goal}$ by repeatedly adding or removing a single set of $\mathcal{F}$ while covering the universe in any intermediate state.
+			In the $\textsc{Minmax Set Cover Reconfiguration}$ problem, given a set system $\mathcal{F}$ over a universe and its two covers $\mathcal{C}^\mathsf{start}$ and $\mathcal{C}^\mathsf{goal}$ of size $k$, we wish to transform $\mathcal{C}^\mathsf{start}$ into $\mathcal{C}^\mathsf{goal}$ by repeatedly adding or removing a single set of $\mathcal{F}$ while covering the universe in any intermediate state.
 			Then, the objective is to minimize the maximize size of any intermediate cover during transformation.
-			We prove that Minmax Set Cover Reconfiguration and Minmax Dominating Set Reconfiguration are $\mathsf{PSPACE}$-hard to approximate within a factor of $2-\frac{1}{\operatorname{polyloglog} N}$, where $N$ is the size of the universe and the number of vertices in a graph, respectively, improving upon Ohsaka (SODA 2024) and Karthik C. S. and Manurangsi (2023).
+			We prove that $\textsc{Minmax Set Cover Reconfiguration}$ and $\textsc{Minmax Dominating Set Reconfiguration}$ are $\mathsf{PSPACE}$-hard to approximate within a factor of $2-\frac{1}{\operatorname{polyloglog} N}$, where $N$ is the size of the universe and the number of vertices in a graph, respectively, improving upon Ohsaka (SODA 2024) and Karthik C. S. and Manurangsi (2023).
 			This is the first result that exhibits a sharp threshold for the approximation factor of any reconfiguration problem because both problems admit a $2$-factor approximation algorithm as per Ito, Demaine, Harvey, Papadimitriou, Sideri, Uehara, and Uno (Theor. Comput. Sci., 2011).
 			Our proof is based on a reconfiguration analogue of the FGLSS reduction from Probabilistically Checkable Reconfiguration Proofs of Hirahara and Ohsaka (2024).
-			We also prove that for any constant $\varepsilon \in (0,1)$, Minmax Hypergraph Vertex Cover Reconfiguration on $\operatorname{poly}(\varepsilon^{-1})$-uniform hypergraphs is $\mathsf{PSPACE}$-hard to approximate within a factor of $2-\varepsilon$.
+			We also prove that for any constant $\varepsilon \in (0,1)$, $\textsc{Minmax Hypergraph Vertex Cover Reconfiguration}$ on $\operatorname{poly}(\varepsilon^{-1})$-uniform hypergraphs is $\mathsf{PSPACE}$-hard to approximate within a factor of $2-\varepsilon$.
 		</div>
 
 
@@ -977,10 +977,10 @@
 		<div id="TSReconfApprox_abst" class="collapse">
 			Given a graph $G$ with a vertex threshold function $\tau$, consider a dynamic process in which any inactive vertex $v$ becomes activated whenever at least $\tau(v)$ of its neighbors are activated.
 			A vertex set $S$ is called a <i>target set</i> if all vertices of $G$ would be activated when initially activating vertices of $S$.
-			In the <b>Minmax Target Set Reconfiguration</b> problem, for a graph $G$ and its two target sets $X$ and $Y$, we wish to transform $X$ into $Y$ by repeatedly adding or removing a single vertex, using only target sets of $G$, so as to minimize the <i>maximum size</i> of any intermediate target set.
-			We prove that it is <b>NP</b>-hard to approximate <b>Minmax Target Set Reconfiguration</b> within a factor of $2-o\left(\frac{1}{\operatorname{polylog} n}\right)$, where $n$ is the number of vertices.
+			In the $\textsf{Minmax Target Set Reconfiguration}$ problem, for a graph $G$ and its two target sets $X$ and $Y$, we wish to transform $X$ into $Y$ by repeatedly adding or removing a single vertex, using only target sets of $G$, so as to minimize the <i>maximum size</i> of any intermediate target set.
+			We prove that it is <b>NP</b>-hard to approximate $\textsf{Minmax Target Set Reconfiguration}$ within a factor of $2-o\left(\frac{1}{\operatorname{polylog} n}\right)$, where $n$ is the number of vertices.
 			Our result establishes a tight lower bound on approximability of <b>Minmax Target Set Reconfiguration</b>, which admits a $2$-factor approximation algorithm.
-			The proof is based on a gap-preserving reduction from <b>Target Set Selection</b> to <b>Minmax Target Set Reconfiguration</b>, where <b>NP</b>-hardness of approximation for the former problem is proven by Chen (SIAM J. Discrete Math., 2009) and Charikar, Naamad, and Wirth (APPROX/RANDOM 2016).
+			The proof is based on a gap-preserving reduction from $\textsf{Target Set Selection}$ to $\textsf{Minmax Target Set Reconfiguration}$, where <b>NP</b>-hardness of approximation for the former problem is proven by Chen (SIAM J. Discrete Math., 2009) and Charikar, Naamad, and Wirth (APPROX/RANDOM 2016).
 		</div>
 
 
@@ -1045,7 +1045,7 @@
 
 		
 		<div id="footer" class="navbar">
-			<p class="muted pull-right">Last modified: February 21st, 2024</p>
+			<p class="muted pull-right">Last modified: February 26th, 2024</p>
 		</div>
 
 		<script src="js/bootstrap.min.js"></script>
