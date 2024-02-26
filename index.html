@@ -931,8 +931,8 @@
 		</li>
 		<div id="ABCReductReconf_abst" class="collapse">
 			We present a reconfiguration analogue of <i>alphabet reduction</i> à la Dinur (J. ACM, 2007) and its applications.
-			Given a binary constraint graph $G$ and its two satisfying assignments $\psi^\mathsf{ini}$ and $\psi^\mathsf{tar}$, the $\mathsf{Maxmin Binary CSP Reconfiguration}$ problem requests to transform $\psi^\mathsf{ini}$ into $\psi^\mathsf{tar}$ by repeatedly changing the value of a single vertex so that the minimum fraction of satisfied edges is maximized.
-			We demonstrate a polynomial-time reduction from $\mathsf{Maxmin Binary CSP Reconfiguration}$ with arbitrarily large alphabet size $W \in \mathbb{N}$ to itself with universal alphabet size $W_0 \in \mathbb{N}$ such that
+			Given a binary constraint graph $G$ and its two satisfying assignments $\psi^\mathsf{ini}$ and $\psi^\mathsf{tar}$, the $\textsf{Maxmin Binary CSP Reconfiguration}$ problem requests to transform $\psi^\mathsf{ini}$ into $\psi^\mathsf{tar}$ by repeatedly changing the value of a single vertex so that the minimum fraction of satisfied edges is maximized.
+			We demonstrate a polynomial-time reduction from $\textsf{Maxmin Binary CSP Reconfiguration}$ with arbitrarily large alphabet size $W \in \mathbb{N}$ to itself with universal alphabet size $W_0 \in \mathbb{N}$ such that
 			<ol>
 			<li>the perfect completeness is preserved, and</li>
 			<li>if any reconfiguration for the former violates $\varepsilon$-fraction of edges, then $\Omega(\varepsilon)$-fraction of edges must be unsatisfied during any reconfiguration for the latter.</li>
@@ -941,8 +941,8 @@
 			getting too close to the other codewords.
 			Combining this alphabet reduction with gap amplification due to Ohsaka (SODA 2024), we are able to amplify the $1$ vs. $1-\varepsilon$ gap for arbitrarily small $\varepsilon \in (0,1)$ up to the $1$ vs. $1-\varepsilon_0$ for some universal $\varepsilon_0 \in (0,1)$
 			<i>without</i> blowing up the alphabet size.
-			In particular, a $1$ vs. $1-\varepsilon_0$ gap version of $\mathsf{Maxmin Binary CSP Reconfiguration}$ with alphabet size $W_0$ is <b>PSPACE</b>-hard only assuming the Reconfiguration Inapproximability Hypothesis posed by Ohsaka (STACS 2023), whose gap parameter can be arbitrarily small.
-			As an immediate corollary, we show that under the same hypothesis, there exists a universal constant $\varepsilon_0 \in (0,1)$ such that many popular reconfiguration problems are <b>PSPACE</b>-hard to approximate within a factor of $1-\varepsilon_0$, including those of $\mathsf{3-SAT}$, $\mathsf{Independent Set}$, $\mathsf{Vertex Cover}$, $\mathsf{Clique}$, $\mathsf{Dominating Set}$, and $\mathsf{Set Cover}$.
+			In particular, a $1$ vs. $1-\varepsilon_0$ gap version of $\textsf{Maxmin Binary CSP Reconfiguration}$ with alphabet size $W_0$ is <b>PSPACE</b>-hard only assuming the Reconfiguration Inapproximability Hypothesis posed by Ohsaka (STACS 2023), whose gap parameter can be arbitrarily small.
+			As an immediate corollary, we show that under the same hypothesis, there exists a universal constant $\varepsilon_0 \in (0,1)$ such that many popular reconfiguration problems are <b>PSPACE</b>-hard to approximate within a factor of $1-\varepsilon_0$, including those of $3\textsf{-SAT}$, $\textsf{Independent Set}$, $\textsf{Vertex Cover}$, $\textsf{Clique}$, $\textsf{Dominating Set}$, and $\textsf{Set Cover}$.
 			This may not be achieved only by gap amplification of Ohsaka, which makes the alphabet size gigantic depending on the gap value of the hypothesis.
 		</div>
 
@@ -963,6 +963,24 @@
 			This is the first result that exhibits a sharp threshold for the approximation factor of any reconfiguration problem because both problems admit a $2$-factor approximation algorithm as per Ito, Demaine, Harvey, Papadimitriou, Sideri, Uehara, and Uno (Theor. Comput. Sci., 2011).
 			Our proof is based on a reconfiguration analogue of the FGLSS reduction from Probabilistically Checkable Reconfiguration Proofs of Hirahara and Ohsaka (2024).
 			We also prove that for any constant $\varepsilon \in (0,1)$, Minmax Hypergraph Vertex Cover Reconfiguration on $\operatorname{poly}(\varepsilon^{-1})$-uniform hypergraphs is $\mathsf{PSPACE}$-hard to approximate within a factor of $2-\varepsilon$.
+		</div>
+
+
+		<li>
+		Tight Inapproximability of Target Set Reconfiguration.<br>
+		<u>Naoto Ohsaka</u>.<br>
+		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#TSReconfApprox_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
+		<a href="https://arxiv.org/abs/2402.15076">
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>arXiv</span>
+		</a>
+		</li>
+		<div id="TSReconfApprox_abst" class="collapse">
+			Given a graph $G$ with a vertex threshold function $\tau$, consider a dynamic process in which any inactive vertex $v$ becomes activated whenever at least $\tau(v)$ of its neighbors are activated.
+			A vertex set $S$ is called a <i>target set</i> if all vertices of $G$ would be activated when initially activating vertices of $S$.
+			In the <b>Minmax Target Set Reconfiguration</b> problem, for a graph $G$ and its two target sets $X$ and $Y$, we wish to transform $X$ into $Y$ by repeatedly adding or removing a single vertex, using only target sets of $G$, so as to minimize the <i>maximum size</i> of any intermediate target set.
+			We prove that it is <b>NP</b>-hard to approximate <b>Minmax Target Set Reconfiguration</b> within a factor of $2-o\left(\frac{1}{\operatorname{polylog} n}\right)$, where $n$ is the number of vertices.
+			Our result establishes a tight lower bound on approximability of <b>Minmax Target Set Reconfiguration</b>, which admits a $2$-factor approximation algorithm.
+			The proof is based on a gap-preserving reduction from <b>Target Set Selection</b> to <b>Minmax Target Set Reconfiguration</b>, where <b>NP</b>-hardness of approximation for the former problem is proven by Chen (SIAM J. Discrete Math., 2009) and Charikar, Naamad, and Wirth (APPROX/RANDOM 2016).
 		</div>
 
 
