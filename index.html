@@ -25,17 +25,14 @@
 		<div>Email: naoto.ohsaka (at) gmail.com</div>
 		<div>Google Scholar author ID: <a href="https://scholar.google.co.jp/citations?user=Qgkc9DgAAAAJ">Qgkc9DgAAAAJ</a></div>
 		<div>ORCID: <a href="https://orcid.org/0000-0001-9584-4764">0000-0001-9584-4764</a></div>
-		<!--
-		<div itemscope itemtype="https://schema.org/Person">ORCID: <a itemprop="sameAs" content="https://orcid.org/0000-0001-9584-4764" href="https://orcid.org/0000-0001-9584-4764" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">0000-0001-9584-4764</a></div>
-		-->
 		<div>DBLP: <a href="https://dblp.org/pid/81/10779.html">81/10779</a></div>
 		
 		<hr>
 
 		<h2>Research interests</h2>
 		<ul>
-			<li>Theoretical computer science: Combinatorial reconfiguration, hardness of approximation, probabilistically checkable proofs.</li>
-			<li>Applications: Graph algorithms, network diffusion, determinantal point processes, recommender systems.</li>
+			<li>Theoretical computer science: Combinatorial reconfiguration, hardness of approximation, and probabilistic proof systems.</li>
+			<li>Applications: Graph mining and recommender systems.</li>
 		</ul>
 
 		<hr>
@@ -44,6 +41,47 @@
 
 		<ol>
 
+		<li>
+		<span class="label label-info">New!!</span> Computational Complexity of Normalizing Constants for the Product of Determinantal Point Processes.<br>
+		Tatsuya Matsuoka and <u>Naoto Ohsaka</u>.<br>
+		<a href="https://www.sciencedirect.com/journal/theoretical-computer-science">Theoretical Computer Science</a> (Full version of ICML 2020). <br>
+		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#pidpp_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
+		<a href="https://arxiv.org/abs/2111.14148">
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>arXiv</span>
+		</a>
+		</li>
+		<div id="pidpp_abst" class="collapse">
+			<p>
+			We consider the product of determinantal point processes (DPPs), a point process whose probability mass is proportional to the product of principal minors of multiple matrices, as a natural, promising generalization of DPPs.
+			We study the computational complexity of computing its normalizing constant, which is among the most essential probabilistic inference tasks.
+			Our complexity-theoretic results (almost) rule out the existence of efficient algorithms for this task unless the input matrices are forced to have favorable structures.
+			In particular, we prove the following:
+			<ul>
+				<li>
+				Computing $\sum_S\det(\mathbf{A}_{S,S})^p$ exactly for every (fixed) positive even integer $p$ is $\textsf{UP}$-hard and $\textsf{Mod}_3\textsf{P}$-hard, which gives a negative answer to an open question posed by Kulesza and Taskar (2012).
+				</li>
+				<li>
+				$\sum_S\det(\mathbf{A}_{S,S})\det(\mathbf{B}_{S,S})\det(\mathbf{C}_{S,S})$ is $\textsf{NP}$-hard to approximate within a factor of $2^{O(|\mathcal{I}|^{1-\varepsilon})}$ or $2^{\mathcal{O}(n^{1/\varepsilon})}$ for any $\varepsilon>0$, where $|\mathcal{I}|$ is the input size and $n$ is the order of the input matrix.
+				This result is stronger than the #P-hardness for the case of two matrices derived by Gillenwater (2014).
+				</li>
+				<li>
+				There exists a $k^{\mathcal{O}(k)}n^{\mathcal{O}(1)}$-time algorithm for computing $\sum_S\det(\mathbf{A}_{S,S})\det(\mathbf{B}_{S,S})$, where $k$ is the maximum rank of $\mathbf{A}$ and $\mathbf{B}$ or the treewidth of the graph formed by nonzero entries of $\mathbf{A}$ and $\mathbf{B}$. Such parameterized algorithms are said to be fixed-parameter tractable.
+				</li>
+			</ul>
+			These results can be extended to the fixed-size case.
+			Further, we present two applications of fixed-parameter tractable algorithms given a matrix $\mathbf{A}$ of treewidth $w$:
+			<ul>
+				<li>
+				We can compute a $2^{\frac{n}{2p-1}}$-approximation to $\sum_S\det({\bf A}_{S,S})^p$ for any fractional number $p>1$ in $w^{\mathcal{O}(wp)}n^{\mathcal{O}(1)}$ time.
+				</li>
+				<li>
+				We can find a $2^{\sqrt n}$-approximation to unconstrained maximum a posteriori inference in $w^{\mathcal{O}(w\sqrt n)}n^{\mathcal{O}(1)}$ time.
+				</li>
+			</ul>
+			</p>
+		</div>
+		
+		
 		<li>
 		<span class="label label-info">New!!</span> Probabilistically Checkable Reconfiguration Proofs and Inapproximability of Reconfiguration Problems.<br>
 		<a href="https://researchmap.jp/shuichi.hirahara">Shuichi Hirahara</a> and
@@ -58,12 +96,15 @@
 		</a>
 		</li>
 		<div id="pcrp_abst" class="collapse">
+			<p>
 			Motivated by the inapproximability of reconfiguration problems, we present a new PCP-type characterization of $\mathsf{PSPACE}$, which we call a <i>probabilistically checkable reconfiguration proof</i> (PCRP):
 			Any $\mathsf{PSPACE}$ computation can be encoded into an exponentially long sequence of polynomially long proofs such that every adjacent pair of the proofs differs in at most one bit, and every proof can be probabilistically checked by reading a constant number of bits.
-			<br>
-			Using the new characterization,  we prove $\mathsf{PSPACE}$-completeness of approximate versions of many reconfiguration problems, such as the <b>Maxmin 3-SAT Reconfiguration</b> problem.
+			</p>
+			<p>
+			Using the new characterization,  we prove $\mathsf{PSPACE}$-completeness of approximate versions of many reconfiguration problems, such as the <span style="font-variant: small-caps;">Maxmin 3-SAT Reconfiguration</span> problem.
 			This resolves the open problem posed by Ito, Demaine, Harvey, Papadimitriou, Sideri, Uehara, and Uno (ISAAC 2008; Theor. Comput. Sci. 2011) as well as the Reconfiguration Inapproximability Hypothesis by Ohsaka (STACS 2023) affirmatively.
-			We also present $\mathsf{PSPACE}$-completeness of approximating the <b>Maxmin Clique Reconfiguration</b> problem to within a factor of $n^\varepsilon$ for some constant $\varepsilon > 0$.
+			We also present $\mathsf{PSPACE}$-completeness of approximating the <span style="font-variant: small-caps;">Maxmin Clique Reconfiguration</span> problem to within a factor of $n^\varepsilon$ for some constant $\varepsilon > 0$.
+			</p>
 		</div>
 
 
@@ -85,17 +126,19 @@
 		</a>
 		</li>
 		<div id="safer_abst" class="collapse">
+			<p>
 			Excellent tail performance is crucial for modern machine learning tasks, such as algorithmic fairness, class imbalance, and risk-sensitive decision making, as it ensures the effective handling of challenging samples within a dataset.
 			Tail performance is also a vital determinant of success for personalised recommender systems to reduce the risk of losing users with low satisfaction.
 			This study introduces a "safe" collaborative filtering method that prioritises recommendation quality for less-satisfied users rather than focusing on the average performance.
 			Our approach minimises the conditional value at risk (CVaR), which represents the average risk over the tails of users' loss.
 			To overcome computational challenges for web-scale recommender systems, we develop a robust yet practical algorithm that extends the most scalable method, implicit alternating least squares (iALS).
 			Empirical evaluation on real-world datasets demonstrates the excellent tail performance of our approach while maintaining competitive computational efficiency.
+			</p>
 		</div>
 
 
 		<li>
-		<span class="label label-info">New!!</span> On the Parameterized Intractability of Determinant Maximization.<br>
+		On the Parameterized Intractability of Determinant Maximization.<br>
 		<u>Naoto Ohsaka</u>.<br>
 		<a href="https://link.springer.com/collections/gecffbehde">Algorithmica</a> (Special issue of ISAAC 2022). <br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#algorithmica24_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
@@ -107,17 +150,19 @@
 		</a>
 		</li>
 		<div id="algorithmica24_abst" class="collapse">
-			In the Determinant Maximization problem, given an $n \times n$ positive semi-definite matrix $\mathbf{A}$ in $\mathbb{Q}^{n \times n}$ and an integer $k$, we are required to find a $k \times k$ principal submatrix of $\mathbf{A}$ having the maximum determinant.
+			<p>
+			In the <span style="font-variant: small-caps;">Determinant Maximization</span> problem, given an $n \times n$ positive semi-definite matrix $\mathbf{A}$ in $\mathbb{Q}^{n \times n}$ and an integer $k$, we are required to find a $k \times k$ principal submatrix of $\mathbf{A}$ having the maximum determinant.
 			This problem is known to be <b>NP</b>-hard and further proven to be <b>W[1]</b>-hard with respect to $k$ by Koutis; i.e., a $f(k)n^{\mathcal{O}(1)}$-time algorithm is unlikely to exist for any computable function $f$.
 			However, there is still room to explore its parameterized complexity in the <i>restricted case</i>, in the hope of overcoming the general-case parameterized intractability.
-			In this study, we rule out the fixed-parameter tractability of Determinant Maximization even if an input matrix is extremely sparse or low rank, or an approximate solution is acceptable.
-			We first prove that Determinant Maximization is <b>NP</b>-hard and <b>W[1]</b>-hard even if an input matrix is an <i>arrowhead matrix</i>; i.e., the underlying graph formed by nonzero entries is a star, implying that the structural sparsity is not helpful.
-			By contrast, we show that Determinant Maximization is solvable in polynomial time on <i>tridiagonal matrices</i>.
+			In this study, we rule out the fixed-parameter tractability of <span style="font-variant: small-caps;">Determinant Maximization</span> even if an input matrix is extremely sparse or low rank, or an approximate solution is acceptable.
+			We first prove that <span style="font-variant: small-caps;">Determinant Maximization</span> is <b>NP</b>-hard and <b>W[1]</b>-hard even if an input matrix is an <i>arrowhead matrix</i>; i.e., the underlying graph formed by nonzero entries is a star, implying that the structural sparsity is not helpful.
+			By contrast, we show that <span style="font-variant: small-caps;">Determinant Maximization</span> is solvable in polynomial time on <i>tridiagonal matrices</i>.
 			Thereafter, we demonstrate the <b>W[1]</b>-hardness with respect to the <i>rank</i> $r$ of an input matrix.
 			Our result is stronger than Koutis' result in the sense that any $k \times k$ principal submatrix is singular whenever $k > r$.
-			We finally give evidence that it is <b>W[1]</b>-hard to approximate Determinant Maximization parameterized by $k$ within a factor of $2^{-c\sqrt{k}}$ for some universal constant $c > 0$.
+			We finally give evidence that it is <b>W[1]</b>-hard to approximate <span style="font-variant: small-caps;">Determinant Maximization</span> parameterized by $k$ within a factor of $2^{-c\sqrt{k}}$ for some universal constant $c > 0$.
 			Our hardness result is conditional on the <i>Parameterized Inapproximability Hypothesis</i> posed by Lokshtanov, Ramanujan, Saurab, and Zehavi, which asserts that a gap version of Binary Constraint Satisfaction Problem is <b>W[1]</b>-hard.
 			To complement this result, we develop an $\varepsilon$-additive approximation algorithm that runs in $\varepsilon^{-r^2} \cdot r^{\mathcal{O}(r^3)} \cdot n^{\mathcal{O}(1)}$ time for the rank $r$ of an input matrix, provided that the diagonal entries are bounded.
+			</p>
 		</div>
 
 
@@ -137,12 +182,14 @@
 		</a>
 		</li>
 		<div id="soda2024_abst" class="collapse">
+			<p>
 			<i>Combinatorial reconfiguration</i> is an emerging field of theoretical computer science that studies the reachability between a pair of feasible solutions for a particular combinatorial problem.
 			We study the hardness of accomplishing “approximate” reconfigurability, which affords to relax the feasibility of solutions.
 			For example, in $\textsf{Minmax Set Cover Reconfiguration}$, given a pair of covers $\mathcal{C}_\mathsf{s}$ and $\mathcal{C}_\mathsf{t}$ for a set system $\mathcal{F}$, we aim to transform $\mathcal{C}_\mathsf{s}$ into $\mathcal{C}_\mathsf{t}$ by repeatedly adding or removing a single set of $\mathcal{F}$ so as to minimize the <i>maximum size</i> of covers during transformation.
 			The recent study by Ohsaka (STACS 2023) gives evidence that a host of reconfiguration problems are <b>PSPACE</b>-hard to approximate assuming the <i>Reconfiguration Inapproximability Hypothesis</i> (RIH), which postulates that a gap version of $\textsf{Maxmin CSP Reconfiguration}$ is <b>PSPACE</b>-hard.
 			One limitation of this approach is that inapproximability factors are not explicitly shown, so that even a $1.00 \cdots 001$-approximation algorithm for $\textsf{Minmax Set Cover Reconfiguration}$ may not be ruled out, whereas it admits $2$-approximation as per Ito, Demaine, Harvey, Papadimitriou, Sideri, Uehara, and Uno (Theor. Comput. Sci., 2011).
-			<br>
+			</p>
+			<p>
 			In this paper, we demonstrate <i>gap amplification</i> for reconfiguration problems.
 			In particular, we prove an explicit factor of <b>PSPACE</b>-hardness of approximation for three popular reconfiguration problems only assuming RIH.
 			Our main result is that under RIH, $\textsf{Maxmin Binary CSP Reconfiguration}$ is <b>PSPACE</b>-hard to approximate within a factor of $0.9942$.
@@ -153,6 +200,7 @@
 			However, unlike Lund--Yannakakis' reduction, the expander mixing lemma is essential to use.
 			We highlight that all results hold unconditionally as long as “<b>PSPACE</b>-hard” is replaced by “<b>NP</b>-hard,” and are the first explicit inapproximability results for reconfiguration problems without resorting to the parallel repetition theorem.
 			We finally complement the main result by showing that it is <b>NP</b>-hard to approximate $\textsf{Maxmin Binary CSP Reconfiguration}$ within a factor better than $\frac{3}{4}$.
+			</p>
 		</div>
 
 
@@ -172,6 +220,7 @@
 		</a>
 		</li>
 		<div id="tumatch_abst" class="collapse">
+			<p>
 			In matching markets such as job posting and online dating platforms, the recommender system plays a critical role in the success of the platform.
 			Unlike standard recommender systems that suggest items to users, reciprocal recommender systems (RRSs) that suggest other users must take into account the mutual interests of users.
 			In addition, ensuring that recommendation opportunities do not disproportionately favor popular users is essential for the total number of matches and for fairness among users.
@@ -179,6 +228,7 @@
 			In this paper, we introduce the reciprocal recommendation method based on the matching with transferable utility (TU matching) model in the context of ranking recommendations in matching markets and propose a fast and examination-model-free algorithm.
 			Furthermore, we evaluate our approach on experiments with synthetic data and real-world data from an online dating platform in Japan.
 			Our method performs better than or as well as existing methods in terms of the total number of matches and works well even in a large-scale dataset for which one existing method does not work.
+			</p>
 		</div>
 
 
@@ -198,6 +248,7 @@
 		</a>
 		</li>
 		<div id="sigir23_ild_abst" class="collapse">
+			<p>
 			Diversification of recommendation results is a promising approach for coping with the uncertainty associated with users' information needs.
 			Of particular importance in diversified recommendation is to define and optimize an appropriate diversity objective.
 			In this study, we revisit the most popular diversity objective called <i>intra-list distance (ILD)</i>, defined as the average pairwise distance between selected items, and a similar but lesser known objective called <i>dispersion</i>, which is the minimum pairwise distance.
@@ -208,6 +259,7 @@
 			ILD may select <i>duplicate</i> items that are very close to each other, whereas dispersion may overlook <i>distant</i> item pairs.
 			As a competitor to ILD and dispersion, we design a diversity objective called Gaussian ILD, which can <i>interpolate</i> between ILD and dispersion by tuning the bandwidth parameter.
 			We verify our theoretical results by experimental results using real-world data and confirm the extreme behavior of ILD and dispersion in practice.
+			</p>
 		</div>
 
 
@@ -228,6 +280,7 @@
 		</a>
 		</li>
 		<div id="sigir23_lowdim_abst" class="collapse">
+			<p>
 			Beyond accuracy, there are a variety of aspects to the quality of recommender systems, such as diversity, fairness, and robustness.
 			We argue that many of the prevalent problems in recommender systems are partly due to <i>low-dimensionality</i> of user and item embeddings, particularly when dot-product models, such as matrix factorization, are used.
 			In this study, we showcase empirical evidence suggesting the necessity of sufficient dimensionality for user/item embeddings to achieve diverse, fair, and robust recommendation.
@@ -235,6 +288,7 @@
 			Our theoretical results demonstrate that the number of possible rankings expressible under dot-product models is exponentially bounded by the dimension of item factors.
 			We empirically found that the low-dimensionality contributes to a popularity bias, widening the gap between the rank positions of popular and long-tail items;
 			we also give a theoretical justification for this phenomenon. 
+			</p>
 		</div>
 
 
@@ -254,11 +308,13 @@
 		</a>
 		</li>
 		<div id="stacs23_abst" class="collapse">
+			<p>
 			<i>Combinatorial reconfiguration</i> is a growing research field studying problems on the transformability between a pair of solutions of a search problem.
 			For example, in SAT Reconfiguration, for a Boolean formula $\varphi$ and two satisfying truth assignments $\sigma_\mathsf{s}$ and $\sigma_\mathsf{t}$ for $\varphi$, we are asked to determine whether there is a sequence of satisfying truth assignments for $\varphi$ starting from $\sigma_\mathsf{s}$ and ending with $\sigma_\mathsf{t}$, each resulting from the previous one by flipping a single variable assignment.
 			We consider the approximability of <i>optimization variants</i> of reconfiguration problems; e.g., Maxmin SAT Reconfiguration requires to maximize the minimum fraction of satisfied clauses of $\varphi$ during transformation from $\sigma_\mathsf{s}$ to $\sigma_\mathsf{t}$.
 			Solving such optimization variants approximately, we may be able to obtain a reasonable reconfiguration sequence comprising almost-satisfying truth assignments.
-			<br>
+			</p>
+			<p>
 			In this study, we prove a series of <i>gap-preserving reductions</i> to give evidence that a host of reconfiguration problems are <b>PSPACE</b>-hard to approximate, under some plausible assumption.
 			Our starting point is a new working hypothesis called the <i>Reconfiguration Inapproximability Hypothesis</i> (RIH), which asserts that a gap version of Maxmin CSP Reconfiguration is <b>PSPACE</b>-hard.
 			This hypothesis may be thought of as a reconfiguration analogue of the PCP theorem.
@@ -267,6 +323,7 @@
 			Because a simple application of the degree reduction technique using expander graphs due to Papadimitriou and Yannakakis does not preserve the <i>perfect completeness</i>, we modify the alphabet as if each vertex could take a pair of values simultaneously.
 			To accomplish the soundness requirement, we further apply an explicit family of near-Ramanujan graphs and the expander mixing lemma.
 			As an application of the main result, we demonstrate that under RIH, optimization variants of popular reconfiguration problems are <b>PSPACE</b>-hard to approximate, including Nondeterministic Constraint Logic due to Hearn and Demaine, Independent Set Reconfiguration, Clique Reconfiguration, and Vertex Cover Reconfiguration.
+			</p>
 		</div>
 
 
@@ -283,6 +340,7 @@
 		</a>
 		</li>
 		<div id="tcs22tsreco_abst" class="collapse">
+			<p>
 			We study the problem of deciding reconfigurability of target sets of a graph.
 			Given a graph $G$ with vertex thresholds $\tau$, consider a dynamic process in which vertex $v$ becomes activated once at least $\tau(v)$ of its neighbors are activated.
 			A vertex set $S$ is called a <i>target set</i> if all vertices of $G$ would be activated when initially activating vertices of $S$.
@@ -291,6 +349,7 @@
 			On the hardness side, we prove that Target Set Reconfiguration is <b>PSPACE</b>-complete on bipartite planar graphs of degree $3$ and $4$ and of threshold $2$, bipartite $3$-regular graphs and planar $3$-regular graphs of threshold $1$ and $2$, and split graphs, which is in contrast to the fact that a special case called Vertex Cover Reconfiguration is in <b>P</b> for the last graph class.
 			On the positive side, we present a polynomial-time algorithm for Target Set Reconfiguration on graphs of maximum degree $2$ and trees.
 			The latter result can be thought of as a generalization of that for Vertex Cover Reconfiguration.
+			</p>
 		</div>
 
 
@@ -310,6 +369,7 @@
 		</a>
 		</li>
 		<div id="isaac22_abst" class="collapse">
+			<p>
 			In the Determinant Maximization problem, given an $n \times n$ positive semi-definite matrix $\mathbf{A}$ in $\mathbb{Q}^{n \times n}$ and an integer $k$, we are required to find a $k \times k$ principal submatrix of $\mathbf{A}$ having the maximum determinant.
 			This problem is known to be <b>NP</b>-hard and further proven to be <b>W[1]</b>-hard with respect to $k$ by Koutis; i.e., a $f(k)n^{\mathcal{O}(1)}$-time algorithm is unlikely to exist for any computable function $f$.
 			However, there is still room to explore its parameterized complexity in the <i>restricted case</i>, in the hope of overcoming the general-case parameterized intractability.
@@ -321,6 +381,7 @@
 			We finally give evidence that it is <b>W[1]</b>-hard to approximate Determinant Maximization parameterized by $k$ within a factor of $2^{-c\sqrt{k}}$ for some universal constant $c > 0$.
 			Our hardness result is conditional on the <i>Parameterized Inapproximability Hypothesis</i> posed by Lokshtanov, Ramanujan, Saurab, and Zehavi, which asserts that a gap version of Binary Constraint Satisfaction Problem is <b>W[1]</b>-hard.
 			To complement this result, we develop an $\varepsilon$-additive approximation algorithm that runs in $\varepsilon^{-r^2} \cdot r^{\mathcal{O}(r^3)} \cdot n^{\mathcal{O}(1)}$ time for the rank $r$ of an input matrix, provided that the diagonal entries are bounded.
+			</p>
 		</div>
 
 
@@ -337,6 +398,7 @@
 		</a>
 		</li>
 		<div id="mapapprox_abst" class="collapse">
+			<p>
 			We study the computational complexity of two hard problems on determinantal point processes (DPPs).
 			One is maximum a posteriori (MAP) inference, i.e., to find a principal submatrix having the maximum determinant.
 			The other is probabilistic inference on exponentiated DPPs (E-DPPs), which can sharpen or weaken the diversity preference of DPPs with an exponent parameter $p$.
@@ -346,6 +408,7 @@
 			We then show that log-determinant maximization is <b>NP</b>-hard to approximate within a factor of $\frac{5}{4}$ for the unconstrained case and within a factor of $1+10^{-10^{13}}$ for the size-constrained monotone case.
 			In particular, log-determinant maximization does not admit a polynomial-time approximation scheme unless <b>P</b> = <b>NP</b>.
 			As a corollary of the first result, we demonstrate that the normalizing constant for E-DPPs of any (fixed) constant exponent $p \geq \beta^{-1} = 10^{10^{13}}$ is <b>NP</b>-hard to approximate within a factor of $2^{\beta pn}$, which is in contrast to the case of $p \leq 1$ admitting a fully polynomial-time randomized approximation scheme.
+			</p>
 		</div>
 
 
@@ -362,6 +425,7 @@
 		</a>
 		</li>
 		<div id="wsdm22_abst" class="collapse">
+			<p>
 			Reconfiguration problems require finding a step-by-step transformation between a pair of feasible solutions for a particular problem.
 			The primary concern in Theoretical Computer Science has been revealing their computational complexity for classical problems.
 			<br>
@@ -376,6 +440,7 @@
 				<li>We devise inapproximability results that approximating the optimum value of MSReco within a $(1-\frac{1+\epsilon}{n^2})$-factor is <b>PSPACE</b>-hard, and we cannot find a $(\frac{5}{6}+\epsilon)$-approximation for USReco.</li>
 				<li>We conduct numerical study on the reconfiguration version of influence maximization and determinantal point processes using real-world social network and movie rating data.</li>
 			</ul>
+			</p>
 		</div>
 
 
@@ -389,6 +454,7 @@
 		</a>
 		</li>
 		<div id="acml21dpp_abst" class="collapse">
+			<p>
 			Determinantal point processes (DPPs) are attractive probabilistic models for expressing item quality and set diversity simultaneously.
 			Although DPPs are widely-applicable to many subset selection tasks, there exist simple small-size probability distributions that any DPP cannot express.
 			To overcome this drawback while keeping good properties of DPPs, in this paper we investigate the expressive power of convex combinations of DPPs.
@@ -396,7 +462,9 @@
 			For the approximation error, we give an upper bound on the Kullback--Leibler divergence $n-\lfloor \log t\rfloor +\epsilon$ for any $\epsilon >0$ of approximate distribution from a given joint probability distribution, where $t$ is the number of DPPs.
 			Our numerical simulation on an online retail dataset empirically verifies that a convex combination of only two DPPs can outperform a nonsymmetric DPP in terms of the Kullback--Leibler divergence.
 			By combining a polynomial number of DPPs, we can express probability distributions induced by bounded-degree pseudo-Boolean functions, which include weighted coverage functions of bounded occurrence.
+			</p>
 		</div>
+
 
 		<li>
 		Maximization of Monotone $k$-Submodular Functions with Bounded Curvature and Non-$k$-Submodular Functions.<br>
@@ -408,10 +476,12 @@
 		</a>
 		</li>
 		<div id="acml21ksfm_abst" class="collapse">
+			<p>
 			The concept of k-submodularity is an extension of submodularity, of which maximization has various applications, such as influence maximization and sensor placement.
 			In such situations, to model complicated real problems, we want to deal with multiple factors, such as, more detailed parameter representing a property of a given function or a constraint which should be imposed for a given function, simultaneously.
 			Besides, it is preferable that an algorithm for the modeling problem is simple. In this paper, for both monotone k-submodular function maximization with bounded curvature and monotone weakly k-submodular function maximization, we give approximation ratio analysis on greedy-type algorithms on the problem with the matroid constraint and that with the individual size constraint.
 			Furthermore, we give an approximation ratio analysis on another type of the relaxation of k-submodular functions, approximately k-submodular functions, with the matroid constraint.
+			</p>
 		</div>
 
 		<li>
@@ -424,12 +494,14 @@
 		</a>
 		</li>
 		<div id="uai21_abst" class="collapse">
+			<p>
 			We study a new optimization problem called submodular maximization under submodular cover (SMSC), which requires to find a fixed-size set such that one monotone submodular function $f$ is maximized subject to that another monotone submodular function $g$ is maximized approximately.
 			SMSC is preferable to submodular function maximization when one wants to maximize two objective functions simultaneously.
 			We propose an optimization framework for SMSC, which guarantees a constant-factor approximation.
 			Our algorithm's key idea is to construct a new instance of submodular function maximization from a given instance of SMSC, which can be approximated efficiently.
 			Besides, if we are given an approximation oracle for submodular function maximization, our algorithm provably produces nearly optimal solutions.
 			We experimentally evaluate the proposed algorithm in terms of sensor placement and movie recommendation using real-world data.
+			</p>
 		</div>
 
 		<li>
@@ -445,11 +517,13 @@
 		</a>
 		</li>
 		<div id="fastreach_abst" class="collapse">
+			<p>
 			We consider the problem of counting the number of vertices reachable from each vertex in a digraph $G$, which is equal to computing all the out-degrees of the transitive closure of $G$.
 			The current (theoretically) fastest algorithms run in quadratic time; however, Borassi has shown that this problem is not solvable in truly subquadratic time unless the Strong Exponential Time Hypothesis fails [Inf. Process. Lett., 116(10):628--630, 2016].
 			In this paper, we present an $\mathcal{O}(f^3n)$-time exact algorithm, where $n$ is the number of vertices in $G$ and $f$ is the feedback edge number of $G$.
 			Our algorithm thus runs in truly subquadratic time for digraphs of $f=\mathcal{O}(n^{\frac{1}{3}-\epsilon})$ for any $\epsilon > 0$, i.e., the number of edges is $n$ plus $\mathcal{O}(n^{\frac{1}{3}-\epsilon})$, and is fully polynomial fixed parameter tractable, the notion of which was first introduced by  Fomin, Lokshtanov, Pilipczuk, Saurabh, and Wrochna [ACM Trans. Algorithms, 14(3):34:1--34:45, 2018].
 			We also show that the same result holds for vertex-weighted digraphs, where the task is to compute the total weights of vertices reachable from each vertex.
+			</p>
 		</div>
 
 		<li>
@@ -465,10 +539,12 @@
 		</a>
 		</li>
 		<div id="orl21_abst" class="collapse">
+			<p>
 			We consider determinantal point processes (DPPs) constrained by spanning trees.
 			Given a graph $G=(V,E)$ and a positive semi-definite matrix $\mathbf{A}$ indexed by $E$, a spanning-tree DPP defines a distribution such that we draw $S\subseteq E$ with probability proportional to $\det(\mathbf{A}_S)$ only if $S$ induces a spanning tree.
 			We prove $\sharp\textsf{P}$-hardness of computing the normalizing constant for spanning-tree DPPs and provide an approximation-preserving reduction from the mixed discriminant, for which FPRAS is not known.
 			We show similar results for DPPs constrained by forests.
+			</p>
 		</div>
 
 		<li>
@@ -481,20 +557,22 @@
 		</a>
 		</li>
 		<div id="aistats21dpp_abst" class="collapse">
+			<p>
 			We study the computational complexity of two hard problems on determinantal point processes (DPPs).
 			One is maximum a posteriori (MAP) inference, i.e., to find a principal submatrix having the maximum determinant.
 			The other is probabilistic inference on exponentiated DPPs (E-DPPs), which can sharpen or weaken the diversity preference of DPPs with an exponent parameter $p$.
 			We prove the following complexity-theoretic hardness results that explain the difficulty in approximating unconstrained MAP inference and the normalizing constant for E-DPPs.
 			<ul>
-			<li>
-			Unconstrained MAP inference for an $n \times n$ matrix is $\textsf{NP}$-hard to approximate within a $2^{\beta n}$-factor, where $\beta = 10^{-10^{13}} $.
-			This result improves upon a $(\frac{9}{8}-\epsilon)$-factor inapproximability given by Kulesza and Taskar (2012).
-			</li>
-			<li>
-			The normalizing constant for E-DPPs of any (fixed) constant exponent $p \geq \beta^{-1} = 10^{10^{13}}$ is $\textsf{NP}$-hard to approximate within a $2^{\beta pn}$-factor.
-			This gives a(nother) negative answer to open questions posed by Kulesza andTaskar (2012); Ohsaka and Matsuoka (2020).
-			</li>
+				<li>
+				Unconstrained MAP inference for an $n \times n$ matrix is $\textsf{NP}$-hard to approximate within a $2^{\beta n}$-factor, where $\beta = 10^{-10^{13}} $.
+				This result improves upon a $(\frac{9}{8}-\epsilon)$-factor inapproximability given by Kulesza and Taskar (2012).
+				</li>
+				<li>
+				The normalizing constant for E-DPPs of any (fixed) constant exponent $p \geq \beta^{-1} = 10^{10^{13}}$ is $\textsf{NP}$-hard to approximate within a $2^{\beta pn}$-factor.
+				This gives a(nother) negative answer to open questions posed by Kulesza andTaskar (2012); Ohsaka and Matsuoka (2020).
+				</li>
 			</ul>
+			</p>
 		</div>
 
 		<li>
@@ -509,13 +587,15 @@
 		</a>
 		</li>
 		<div id="aistats21track_abst" class="collapse">
+			<p>
 			In this paper, we propose algorithms for online submodular optimization with tracking regret bounds.
 			Online submodular optimization is a generic framework for sequential decision making used to select subsets.
 			Existing algorithms for online submodular optimization have been shown to achieve small (static) regret, which means that the algorithm’s performance is comparable to the performance of a fixed optimal action.
 			Such algorithms, however, may perform poorly in an environment that changes over time.
 			To overcome this problem, we apply a tracking-regret-analysis framework to online submodular optimization, one by which output is assessed through comparison with time-varying optimal subsets.
 			We propose algorithms for submodular minimization, monotone submodular maximization under a size constraint, and unconstrained submodular maximization, and we show tracking regret bounds.
-			In addition, we show that our tracking regret bound for submodular minimization is nearly tight. 
+			In addition, we show that our tracking regret bound for submodular minimization is nearly tight.
+			</p>
 		</div>
 
 
@@ -533,6 +613,7 @@
 		</a>
 		</li>
 		<div id="sdm21_abst" class="collapse">
+			<p>
 			Prediction in a new domain without any training sample, called zero-shot domain adaptation (ZSDA), is an important task in domain adaptation.
 			While prediction in a new domain has gained much attention in recent years, in this paper, we investigate another potential of ZSDA.
 			Specifically, instead of predicting responses in a new domain, we find a description of a new domain given a prediction.
@@ -540,7 +621,9 @@
 			We propose a simple framework for predictive optimization with ZSDA and analyze the condition in which the optimization problem becomes convex optimization.
 			We also discuss how to handle the interaction of characteristics of a domain in predictive optimization.
 			Through numerical experiments, we demonstrate the potential usefulness of our proposed framework. 
+			</p>
 		</div>
+
 
 		<li>
 		On the (In)tractability of Computing Normalizing Constants for the Product of Determinantal Point Processes.<br>
@@ -552,6 +635,7 @@
 		</a>
 		</li>
 		<div id="icml20_abst" class="collapse">
+			<p>
 			We consider the product of determinantal point processes (DPPs), a point process whose probability mass is proportional to the product of principal minors of multiple matrices as a natural, promising generalization of DPPs.
 			We study the computational complexity of computing its normalizing constant, which is among the most essential probabilistic inference tasks.
 			Our complexity-theoretic results (almost) rule out the existence of efficient algorithms for this task, unless input matrices are forced to have favorable structures.
@@ -574,6 +658,7 @@
 				Such parameterized algorithms are said to be fixed-parameter tractable.
 				</li>
 			</ul>
+			</p>
 		</div>
 
 		<li>
@@ -589,10 +674,12 @@
 		</a>
 		</li>
 		<div id="sigmod20_abst" class="collapse">
+			<p>
 			Influence maximization is among the most fundamental algorithmic problems in social influence analysis.
 			Over the last decade, a great effort has been devoted to developing efficient algorithms for influence maximization, so that identifying the ``best'' algorithm has become a demanding task.
 			In SIGMOD'17, Arora, Galhotra, and Ranu reported benchmark results on eleven existing algorithms and demonstrated that there is no single state-of-the-art offering the best trade-off between computational efficiency and solution quality.
-			<br/>
+			</p>
+			<p>
 			In this paper, we report a high-level experimental study on three well-established algorithmic approaches for influence maximization, referred to as Oneshot, Snapshot, and Reverse Influence Sampling (RIS).
 			Different from Arora et al., our experimental methodology is so designed that we examine the distribution of random solutions, characterize the relation between the sample number and the actual solution quality, and avoid implementation dependencies.
 			Our main findings are as follows:
@@ -601,6 +688,7 @@
 			3. Oneshot requires more samples than Snapshot, and Snapshot requires fewer but larger samples than RIS.
 			We discuss the time efficiency when conditioning Oneshot, Snapshot, and RIS to be of identical accuracy.
 	 		Our conclusion is that Oneshot is suitable only if the size of available memory is limited, and RIS is more efficient than Snapshot for large networks; Snapshot is preferable for small, low-probability networks.
+	 		</p>
 		</div>
 
 		<li>
@@ -615,12 +703,14 @@
 		</a>
 		</li>
 		<div id="sdm20_abst" class="collapse">
+			<p>
 			Predictive optimization is a framework for designing an entire data-analysis pipeline that comprises both prediction and optimization, to be able to maximize overall throughput performance.
 	 		In practical demand analysis, a knowledge of hierarchies, which might be geographical or categorical, is recognized as useful, though such additional knowledge has not been taken into account in existing predictive optimization.
 			In this paper, we propose a novel hierarchical predictive optimization pipeline that is able to deal with a wide range of applications including inventory management.
 			Based on an existing hierarchical demand prediction model, we present a stochastic matching framework that can manage prediction-uncertainty in decision making.
 			We further provide a greedy approximation algorithm for solving demand matching on hierarchical structures.
 			In experimental evaluations on both artificial and real-world data, we demonstrate the effectiveness of our proposed hierarchical-predictive-optimization pipeline.
+			</p>
 		</div>
 
 		<li>
@@ -638,12 +728,14 @@
 		</a>
 		</li>
 		<div id="dexa18_abst" class="collapse">
+			<p>
 			We consider and formulate problems of PageRank score boosting motivated by applications such as effective web advertising.
 			More precisely, given a graph and target vertices, one is required to find a fixed-size set of missing edges that maximizes the minimum PageRank score among the targets.
 			We provide theoretical analyses to show that all of them are NP-hard.
 			To overcome the hardness, we develop heuristic-based algorithms for them.
 			We finally perform experiments on several real-world networks to verify the effectiveness of the proposed algorithms compared to baselines.
 			Specifically, our algorithm achieves 100 times improvements of the minimum PageRank score among selected 100 vertices by adding only dozens of edges.
+			</p>
 		</div>
 
 		<li>
@@ -659,6 +751,7 @@
 		</a>
 		</li>
 		<div id="ssdbm18_abst" class="collapse">
+			<p>
 			Algorithmic problems of computing influence estimation and influence maximization have been actively researched for decades.
 			We developed a novel algorithm, NoSingles, based on the Reverse Influence Sampling method proposed by Borgs et al. in 2013.
 			NoSingles solves the problem of influence maximization in large graphs using much smaller space than the existing state-of-the-art algorithms while preserving the theoretical guarantee of the approximation of $$(1-1/e-\epsilon)$$ of the optimum, for any $$ \epsilon > 0 $$.
@@ -666,6 +759,7 @@
 			We also introduce a variation of NoSingles algorithm, which further decreases the running time, while preserving the approximation guarantee.
 			We support our claims with extensive experiments on large real-world graphs.
 			Savings in required space allow to successfully run NoSingles on a consumer-grade laptop for graphs with tens of millions of vertices and hundreds of millions of edges.
+			</p>
 		</div>
 
 		<li>
@@ -680,6 +774,7 @@
 		</a>
 		</li>
 		<div id="stacs18_abst" class="collapse">
+			<p>
 			There are many classical problems in P whose time complexities have not been improved over the past decades.
 			Recent studies of ``Hardness in P'' have revealed that, for several of such problems, the current fastest algorithm is the best possible under some complexity assumptions.
 			To bypass this difficulty, Fomin et al. (SODA 2017) introduced the concept of fully polynomial FPT algorithms.
@@ -691,6 +786,7 @@
 			Because any graph of tree-width $$\mathrm{tw}$$ has tree-depth at most $$(\mathrm{tw}+1)\log_2 n$$, our algorithms also run in $$O(\mathrm{tw}\cdot m\log n)$$ time or $$O(\mathrm{tw}\cdot (m+n\log n)\log n)$$ time.
 			These results match or improve the previous best algorithms parameterized by tree-width.
 			Especially, we solve an open problem of fully polynomial FPT algorithm for Weighted Matching parameterized by tree-width posed by Fomin et al.
+			</p>
 		</div>
 
 
@@ -713,10 +809,12 @@
 		</a>
 		</li>
 		<div id="cmin_sigmod17_abst" class="collapse">
+			<p>
 			Fueled by the increasing popularity of online social networks, social influence analysis has attracted a great deal of research attention in the past decade.
 			The diffusion process is often modeled using influence graphs, and there has been a line of research that involves algorithmic problems in influence graphs.
 			However, the vast size of today's real-world networks raises a serious issue with regard to computational efficiency.
-			<br/>
+			</p>
+			<p>
 			In this paper, we propose a new algorithm for reducing influence graphs.
 			Given an input influence graph, the proposed algorithm produces a vertex-weighted influence graph, which is compact and approximates the diffusion properties of the input graph.
 			The central strategy of influence graph reduction is coarsening, which has the potential to greatly reduce the number of edges by merging a vertex set into a single weighted vertex.
@@ -726,6 +824,7 @@
 			Experiments with real-world networks demonstrate that the proposed algorithm can scale to billion-edge graphs and reduce the graph size to up to 4%.
 			In addition, our influence maximization framework achieves four times speed-up of a state-of-the-art D-SSA algorithm, and
 			our influence estimation framework cuts down the computation time of a simulation-based method to 3.5%.
+			</p>
 		</div>
 
 
@@ -743,11 +842,13 @@
 		</a>
 		</li>
 		<div id="portfolio_www17_abst" class="collapse">
+			<p>
 			Motivated by viral marketing, stochastic diffusion processes that model influence spread on a network have been studied intensively.
 			The primary interest in such models has been to find a seed set of a fixed size that maximizes the expected size of the cascade from it.
 			Practically, however, it is not desirable to have the risk of ending with a small cascade, even if the expected size of the cascade is large.
 			To address this issue, we adopt conditional value at risk (CVaR) as a risk measure, and propose an algorithm that computes a portfolio over seed sets with a provable guarantee on its CVaR.
 			Using real-world social networks, we demonstrate that the portfolio computed by our algorithm has a significantly better CVaR than seed sets computed by other baseline methods.
+			</p>
 		</div>
 		</li>
 
@@ -858,42 +959,7 @@
 
 		<ol>
 
-		<li>
-		Computational Complexity of Normalizing Constants for the Product of Determinantal Point Processes.<br>
-		<u>Naoto Ohsaka</u>, Tatsuya Matsuoka<br>
-		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#pidpp_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
-		<a href="https://arxiv.org/abs/2111.14148">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>arXiv</span>
-		</a>
-		</li>
-		<div id="pidpp_abst" class="collapse">
-			We consider the product of determinantal point processes (DPPs), a point process whose probability mass is proportional to the product of principal minors of multiple matrices, as a natural, promising generalization of DPPs.
-			We study the computational complexity of computing its normalizing constant, which is among the most essential probabilistic inference tasks.
-			Our complexity-theoretic results (almost) rule out the existence of efficient algorithms for this task unless the input matrices are forced to have favorable structures.
-			In particular, we prove the following:
-			<ul>
-				<li>
-				Computing $\sum_S\det(\mathbf{A}_{S,S})^p$ exactly for every (fixed) positive even integer $p$ is $\textsf{UP}$-hard and $\textsf{Mod}_3\textsf{P}$-hard, which gives a negative answer to an open question posed by Kulesza and Taskar (2012).
-				</li>
-				<li>
-				$\sum_S\det(\mathbf{A}_{S,S})\det(\mathbf{B}_{S,S})\det(\mathbf{C}_{S,S})$ is $\textsf{NP}$-hard to approximate within a factor of $2^{O(|\mathcal{I}|^{1-\epsilon})}$ or $2^{\mathcal{O}(n^{1/\epsilon})}$ for any $\epsilon>0$, where $|\mathcal{I}|$ is the input size and $n$ is the order of the input matrix.
-				This result is stronger than the #P-hardness for the case of two matrices derived by Gillenwater (2014).
-				</li>
-				<li>
-				There exists a $k^{\mathcal{O}(k)}n^{\mathcal{O}(1)}$-time algorithm for computing $\sum_S\det(\mathbf{A}_{S,S})\det(\mathbf{B}_{S,S})$, where $k$ is the maximum rank of $\mathbf{A}$ and $\mathbf{B}$ or the treewidth of the graph formed by nonzero entries of $\mathbf{A}$ and $\mathbf{B}$. Such parameterized algorithms are said to be fixed-parameter tractable.
-				</li>
-			</ul>
-			These results can be extended to the fixed-size case.
-			Further, we present two applications of fixed-parameter tractable algorithms given a matrix $\mathbf{A}$ of treewidth $w$:
-			<ul>
-				<li>
-				We can compute a $2^{\frac{n}{2p-1}}$-approximation to $\sum_S\det({\bf A}_{S,S})^p$ for any fractional number $p>1$ in $w^{\mathcal{O}(wp)}n^{\mathcal{O}(1)}$ time.
-				</li>
-				<li>
-				We can find a $2^{\sqrt n}$-approximation to unconstrained maximum a posteriori inference in $w^{\mathcal{O}(w\sqrt n)}n^{\mathcal{O}(1)}$ time.
-				</li>
-			</ul>
-		</div>
+
 
 
 		<li>
@@ -905,19 +971,21 @@
 		</a>
 		</li>
 		<div id="lcreconf_abst" class="collapse">
+			<p>
 			Given a two-prover game $G$ and its two satisfying labelings $\psi_\mathsf{s}$ and $\psi_\mathsf{t}$,
-			the <b>Label Cover Reconfiguration</b> problem asks whether $\psi_\mathsf{s}$ can be transformed into $\psi_\mathsf{t}$ by repeatedly changing the value of a vertex while preserving any intermediate labeling satisfying $G$.
-			We consider an optimization variant of <b>Label Cover Reconfiguration</b> by relaxing the feasibility of labelings, referred to as <b>Maxmin Label Cover Reconfiguration</b>:
+			the <span style="font-variant: small-caps;">Label Cover Reconfiguration</span> problem asks whether $\psi_\mathsf{s}$ can be transformed into $\psi_\mathsf{t}$ by repeatedly changing the value of a vertex while preserving any intermediate labeling satisfying $G$.
+			We consider an optimization variant of <span style="font-variant: small-caps;">Label Cover Reconfiguration</span> by relaxing the feasibility of labelings, referred to as <span style="font-variant: small-caps;">Maxmin Label Cover Reconfiguration</span>:
 			we are allowed to transform by passing through any non-satisfying labelings, but required to maximize the minimum fraction of satisfied edges during transformation from $\psi_\mathsf{s}$ to $\psi_\mathsf{t}$.
 			Since the parallel repetition theorem of Raz (SIAM J. Comput., 1998), which implies <b>NP</b>-hardness of Label Cover within any constant factor, produces strong inapproximability results for many <b>NP</b>-hard problems,
-			one may think of using <b>Maxmin Label Cover Reconfiguration</b> to derive inapproximability results for reconfiguration problems.
-			We prove the following results on <b>Maxmin Label Cover Reconfiguration</b>, which display different trends from those of <b>Label Cover</b> and the parallel repetition theorem:
+			one may think of using <span style="font-variant: small-caps;">Maxmin Label Cover Reconfiguration</span> to derive inapproximability results for reconfiguration problems.
+			We prove the following results on <span style="font-variant: small-caps;">Maxmin Label Cover Reconfiguration</span>, which display different trends from those of <span style="font-variant: small-caps;">Label Cover</span> and the parallel repetition theorem:
 			<ul>
-			<li><b>Maxmin Label Cover Reconfiguration</b> can be approximated within a factor of nearly $\frac{1}{4}$ for restricted graph classes, including slightly dense graphs and balanced bipartite graphs.</li>
-			<li>A naive parallel repetition of <b>Maxmin Label Cover Reconfiguration</b> does not decrease the optimal objective value.</li>
-			<li><b>Label Cover Reconfiguration</b> on projection games can be decided in polynomial time.</li>
+				<li><span style="font-variant: small-caps;">Maxmin Label Cover Reconfiguration</span> can be approximated within a factor of nearly $\frac{1}{4}$ for restricted graph classes, including slightly dense graphs and balanced bipartite graphs.</li>
+				<li>A naive parallel repetition of <span style="font-variant: small-caps;">Maxmin Label Cover Reconfiguration</span> does not decrease the optimal objective value.</li>
+				<li><span style="font-variant: small-caps;">Label Cover Reconfiguration</span> on projection games can be decided in polynomial time.</li>
 			</ul>
 			The above results suggest that a reconfiguration analogue of the parallel repetition theorem is unlikely.
+			</p>
 		</div>
 
 
@@ -930,6 +998,7 @@
 		</a>
 		</li>
 		<div id="ABCReductReconf_abst" class="collapse">
+			<p>
 			We present a reconfiguration analogue of <i>alphabet reduction</i> à la Dinur (J. ACM, 2007) and its applications.
 			Given a binary constraint graph $G$ and its two satisfying assignments $\psi^\mathsf{ini}$ and $\psi^\mathsf{tar}$, the $\textsf{Maxmin Binary CSP Reconfiguration}$ problem requests to transform $\psi^\mathsf{ini}$ into $\psi^\mathsf{tar}$ by repeatedly changing the value of a single vertex so that the minimum fraction of satisfied edges is maximized.
 			We demonstrate a polynomial-time reduction from $\textsf{Maxmin Binary CSP Reconfiguration}$ with arbitrarily large alphabet size $W \in \mathbb{N}$ to itself with universal alphabet size $W_0 \in \mathbb{N}$ such that
@@ -944,6 +1013,7 @@
 			In particular, a $1$ vs. $1-\varepsilon_0$ gap version of $\textsf{Maxmin Binary CSP Reconfiguration}$ with alphabet size $W_0$ is <b>PSPACE</b>-hard only assuming the Reconfiguration Inapproximability Hypothesis posed by Ohsaka (STACS 2023), whose gap parameter can be arbitrarily small.
 			As an immediate corollary, we show that under the same hypothesis, there exists a universal constant $\varepsilon_0 \in (0,1)$ such that many popular reconfiguration problems are <b>PSPACE</b>-hard to approximate within a factor of $1-\varepsilon_0$, including those of $3\textsf{-SAT}$, $\textsf{Independent Set}$, $\textsf{Vertex Cover}$, $\textsf{Clique}$, $\textsf{Dominating Set}$, and $\textsf{Set Cover}$.
 			This may not be achieved only by gap amplification of Ohsaka, which makes the alphabet size gigantic depending on the gap value of the hypothesis.
+			</p>
 		</div>
 
 
@@ -955,14 +1025,19 @@
 		<a href="https://arxiv.org/abs/2402.12645">
 			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>arXiv</span>
 		</a>
+		<a href="https://eccc.weizmann.ac.il/report/2024/039/">
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>ECCC</span>
+		</a>
 		</li>
 		<div id="SetCoverReconf_abst" class="collapse">
-			In the <b>Minmax Set Cover Reconfiguration</b> problem, given a set system $\mathcal{F}$ over a universe and its two covers $\mathcal{C}^\mathsf{start}$ and $\mathcal{C}^\mathsf{goal}$ of size $k$, we wish to transform $\mathcal{C}^\mathsf{start}$ into $\mathcal{C}^\mathsf{goal}$ by repeatedly adding or removing a single set of $\mathcal{F}$ while covering the universe in any intermediate state.
+			<p>
+			In the <span style="font-variant: small-caps;">Minmax Set Cover Reconfiguration</span> problem, given a set system $\mathcal{F}$ over a universe and its two covers $\mathcal{C}^\mathsf{start}$ and $\mathcal{C}^\mathsf{goal}$ of size $k$, we wish to transform $\mathcal{C}^\mathsf{start}$ into $\mathcal{C}^\mathsf{goal}$ by repeatedly adding or removing a single set of $\mathcal{F}$ while covering the universe in any intermediate state.
 			Then, the objective is to minimize the maximize size of any intermediate cover during transformation.
-			We prove that <b>Minmax Set Cover Reconfiguration</b> and <b>Minmax Dominating Set Reconfiguration</b> are $\mathsf{PSPACE}$-hard to approximate within a factor of $2-\frac{1}{\operatorname{polyloglog} N}$, where $N$ is the size of the universe and the number of vertices in a graph, respectively, improving upon Ohsaka (SODA 2024) and Karthik C. S. and Manurangsi (2023).
+			We prove that <span style="font-variant: small-caps;">Minmax Set Cover Reconfiguration</span> and <span style="font-variant: small-caps;">Minmax Dominating Set Reconfiguration</span> are $\mathsf{PSPACE}$-hard to approximate within a factor of $2-\frac{1}{\operatorname{polyloglog} N}$, where $N$ is the size of the universe and the number of vertices in a graph, respectively, improving upon Ohsaka (SODA 2024) and Karthik C. S. and Manurangsi (2023).
 			This is the first result that exhibits a sharp threshold for the approximation factor of any reconfiguration problem because both problems admit a $2$-factor approximation algorithm as per Ito, Demaine, Harvey, Papadimitriou, Sideri, Uehara, and Uno (Theor. Comput. Sci., 2011).
 			Our proof is based on a reconfiguration analogue of the FGLSS reduction from Probabilistically Checkable Reconfiguration Proofs of Hirahara and Ohsaka (2024).
-			We also prove that for any constant $\varepsilon \in (0,1)$, <b>Minmax Hypergraph Vertex Cover Reconfiguration</b> on $\operatorname{poly}(\varepsilon^{-1})$-uniform hypergraphs is $\mathsf{PSPACE}$-hard to approximate within a factor of $2-\varepsilon$.
+			We also prove that for any constant $\varepsilon \in (0,1)$, <span style="font-variant: small-caps;">Minmax Hypergraph Vertex Cover Reconfiguration</span> on $\operatorname{poly}(\varepsilon^{-1})$-uniform hypergraphs is $\mathsf{PSPACE}$-hard to approximate within a factor of $2-\varepsilon$.
+			</p>
 		</div>
 
 
@@ -975,12 +1050,14 @@
 		</a>
 		</li>
 		<div id="TSReconfApprox_abst" class="collapse">
+			<p>
 			Given a graph $G$ with a vertex threshold function $\tau$, consider a dynamic process in which any inactive vertex $v$ becomes activated whenever at least $\tau(v)$ of its neighbors are activated.
 			A vertex set $S$ is called a <i>target set</i> if all vertices of $G$ would be activated when initially activating vertices of $S$.
 			In the $\textsf{Minmax Target Set Reconfiguration}$ problem, for a graph $G$ and its two target sets $X$ and $Y$, we wish to transform $X$ into $Y$ by repeatedly adding or removing a single vertex, using only target sets of $G$, so as to minimize the <i>maximum size</i> of any intermediate target set.
 			We prove that it is <b>NP</b>-hard to approximate $\textsf{Minmax Target Set Reconfiguration}$ within a factor of $2-o\left(\frac{1}{\operatorname{polylog} n}\right)$, where $n$ is the number of vertices.
 			Our result establishes a tight lower bound on approximability of $\textsf{Minmax Target Set Reconfiguration}$, which admits a $2$-factor approximation algorithm.
 			The proof is based on a gap-preserving reduction from $\textsf{Target Set Selection}$ to $\textsf{Minmax Target Set Reconfiguration}$, where <b>NP</b>-hardness of approximation for the former problem is proven by Chen (SIAM J. Discrete Math., 2009) and Charikar, Naamad, and Wirth (APPROX/RANDOM 2016).
+			</p>
 		</div>
 
 
@@ -1045,7 +1122,7 @@
 
 		
 		<div id="footer" class="navbar">
-			<p class="muted pull-right">Last modified: February 26th, 2024</p>
+			<p class="muted pull-right">Last modified: March 23rd, 2024</p>
 		</div>
 
 		<script src="js/bootstrap.min.js"></script>
