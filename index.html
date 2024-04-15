@@ -42,10 +42,65 @@
 		<ol>
 
 		<li>
+		<span class="label label-info">New!!</span> Alphabet Reduction for Reconfiguration Problems.<br>
+		<u>Naoto Ohsaka</u>.<br>
+		<a href="https://compose.ioc.ee/icalp2024/">51st EATCS International Colloquium on Automata, Languages, and Programming (ICALP 2024)</a>. <br>
+		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#ABCReductReconf_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
+		<a href="https://arxiv.org/abs/2402.10627">
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>arXiv</span>
+		</a>
+		</li>
+		<div id="ABCReductReconf_abst" class="collapse">
+			<p>
+			We present a reconfiguration analogue of <i>alphabet reduction</i> à la Dinur (J. ACM, 2007) and its applications.
+			Given a binary constraint graph $G$ and its two satisfying assignments $\psi^\mathsf{ini}$ and $\psi^\mathsf{tar}$, the $\textsf{Maxmin Binary CSP Reconfiguration}$ problem requests to transform $\psi^\mathsf{ini}$ into $\psi^\mathsf{tar}$ by repeatedly changing the value of a single vertex so that the minimum fraction of satisfied edges is maximized.
+			We demonstrate a polynomial-time reduction from $\textsf{Maxmin Binary CSP Reconfiguration}$ with arbitrarily large alphabet size $W \in \mathbb{N}$ to itself with universal alphabet size $W_0 \in \mathbb{N}$ such that
+			<ol>
+				<li>the perfect completeness is preserved, and</li>
+				<li>if any reconfiguration for the former violates $\varepsilon$-fraction of edges, then $\Omega(\varepsilon)$-fraction of edges must be unsatisfied during any reconfiguration for the latter.</li>
+			</ol>
+			The crux of its construction is the <i>reconfigurability of Hadamard codes</i>, which enables to reconfigure between a pair of codewords, while avoiding getting too close to the other codewords.
+			Combining this alphabet reduction with gap amplification due to Ohsaka (SODA 2024), we are able to amplify the $1$ vs. $1-\varepsilon$ gap for arbitrarily small $\varepsilon \in (0,1)$ up to the $1$ vs. $1-\varepsilon_0$ for some universal $\varepsilon_0 \in (0,1)$ <i>without</i> blowing up the alphabet size.
+			In particular, a $1$ vs. $1-\varepsilon_0$ gap version of $\textsf{Maxmin Binary CSP Reconfiguration}$ with alphabet size $W_0$ is <b>PSPACE</b>-hard only assuming the Reconfiguration Inapproximability Hypothesis posed by Ohsaka (STACS 2023), whose gap parameter can be arbitrarily small.
+			As an immediate corollary, we show that under the same hypothesis, there exists a universal constant $\varepsilon_0 \in (0,1)$ such that many popular reconfiguration problems are <b>PSPACE</b>-hard to approximate within a factor of $1-\varepsilon_0$, including those of $3\textsf{-SAT}$, $\textsf{Independent Set}$, $\textsf{Vertex Cover}$, $\textsf{Clique}$, $\textsf{Dominating Set}$, and $\textsf{Set Cover}$.
+			This may not be achieved only by gap amplification of Ohsaka, which makes the alphabet size gigantic depending on the gap value of the hypothesis.
+			</p>
+		</div>
+
+
+		<li>
+		<span class="label label-info">New!!</span> Optimal PSPACE-hardness of Approximating Set Cover Reconfiguration.<br>
+		<a href="https://researchmap.jp/shuichi.hirahara">Shuichi Hirahara</a> and
+		<u>Naoto Ohsaka</u>.<br>
+		<a href="https://compose.ioc.ee/icalp2024/">51st EATCS International Colloquium on Automata, Languages, and Programming (ICALP 2024)</a>. <br>
+		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#SetCoverReconf_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
+		<a href="https://arxiv.org/abs/2402.12645">
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>arXiv</span>
+		</a>
+		<a href="https://eccc.weizmann.ac.il/report/2024/039/">
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>ECCC</span>
+		</a>
+		</li>
+		<div id="SetCoverReconf_abst" class="collapse">
+			<p>
+			In the <span style="font-variant: small-caps;">Minmax Set Cover Reconfiguration</span> problem, given a set system $\mathcal{F}$ over a universe and its two covers $\mathcal{C}^\mathsf{start}$ and $\mathcal{C}^\mathsf{goal}$ of size $k$, we wish to transform $\mathcal{C}^\mathsf{start}$ into $\mathcal{C}^\mathsf{goal}$ by repeatedly adding or removing a single set of $\mathcal{F}$ while covering the universe in any intermediate state.
+			Then, the objective is to minimize the maximize size of any intermediate cover during transformation.
+			We prove that <span style="font-variant: small-caps;">Minmax Set Cover Reconfiguration</span> and <span style="font-variant: small-caps;">Minmax Dominating Set Reconfiguration</span> are $\mathsf{PSPACE}$-hard to approximate within a factor of $2-\frac{1}{\operatorname{polyloglog} N}$, where $N$ is the size of the universe and the number of vertices in a graph, respectively, improving upon Ohsaka (SODA 2024) and Karthik C. S. and Manurangsi (2023).
+			This is the first result that exhibits a sharp threshold for the approximation factor of any reconfiguration problem because both problems admit a $2$-factor approximation algorithm as per Ito, Demaine, Harvey, Papadimitriou, Sideri, Uehara, and Uno (Theor. Comput. Sci., 2011).
+			Our proof is based on a reconfiguration analogue of the FGLSS reduction from Probabilistically Checkable Reconfiguration Proofs of Hirahara and Ohsaka (2024).
+			We also prove that for any constant $\varepsilon \in (0,1)$, <span style="font-variant: small-caps;">Minmax Hypergraph Vertex Cover Reconfiguration</span> on $\operatorname{poly}(\varepsilon^{-1})$-uniform hypergraphs is $\mathsf{PSPACE}$-hard to approximate within a factor of $2-\varepsilon$.
+			</p>
+		</div>
+
+
+		<li>
 		<span class="label label-info">New!!</span> Computational Complexity of Normalizing Constants for the Product of Determinantal Point Processes.<br>
 		Tatsuya Matsuoka and <u>Naoto Ohsaka</u>.<br>
 		<a href="https://www.sciencedirect.com/journal/theoretical-computer-science">Theoretical Computer Science</a> (Full version of ICML 2020). <br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#pidpp_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
+		<a href="https://doi.org/10.1016/j.tcs.2024.114513">
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
+		</a>
 		<a href="https://arxiv.org/abs/2111.14148">
 			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>arXiv</span>
 		</a>
@@ -109,18 +164,16 @@
 
 
 		<li>
-		<span class="label label-info">New!!</span> Safe Collaborative Filtering.<br>
+		Safe Collaborative Filtering.<br>
 		<a href="https://riktor.github.io/">Riku Togashi</a>,
 		<a href="https://sites.google.com/site/homepageoka/tatsushi-oka">Tatsushi Oka</a>,
 		<u>Naoto Ohsaka</u>, and
 		Tetsuro Morimura.<br>
 		<a href="https://iclr.cc/Conferences/2024">12th International Conference on Learning Representations (ICLR 2024)</a>. <br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#safer_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
-		<!--
-		<a href="https://doi.org/--.----">
+		<a href="https://openreview.net/forum?id=yarUvgEXq3">
 			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
 		</a>
-		-->
 		<a href="https://arxiv.org/abs/2306.05292">
 			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>arXiv</span>
 		</a>
@@ -989,57 +1042,6 @@
 		</div>
 
 
-		<li>
-		Alphabet Reduction for Reconfiguration Problems.<br>
-		<u>Naoto Ohsaka</u>.<br>
-		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#ABCReductReconf_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
-		<a href="https://arxiv.org/abs/2402.10627">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>arXiv</span>
-		</a>
-		</li>
-		<div id="ABCReductReconf_abst" class="collapse">
-			<p>
-			We present a reconfiguration analogue of <i>alphabet reduction</i> à la Dinur (J. ACM, 2007) and its applications.
-			Given a binary constraint graph $G$ and its two satisfying assignments $\psi^\mathsf{ini}$ and $\psi^\mathsf{tar}$, the $\textsf{Maxmin Binary CSP Reconfiguration}$ problem requests to transform $\psi^\mathsf{ini}$ into $\psi^\mathsf{tar}$ by repeatedly changing the value of a single vertex so that the minimum fraction of satisfied edges is maximized.
-			We demonstrate a polynomial-time reduction from $\textsf{Maxmin Binary CSP Reconfiguration}$ with arbitrarily large alphabet size $W \in \mathbb{N}$ to itself with universal alphabet size $W_0 \in \mathbb{N}$ such that
-			<ol>
-			<li>the perfect completeness is preserved, and</li>
-			<li>if any reconfiguration for the former violates $\varepsilon$-fraction of edges, then $\Omega(\varepsilon)$-fraction of edges must be unsatisfied during any reconfiguration for the latter.</li>
-			</ol>
-			The crux of its construction is the <i>reconfigurability of Hadamard codes</i>, which enables to reconfigure between a pair of codewords, while avoiding 
-			getting too close to the other codewords.
-			Combining this alphabet reduction with gap amplification due to Ohsaka (SODA 2024), we are able to amplify the $1$ vs. $1-\varepsilon$ gap for arbitrarily small $\varepsilon \in (0,1)$ up to the $1$ vs. $1-\varepsilon_0$ for some universal $\varepsilon_0 \in (0,1)$
-			<i>without</i> blowing up the alphabet size.
-			In particular, a $1$ vs. $1-\varepsilon_0$ gap version of $\textsf{Maxmin Binary CSP Reconfiguration}$ with alphabet size $W_0$ is <b>PSPACE</b>-hard only assuming the Reconfiguration Inapproximability Hypothesis posed by Ohsaka (STACS 2023), whose gap parameter can be arbitrarily small.
-			As an immediate corollary, we show that under the same hypothesis, there exists a universal constant $\varepsilon_0 \in (0,1)$ such that many popular reconfiguration problems are <b>PSPACE</b>-hard to approximate within a factor of $1-\varepsilon_0$, including those of $3\textsf{-SAT}$, $\textsf{Independent Set}$, $\textsf{Vertex Cover}$, $\textsf{Clique}$, $\textsf{Dominating Set}$, and $\textsf{Set Cover}$.
-			This may not be achieved only by gap amplification of Ohsaka, which makes the alphabet size gigantic depending on the gap value of the hypothesis.
-			</p>
-		</div>
-
-
-		<li>
-		Optimal PSPACE-hardness of Approximating Set Cover Reconfiguration.<br>
-		<a href="https://researchmap.jp/shuichi.hirahara">Shuichi Hirahara</a> and
-		<u>Naoto Ohsaka</u>.<br>
-		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#SetCoverReconf_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
-		<a href="https://arxiv.org/abs/2402.12645">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>arXiv</span>
-		</a>
-		<a href="https://eccc.weizmann.ac.il/report/2024/039/">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>ECCC</span>
-		</a>
-		</li>
-		<div id="SetCoverReconf_abst" class="collapse">
-			<p>
-			In the <span style="font-variant: small-caps;">Minmax Set Cover Reconfiguration</span> problem, given a set system $\mathcal{F}$ over a universe and its two covers $\mathcal{C}^\mathsf{start}$ and $\mathcal{C}^\mathsf{goal}$ of size $k$, we wish to transform $\mathcal{C}^\mathsf{start}$ into $\mathcal{C}^\mathsf{goal}$ by repeatedly adding or removing a single set of $\mathcal{F}$ while covering the universe in any intermediate state.
-			Then, the objective is to minimize the maximize size of any intermediate cover during transformation.
-			We prove that <span style="font-variant: small-caps;">Minmax Set Cover Reconfiguration</span> and <span style="font-variant: small-caps;">Minmax Dominating Set Reconfiguration</span> are $\mathsf{PSPACE}$-hard to approximate within a factor of $2-\frac{1}{\operatorname{polyloglog} N}$, where $N$ is the size of the universe and the number of vertices in a graph, respectively, improving upon Ohsaka (SODA 2024) and Karthik C. S. and Manurangsi (2023).
-			This is the first result that exhibits a sharp threshold for the approximation factor of any reconfiguration problem because both problems admit a $2$-factor approximation algorithm as per Ito, Demaine, Harvey, Papadimitriou, Sideri, Uehara, and Uno (Theor. Comput. Sci., 2011).
-			Our proof is based on a reconfiguration analogue of the FGLSS reduction from Probabilistically Checkable Reconfiguration Proofs of Hirahara and Ohsaka (2024).
-			We also prove that for any constant $\varepsilon \in (0,1)$, <span style="font-variant: small-caps;">Minmax Hypergraph Vertex Cover Reconfiguration</span> on $\operatorname{poly}(\varepsilon^{-1})$-uniform hypergraphs is $\mathsf{PSPACE}$-hard to approximate within a factor of $2-\varepsilon$.
-			</p>
-		</div>
-
 
 		<li>
 		Tight Inapproximability of Target Set Reconfiguration.<br>
@@ -1122,7 +1124,7 @@
 
 		
 		<div id="footer" class="navbar">
-			<p class="muted pull-right">Last modified: March 23rd, 2024</p>
+			<p class="muted pull-right">Last modified: April 15th, 2024</p>
 		</div>
 
 		<script src="js/bootstrap.min.js"></script>
