@@ -60,6 +60,9 @@
 		<u>Naoto Ohsaka</u>.<br>
 		<a href="https://compose.ioc.ee/icalp2024/">51st EATCS International Colloquium on Automata, Languages, and Programming (ICALP 2024)</a>. <br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#ABCReductReconf_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
+		<a href="https://doi.org/10.4230/LIPIcs.ICALP.2024.113">
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
+		</a>
 		<a href="https://arxiv.org/abs/2402.10627">
 			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>arXiv</span>
 		</a>
@@ -67,17 +70,17 @@
 		<div id="ABCReductReconf_abst" class="collapse">
 			<p>
 			We present a reconfiguration analogue of <i>alphabet reduction</i> à la Dinur (J. ACM, 2007) and its applications.
-			Given a binary constraint graph $G$ and its two satisfying assignments $\psi^\mathsf{ini}$ and $\psi^\mathsf{tar}$, the $\textsf{Maxmin Binary CSP Reconfiguration}$ problem requests to transform $\psi^\mathsf{ini}$ into $\psi^\mathsf{tar}$ by repeatedly changing the value of a single vertex so that the minimum fraction of satisfied edges is maximized.
-			We demonstrate a polynomial-time reduction from $\textsf{Maxmin Binary CSP Reconfiguration}$ with arbitrarily large alphabet size $W \in \mathbb{N}$ to itself with universal alphabet size $W_0 \in \mathbb{N}$ such that
+			Given a binary constraint graph $G$ and its two satisfying assignments $\psi^\mathsf{ini}$ and $\psi^\mathsf{tar}$, the $\textsf{Maxmin 2-CSP Reconfiguration}$ problem requests to transform $\psi^\mathsf{ini}$ into $\psi^\mathsf{tar}$ by repeatedly changing the value of a single vertex so that the minimum fraction of satisfied edges is maximized.
+			We demonstrate a polynomial-time reduction from $\textsf{Maxmin 2-CSP Reconfiguration}$ with arbitrarily large alphabet size $W \in \mathbb{N}$ to itself with universal alphabet size $W_0 \in \mathbb{N}$ such that
 			<ol>
 				<li>the perfect completeness is preserved, and</li>
 				<li>if any reconfiguration for the former violates $\varepsilon$-fraction of edges, then $\Omega(\varepsilon)$-fraction of edges must be unsatisfied during any reconfiguration for the latter.</li>
 			</ol>
 			The crux of its construction is the <i>reconfigurability of Hadamard codes</i>, which enables to reconfigure between a pair of codewords, while avoiding getting too close to the other codewords.
 			Combining this alphabet reduction with gap amplification due to Ohsaka (SODA 2024), we are able to amplify the $1$ vs. $1-\varepsilon$ gap for arbitrarily small $\varepsilon \in (0,1)$ up to the $1$ vs. $1-\varepsilon_0$ for some universal $\varepsilon_0 \in (0,1)$ <i>without</i> blowing up the alphabet size.
-			In particular, a $1$ vs. $1-\varepsilon_0$ gap version of $\textsf{Maxmin Binary CSP Reconfiguration}$ with alphabet size $W_0$ is <b>PSPACE</b>-hard only assuming the Reconfiguration Inapproximability Hypothesis posed by Ohsaka (STACS 2023), whose gap parameter can be arbitrarily small.
+			In particular, a $1$ vs. $1-\varepsilon_0$ gap version of $\textsf{Maxmin 2-CSP Reconfiguration}$ with alphabet size $W_0$ is <b>PSPACE</b>-hard given a probabilistically checkable reconfiguration proof system having any soundness error $1-\varepsilon$ due to Hirahara and Ohsaka (STOC 2024) and Karthik C. S. and Manurangsi (2023).
 			As an immediate corollary, we show that under the same hypothesis, there exists a universal constant $\varepsilon_0 \in (0,1)$ such that many popular reconfiguration problems are <b>PSPACE</b>-hard to approximate within a factor of $1-\varepsilon_0$, including those of $3\textsf{-SAT}$, $\textsf{Independent Set}$, $\textsf{Vertex Cover}$, $\textsf{Clique}$, $\textsf{Dominating Set}$, and $\textsf{Set Cover}$.
-			This may not be achieved only by gap amplification of Ohsaka, which makes the alphabet size gigantic depending on the gap value of the hypothesis.
+			This may not be achieved only by gap amplification of Ohsaka, which makes the alphabet size gigantic depending on $\varepsilon^-1$.
 			</p>
 		</div>
 
@@ -88,6 +91,9 @@
 		<u>Naoto Ohsaka</u>.<br>
 		<a href="https://compose.ioc.ee/icalp2024/">51st EATCS International Colloquium on Automata, Languages, and Programming (ICALP 2024)</a>. <br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#SetCoverReconf_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
+		<a href="https://doi.org/10.4230/LIPIcs.ICALP.2024.85">
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
+		</a>
 		<a href="https://arxiv.org/abs/2402.12645">
 			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>arXiv</span>
 		</a>
@@ -108,7 +114,7 @@
 
 
 		<li>
-		<span class="label label-info">New!!</span> Computational Complexity of Normalizing Constants for the Product of Determinantal Point Processes.<br>
+		Computational Complexity of Normalizing Constants for the Product of Determinantal Point Processes.<br>
 		Tatsuya Matsuoka and <u>Naoto Ohsaka</u>.<br>
 		<a href="https://www.sciencedirect.com/journal/theoretical-computer-science">Theoretical Computer Science</a> (Full version of ICML 2020). <br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#pidpp_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
@@ -152,11 +158,14 @@
 		
 		
 		<li>
-		<span class="label label-info">New!!</span> Probabilistically Checkable Reconfiguration Proofs and Inapproximability of Reconfiguration Problems.<br>
+		Probabilistically Checkable Reconfiguration Proofs and Inapproximability of Reconfiguration Problems.<br>
 		<a href="https://researchmap.jp/shuichi.hirahara">Shuichi Hirahara</a> and
 		<u>Naoto Ohsaka</u>.<br>
 		<a href="http://acm-stoc.org/stoc2024/">56th Annual ACM Symposium on Theory of Computing (STOC 2024)</a>. <br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#pcrp_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
+		<a href="https://doi.org/10.1145/3618260.3649667">
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
+		</a>
 		<a href="https://arxiv.org/abs/2401.00474">
 			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>arXiv</span>
 		</a>
@@ -1138,7 +1147,7 @@
 
 		
 		<div id="footer" class="navbar">
-			<p class="muted pull-right">Last modified: May 2nd, 2024</p>
+			<p class="muted pull-right">Last modified: July 17th, 2024</p>
 		</div>
 
 		<script src="js/bootstrap.min.js"></script>
