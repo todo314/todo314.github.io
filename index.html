@@ -38,7 +38,7 @@
 
 		<h2>Publications</h2>
 
-		<ol>
+		<ol reversed>
 
 		<li>
 		<span class="label label-info">New!!</span> Matroid Semi-Bandits in Sublinear Time.<br>
@@ -47,10 +47,20 @@
 		Kaito Ariu.<br>
 		<a href="https://icml.cc/Conferences/2024">40th International Conference on Machine Learning (ICML 2024)</a>. <br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#ICML2024_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
+		<a href="https://openreview.net/forum?id=MwQ53xAIPs">
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
+		</a>
+		<a href="https://arxiv.org/abs/2405.17968">
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>arXiv</span>
+		</a>
 		</li>
 		<div id="ICML2024_abst" class="collapse">
 			<p>
-			Coming soon...
+			We study the matroid semi-bandits problem, where at each round the learner plays a subset of $K$ arms from a feasible set, and the goal is to maximize the expected cumulative linear rewards. 
+			Existing algorithms have per-round time complexity at least $\Omega(K)$, which becomes expensive when $K$ is large. 
+			To address this computational issue, we propose FasterCUCB whose sampling rule takes time sublinear in $K$ for common classes of matroids: $\bigO(D\,\mathrm{polylog}(K)\,\mathrm{polylog}(T))$ for uniform matroids, partition matroids, and graphical matroids, and $\bigO(D\sqrt{K}\mathrm{polylog}(T))$ for transversal matroids. 
+			Here, $D$ is the maximum number of elements in any feasible subset of arms, and $T$ is the horizon.
+			Our technique is based on dynamic maintenance of an approximate maximum-weight basis over inner-product weights. Although the introduction of an approximate maximum-weight basis presents a challenge in regret analysis, we can still guarantee an upper bound on regret as tight as CUCB in the sense that it matches the gap-dependent lower bound by Kveton et al. (2014a) asymptotically.
 			</p>
 		</div>
 
@@ -61,10 +71,13 @@
 		<a href="https://compose.ioc.ee/icalp2024/">51st EATCS International Colloquium on Automata, Languages, and Programming (ICALP 2024)</a>. <br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#ABCReductReconf_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
 		<a href="https://doi.org/10.4230/LIPIcs.ICALP.2024.113">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
 		</a>
 		<a href="https://arxiv.org/abs/2402.10627">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>arXiv</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>arXiv</span>
+		</a>
+		<a href="./slide/abcreduct_icalp24_slide.pdf">
+			<span class="btn btn-success btn-xs"><i class="glyphicon glyphicon-film"></i>Slide</span>
 		</a>
 		</li>
 		<div id="ABCReductReconf_abst" class="collapse">
@@ -79,7 +92,7 @@
 			The crux of its construction is the <i>reconfigurability of Hadamard codes</i>, which enables to reconfigure between a pair of codewords, while avoiding getting too close to the other codewords.
 			Combining this alphabet reduction with gap amplification due to Ohsaka (SODA 2024), we are able to amplify the $1$ vs. $1-\varepsilon$ gap for arbitrarily small $\varepsilon \in (0,1)$ up to the $1$ vs. $1-\varepsilon_0$ for some universal $\varepsilon_0 \in (0,1)$ <i>without</i> blowing up the alphabet size.
 			In particular, a $1$ vs. $1-\varepsilon_0$ gap version of $\textsf{Maxmin 2-CSP Reconfiguration}$ with alphabet size $W_0$ is <b>PSPACE</b>-hard given a probabilistically checkable reconfiguration proof system having any soundness error $1-\varepsilon$ due to Hirahara and Ohsaka (STOC 2024) and Karthik C. S. and Manurangsi (2023).
-			As an immediate corollary, we show that under the same hypothesis, there exists a universal constant $\varepsilon_0 \in (0,1)$ such that many popular reconfiguration problems are <b>PSPACE</b>-hard to approximate within a factor of $1-\varepsilon_0$, including those of $3\textsf{-SAT}$, $\textsf{Independent Set}$, $\textsf{Vertex Cover}$, $\textsf{Clique}$, $\textsf{Dominating Set}$, and $\textsf{Set Cover}$.
+			As an immediate corollary, we show that under the same hypothesis, there exists a universal constant $\varepsilon_0 \in (0,1)$ such that many popular reconfiguration problems are <b>PSPACE</b>-hard to approximate within a factor of $1-\varepsilon_0$, including those of $\textsf{3-SAT}$, $\textsf{Independent Set}$, $\textsf{Vertex Cover}$, $\textsf{Clique}$, $\textsf{Dominating Set}$, and $\textsf{Set Cover}$.
 			This may not be achieved only by gap amplification of Ohsaka, which makes the alphabet size gigantic depending on $\varepsilon^-1$.
 			</p>
 		</div>
@@ -92,13 +105,16 @@
 		<a href="https://compose.ioc.ee/icalp2024/">51st EATCS International Colloquium on Automata, Languages, and Programming (ICALP 2024)</a>. <br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#SetCoverReconf_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
 		<a href="https://doi.org/10.4230/LIPIcs.ICALP.2024.85">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
 		</a>
 		<a href="https://arxiv.org/abs/2402.12645">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>arXiv</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>arXiv</span>
 		</a>
 		<a href="https://eccc.weizmann.ac.il/report/2024/039/">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>ECCC</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>ECCC</span>
+		</a>
+		<a href="./slide/setcover_icalp24_slide.pdf">
+			<span class="btn btn-success btn-xs"><i class="glyphicon glyphicon-film"></i>Slide</span>
 		</a>
 		</li>
 		<div id="SetCoverReconf_abst" class="collapse">
@@ -119,10 +135,10 @@
 		<a href="https://www.sciencedirect.com/journal/theoretical-computer-science">Theoretical Computer Science</a> (Full version of ICML 2020). <br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#pidpp_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
 		<a href="https://doi.org/10.1016/j.tcs.2024.114513">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
 		</a>
 		<a href="https://arxiv.org/abs/2111.14148">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>arXiv</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>arXiv</span>
 		</a>
 		</li>
 		<div id="pidpp_abst" class="collapse">
@@ -164,13 +180,19 @@
 		<a href="http://acm-stoc.org/stoc2024/">56th Annual ACM Symposium on Theory of Computing (STOC 2024)</a>. <br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#pcrp_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
 		<a href="https://doi.org/10.1145/3618260.3649667">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
 		</a>
 		<a href="https://arxiv.org/abs/2401.00474">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>arXiv</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>arXiv</span>
 		</a>
 		<a href="https://eccc.weizmann.ac.il/report/2024/023/">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>ECCC</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>ECCC</span>
+		</a>
+		<a href="./slide/pcrp_stoc24_slide.pdf">
+			<span class="btn btn-success btn-xs"><i class="glyphicon glyphicon-film"></i>Slide</span>
+		</a>
+		<a href="https://www.youtube.com/watch?v=nBY5s2k4Zx0">
+			<span class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-facetime-video"></i>Video</span>
 		</a>
 		</li>
 		<div id="pcrp_abst" class="collapse">
@@ -195,10 +217,10 @@
 		<a href="https://iclr.cc/Conferences/2024">12th International Conference on Learning Representations (ICLR 2024)</a>. <br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#safer_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
 		<a href="https://openreview.net/forum?id=yarUvgEXq3">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
 		</a>
 		<a href="https://arxiv.org/abs/2306.05292">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>arXiv</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>arXiv</span>
 		</a>
 		</li>
 		<div id="safer_abst" class="collapse">
@@ -219,10 +241,10 @@
 		<a href="https://link.springer.com/collections/gecffbehde">Algorithmica</a> (Special issue of ISAAC 2022). <br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#algorithmica24_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
 		<a href="https://doi.org/10.1007/s00453-023-01205-0">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
 		</a>
 		<a href="https://arxiv.org/abs/2209.12519">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>arXiv</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>arXiv</span>
 		</a>
 		</li>
 		<div id="algorithmica24_abst" class="collapse">
@@ -248,13 +270,13 @@
 		<a href="https://www.siam.org/conferences/cm/conference/soda24">35th Annual ACM-SIAM Symposium on Discrete Algorithms (SODA 2024)</a>. <br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#soda2024_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
 		<a href="https://doi.org/10.1137/1.9781611977912.54">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
 		</a>
 		<a href="https://arxiv.org/abs/2310.14160">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>arXiv</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>arXiv</span>
 		</a>
 		<a href="./slide/gapampreconf_soda24_slide.pdf">
-			<span class="btn btn-success btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Slide</span>
+			<span class="btn btn-success btn-xs"><i class="glyphicon glyphicon-film"></i>Slide</span>
 		</a>
 		</li>
 		<div id="soda2024_abst" class="collapse">
@@ -289,10 +311,10 @@
 		<a href="https://recsys.acm.org/recsys23">17th ACM Conference on Recommender Systems (RecSys 2023)</a>. <br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#tumatch_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
 		<a href="https://doi.org/10.1145/3604915.3608774">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
 		</a>
 		<a href="https://arxiv.org/abs/2306.09060">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>arXiv</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>arXiv</span>
 		</a>
 		</li>
 		<div id="tumatch_abst" class="collapse">
@@ -317,10 +339,10 @@
 		<a href="https://sigir.org/sigir2023">46th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR 2023)</a>. <br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#sigir23_ild_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
 		<a href="https://doi.org/10.1145/3539618.3591623">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
 		</a>
 		<a href="https://arxiv.org/abs/2305.13801">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>arXiv</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>arXiv</span>
 		</a>
 		</li>
 		<div id="sigir23_ild_abst" class="collapse">
@@ -349,10 +371,10 @@
 		<a href="https://sigir.org/sigir2023">46th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR 2023)</a>. <br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#sigir23_lowdim_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
 		<a href="https://doi.org/10.1145/3539618.3591659">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
 		</a>
 		<a href="https://arxiv.org/abs/2305.13597">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>arXiv</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>arXiv</span>
 		</a>
 		</li>
 		<div id="sigir23_lowdim_abst" class="collapse">
@@ -374,13 +396,13 @@
 		<a href="https://www.conferences.uni-hamburg.de/event/272/page/153-home">40th International Symposium on Theoretical Aspects of Computer Science (STACS 2023)</a>. <br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#stacs23_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
 		<a href="https://doi.org/10.4230/LIPIcs.STACS.2023.49">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
 		</a>
 		<a href="https://arxiv.org/abs/2212.04207">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>arXiv</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>arXiv</span>
 		</a>
 		<a href="./slide/reconfapprox_stacs23_slide.pdf">
-			<span class="btn btn-success btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Slide</span>
+			<span class="btn btn-success btn-xs"><i class="glyphicon glyphicon-film"></i>Slide</span>
 		</a>
 		</li>
 		<div id="stacs23_abst" class="collapse">
@@ -409,10 +431,10 @@
 		<a href="https://www.sciencedirect.com/journal/theoretical-computer-science">Theoretical Computer Science</a>. <br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#tcs22tsreco_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
 		<a href="https://doi.org/10.1016/j.tcs.2022.11.036">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
 		</a>
 		<a href="https://arxiv.org/abs/2107.09885">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>arXiv</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>arXiv</span>
 		</a>
 		</li>
 		<div id="tcs22tsreco_abst" class="collapse">
@@ -435,13 +457,13 @@
 		<a href="https://isa.hanyang.ac.kr/isaac2022/">33rd International Symposium on Algorithms and Computation (ISAAC 2022)</a>. <br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#isaac22_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
 		<a href="https://doi.org/10.4230/LIPIcs.ISAAC.2022.46">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
 		</a>
 		<a href="https://arxiv.org/abs/2209.12519">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>arXiv</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>arXiv</span>
 		</a>
 		<a href="./slide/detmax_isaac22_slide.pdf">
-			<span class="btn btn-success btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Slide</span>
+			<span class="btn btn-success btn-xs"><i class="glyphicon glyphicon-film"></i>Slide</span>
 		</a>
 		</li>
 		<div id="isaac22_abst" class="collapse">
@@ -467,10 +489,10 @@
 		<a href="https://www.jair.org">Journal of Artificial Intelligence Research</a> (Full version of AISTATS 2021). <br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#mapapprox_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
 		<a href="https://doi.org/10.1613/jair.1.13288">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
 		</a>
 		<a href="https://arxiv.org/abs/2109.00727">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>arXiv</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>arXiv</span>
 		</a>
 		</li>
 		<div id="mapapprox_abst" class="collapse">
@@ -494,10 +516,10 @@
 		<a href="https://www.wsdm-conference.org/2022/">15th ACM International Conference on Web Search and Data Mining (WSDM 2022)</a>. <br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#wsdm22_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
 		<a href="https://doi.org/10.1145/3488560.3498382">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
 		</a>
 		<a href="https://arxiv.org/abs/2111.14030">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>arXiv</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>arXiv</span>
 		</a>
 		</li>
 		<div id="wsdm22_abst" class="collapse">
@@ -526,7 +548,7 @@
 		<a href="http://www.acml-conf.org/2021/">13th Asian Conference on Machine Learning (ACML 2021)</a>. <br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#acml21dpp_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
 		<a href="https://proceedings.mlr.press/v157/matsuoka21a.html">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
 		</a>
 		</li>
 		<div id="acml21dpp_abst" class="collapse">
@@ -548,7 +570,7 @@
 		<a href="http://www.acml-conf.org/2021/">13th Asian Conference on Machine Learning (ACML 2021)</a>. <br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#acml21ksfm_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
 		<a href="https://proceedings.mlr.press/v157/matsuoka21b.html">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
 		</a>
 		</li>
 		<div id="acml21ksfm_abst" class="collapse">
@@ -566,7 +588,7 @@
 		<a href="https://www.auai.org/uai2021/">37th Conference on Uncertainty in Artificial Intelligence (UAI 2021)</a>. <br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#uai21_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
 		<a href="https://proceedings.mlr.press/v161/ohsaka21a.html">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
 		</a>
 		</li>
 		<div id="uai21_abst" class="collapse">
@@ -586,10 +608,10 @@
 		<a href="https://www.journals.elsevier.com/information-processing-letters">Information Processing Letters</a>. <br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#fastreach_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
 		<a href="https://doi.org/10.1016/j.ipl.2021.106137">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
 		</a>
 		<a href="https://arxiv.org/abs/2103.04595">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>arXiv</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>arXiv</span>
 		</a>
 		</li>
 		<div id="fastreach_abst" class="collapse">
@@ -608,10 +630,10 @@
 		<a href="https://www.journals.elsevier.com/operations-research-letters">Operations Research Letters</a>. <br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#orl21_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
 		<a href="https://doi.org/10.1016/j.orl.2021.02.004">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
 		</a>
 		<a href="https://arxiv.org/abs/2102.12646">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>arXiv</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>arXiv</span>
 		</a>
 		</li>
 		<div id="orl21_abst" class="collapse">
@@ -629,7 +651,7 @@
 		<a href="https://aistats.org/aistats2021">24th International Conference on Artificial Intelligence and Statistics (AISTATS 2021)</a>. <br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#aistats21dpp_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
 		<a href="http://proceedings.mlr.press/v130/ohsaka21a.html">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
 		</a>
 		</li>
 		<div id="aistats21dpp_abst" class="collapse">
@@ -659,7 +681,7 @@
 		<a href="https://aistats.org/aistats2021">24th International Conference on Artificial Intelligence and Statistics (AISTATS 2021)</a>. <br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#aistats21track_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
 		<a href="http://proceedings.mlr.press/v130/matsuoka21a.html">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
 		</a>
 		</li>
 		<div id="aistats21track_abst" class="collapse">
@@ -682,10 +704,10 @@
 		<a href="https://www.siam.org/conferences/cm/conference/sdm21">2021 SIAM International Conference on Data Mining (SDM 2021)</a>. <br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#sdm21_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
 		<a href="https://doi.org/10.1137/1.9781611976700.42">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
 		</a>
 		<a href="https://arxiv.org/abs/2101.06233">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>arXiv</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>arXiv</span>
 		</a>
 		</li>
 		<div id="sdm21_abst" class="collapse">
@@ -707,7 +729,7 @@
 		<a href="https://icml.cc/Conferences/2020/">37th International Conference on Machine Learning (ICML 2020)</a>. <br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#icml20_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
 		<a href="http://proceedings.mlr.press/v119/ohsaka20a.html">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
 		</a>
 		</li>
 		<div id="icml20_abst" class="collapse">
@@ -743,10 +765,10 @@
 		<a href="https://sigmod2020.org/">ACM SIGMOD International Conference on Management of Data 2020 (SIGMOD 2020)</a>. <br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#sigmod20_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
 		<a href="https://doi.org/10.1145/3318464.3380564">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
 		</a>
 		<a href="https://arxiv.org/abs/2003.09816">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>arXiv</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>arXiv</span>
 		</a>
 		</li>
 		<div id="sigmod20_abst" class="collapse">
@@ -775,7 +797,7 @@
 		<a href="https://www.siam.org/conferences/cm/conference/sdm20">2020 SIAM International Conference on Data Mining (SDM 2020)</a>. <br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#sdm20_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
 		<a href="https://doi.org/10.1137/1.9781611976236.20">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
 		</a>
 		</li>
 		<div id="sdm20_abst" class="collapse">
@@ -800,7 +822,7 @@
 		<a href="http://www.dexa.org/dexa2018">29th International Conference on Database and Expert Systems Applications (DEXA 2018)</a>. <br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#dexa18_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
 		<a href="https://doi.org/10.1007/978-3-319-98809-2_26">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
 		</a>
 		</li>
 		<div id="dexa18_abst" class="collapse">
@@ -823,7 +845,7 @@
 		<a href="http://ssdbm2018.inf.unibz.it/">30th International Conference on Scientific and Statistical Database Management (SSDBM 2018)</a>. <br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#ssdbm18_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
 		<a href="https://doi.org/10.1145/3221269.3221291">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
 		</a>
 		</li>
 		<div id="ssdbm18_abst" class="collapse">
@@ -846,7 +868,7 @@
 		<a href="https://stacs2018.sciencesconf.org/">35th International Symposium on Theoretical Aspects of Computer Science (STACS 2018)</a>. <br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#stacs18_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
 		<a href="https://doi.org/10.4230/LIPIcs.STACS.2018.41">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
 		</a>
 		</li>
 		<div id="stacs18_abst" class="collapse">
@@ -875,10 +897,10 @@
 		<a href="http://sigmod2017.org/">ACM SIGMOD International Conference on Management of Data 2017 (SIGMOD 2017)</a>. <br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#cmin_sigmod17_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
 		<a href="https://doi.org/10.1145/3035918.3064045">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
 		</a>
 		<a href="slide/cmin_sigmod17_slide.pdf">
-			<span class="btn btn-success btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Slide</span>
+			<span class="btn btn-success btn-xs"><i class="glyphicon glyphicon-film"></i>Slide</span>
 		</a>
 		<a href="https://github.com/chronotable/coarsening-infnet">
 			<span class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-cloud"></i>Code</span>
@@ -911,10 +933,10 @@
 		<a href="http://www.www2017.com.au/">International Conference on World Wide Web (WWW 2017)</a>.<br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#portfolio_www17_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
 		<a href="https://doi.org/10.1145/3038912.3052628">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
 		</a>
 		<a href="slide/portfolio_www17_slide.pdf">
-			<span class="btn btn-success btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Slide</span>
+			<span class="btn btn-success btn-xs"><i class="glyphicon glyphicon-film"></i>Slide</span>
 		</a>
 		</li>
 		<div id="portfolio_www17_abst" class="collapse">
@@ -937,10 +959,10 @@
 		<a href="http://research.nii.ac.jp/~k_keniti/">Ken-ichi Kawarabayashi.</a><br>
 		<a href="http://www.ecmlpkdd2016.org/">European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD 2016)</a>.<br>
 		<a href="https://doi.org/10.1007/978-3-319-46128-1_9">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
 		</a>
 		<a href="slide/tdinfmax_ecmlpkdd16_slide.pdf">
-			<span class="btn btn-success btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Slide</span>
+			<span class="btn btn-success btn-xs"><i class="glyphicon glyphicon-film"></i>Slide</span>
 		</a>
 		</li>
 
@@ -953,10 +975,10 @@
 		<a href="http://research.nii.ac.jp/~k_keniti/">Ken-ichi Kawarabayashi.</a><br>
 		<a href="http://www.vldb.org/pvldb/vol9.html">Proceedings of the VLDB Endowment (PVLDB 16)</a>.<br>
 		<a href="http://www.vldb.org/pvldb/vol9/p1077-ohsaka.pdf">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
 		</a>
 		<a href="slide/dia_vldb16_slide.pdf">
-			<span class="btn btn-success btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Slide</span>
+			<span class="btn btn-success btn-xs"><i class="glyphicon glyphicon-film"></i>Slide</span>
 		</a>
 		<a href="https://github.com/todo314/dynamic-influence-analysis">
 			<span class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-cloud"></i>Code</span>
@@ -970,10 +992,10 @@
 		<a href="http://research.nii.ac.jp/~yyoshida/">Yuichi Yoshida</a><br>
 		<a href="https://nips.cc/Conferences/2015/">Annual Conference on Neural Information Processing Systems (NIPS 2015)</a>.<br>
 		<a href="http://papers.nips.cc/paper/5709-monotone-k-submodular-function-maximization-with-size-constraints">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
 		</a>
 		<a href="slide/ksfm_nips15_poster.pdf">
-			<span class="btn btn-success btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Poster</span>
+			<span class="btn btn-success btn-xs"><i class="glyphicon glyphicon-film"></i>Poster</span>
 		</a>
 		</li>
 
@@ -985,10 +1007,10 @@
 		<a href="http://research.nii.ac.jp/~k_keniti/">Ken-ichi Kawarabayashi.</a><br>
 		<a href="http://www.kdd.org/kdd2015/">ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (SIGKDD 2015)</a>.<br>
 		<a href="https://doi.org/10.1145/2783258.2783297">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
 		</a>
 		<a href="slide/pprtracking_kdd15_slide.pdf">
-			<span class="btn btn-success btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Slide</span>
+			<span class="btn btn-success btn-xs"><i class="glyphicon glyphicon-film"></i>Slide</span>
 		</a>
 		</li>
 
@@ -1001,10 +1023,10 @@
 		<a href="http://research.nii.ac.jp/~k_keniti/">Ken-ichi Kawarabayashi.</a><br>
 		<a href="http://www.aaai.org/Conferences/AAAI/aaai14.php">AAAI Conference on Artificial Intelligence (AAAI 2014)</a>.<br>
 		<a href="https://www.aaai.org/ocs/index.php/AAAI/AAAI14/paper/view/8455">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
 		</a>
 		<a href="slide/infmax_aaai14_slide.pdf">
-			<span class="btn btn-success btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Slide</span>
+			<span class="btn btn-success btn-xs"><i class="glyphicon glyphicon-film"></i>Slide</span>
 		</a>
 		<a href="https://github.com/todo314/pruned-monte-carlo">
 			<span class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-cloud"></i>Code</span>
@@ -1018,11 +1040,11 @@
 		Masato Suzuki.<br>
 		IEEE International Conference on Granular Computing (GrC 2011).<br>
 		<a href="https://doi.org/10.1109/GRC.2011.6122650">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Paper</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
 		</a>
 		<!--
 		<a href="">
-			<span class="btn btn-success btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Slide</span>
+			<span class="btn btn-success btn-xs"><i class="glyphicon glyphicon-film"></i>Slide</span>
 		</a>
 		-->
 		</li>
@@ -1043,7 +1065,7 @@
 		<u>Naoto Ohsaka</u>.<br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#lcreconf_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
 		<a href="https://arxiv.org/abs/2304.08746">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>arXiv</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>arXiv</span>
 		</a>
 		</li>
 		<div id="lcreconf_abst" class="collapse">
@@ -1071,7 +1093,7 @@
 		<u>Naoto Ohsaka</u>.<br>
 		<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#TSReconfApprox_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
 		<a href="https://arxiv.org/abs/2402.15076">
-			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-download-alt"></i>arXiv</span>
+			<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>arXiv</span>
 		</a>
 		</li>
 		<div id="TSReconfApprox_abst" class="collapse">
@@ -1101,7 +1123,7 @@
 		January 19th, 2024. <br>
 		At <a href="https://kklab.nii.ac.jp/seminars/2023/12/reconfiguration-problems-hardness-of-approximation-and-gap-amplification-what-are-they.html">AFSA & MI CS Seminar</a>. <br>
 		<a href="./slide/gapampreconf_afsa24_slide.pdf">
-			<span class="btn btn-success btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Slide</span>
+			<span class="btn btn-success btn-xs"><i class="glyphicon glyphicon-film"></i>Slide</span>
 		</a>
 		</li>
 
@@ -1111,7 +1133,7 @@
 		March 23rd, 2016. <br>
 		At <a href="http://www.ml.inf.ethz.ch/">the Institute for Machine Learning at ETH Zurich</a>. <br>
 		<a href="./slide/ksfm_ethz16_slide.pdf">
-			<span class="btn btn-success btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Slide</span>
+			<span class="btn btn-success btn-xs"><i class="glyphicon glyphicon-film"></i>Slide</span>
 		</a>
 		</li>
 
@@ -1145,9 +1167,13 @@
 			</div>
 		</div>
 
+		<hr>
+		<a href="./rejections.txt">
+			CV of Failures
+		</a>
 		
 		<div id="footer" class="navbar">
-			<p class="muted pull-right">Last modified: July 17th, 2024</p>
+			<p class="muted pull-right">Last modified: September 23rd, 2024</p>
 		</div>
 
 		<script src="js/bootstrap.min.js"></script>
