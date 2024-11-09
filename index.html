@@ -9,42 +9,49 @@
 	<script type="text/x-mathjax-config">
 			MathJax.Hub.Config({
 				tex2jax: {
-					inlineMath: [ ['$','$'], ['$$','$$'], ["\\(","\\)"] ],
-					displayMath: [ ["\\[","\\]"] ]
+					inlineMath: [ ['$','$'] ],
+					displayMath: [ ['$$','$$'] ]
 				}
 			});
 		</script>
 	<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"> </script>
 	<meta http-equiv="X-UA-Compatible" CONTENT="IE=EmulateIE7" />
+	<meta name="google-site-verification" content="9AHKTefKNmaaQ_D-OTrx9gcYwaA5kUWE_Q46e72Wlr0" />
 	<style type="text/css">
 		li {
 			padding-top: 3px;
 			padding-bottom: 3px;
 		}
+
+		.small-caps {
+			font-variant-caps: small-caps;
+		}
+		.initial {
+			font-variant-caps: initial;
+		}
 	</style>
 </head>
 
+
 <body style='font-family: "Comic Sans MS", "Comic Sans";'>
 	<div class="container">
-		<h1>Welcome to my homepage !!</h1>
-		<h1>Naoto Ohsaka</h1>
+		<h1>Welcome to my homepage!!</h1>
+		<h2>Naoto Ohsaka</h2>
 		<div><a href="./photo.jpg">Photo (by Koyo Hayashi, January 2024)</a></div>
 		<div><a href="./cv.pdf">Curriculum Vitae</a></div>
-		<div>Email: naoto.ohsaka (at) gmail.com</div>
+		<div>Email: <a href="mailto:naoto.ohsaka@gmail.com">naoto.ohsaka@gmail.com</a></div>
 		<div>Google Scholar author ID: <a href="https://scholar.google.co.jp/citations?user=Qgkc9DgAAAAJ">Qgkc9DgAAAAJ</a></div>
 		<div>ORCID: <a href="https://orcid.org/0000-0001-9584-4764">0000-0001-9584-4764</a></div>
 		<div>DBLP: <a href="https://dblp.org/pid/81/10779.html">81/10779</a></div>
 
 		<hr>
 
-		<h2>Research interests</h2>
-		<ul>
-			<li>Theoretical computer science: Computational complexity, combinatorial reconfiguration, hardness of approximation, and probabilistic proof systems.</li>
-		</ul>
+		<h3>Research Interests</h3>
+		Theoretical Computer Science, especially Combinatorial Reconfiguration, Hardness of Approximation,  Probabilistically Checkable Proofs, and Computational Complexity Theory.
 
 		<hr>
 
-		<h2>Publications</h2>
+		<h3>Publications</h3>
 
 		<ol reversed>
 
@@ -101,7 +108,7 @@
 				Combining this alphabet reduction with gap amplification due to Ohsaka (SODA 2024), we are able to amplify the $1$ vs. $1-\varepsilon$ gap for arbitrarily small $\varepsilon \in (0,1)$ up to the $1$ vs. $1-\varepsilon_0$ for some universal $\varepsilon_0 \in (0,1)$ <i>without</i> blowing up the alphabet size.
 				In particular, a $1$ vs. $1-\varepsilon_0$ gap version of $\textsf{Maxmin 2-CSP Reconfiguration}$ with alphabet size $W_0$ is <b>PSPACE</b>-hard given a probabilistically checkable reconfiguration proof system having any soundness error $1-\varepsilon$ due to Hirahara and Ohsaka (STOC 2024) and Karthik C. S. and Manurangsi (2023).
 				As an immediate corollary, we show that under the same hypothesis, there exists a universal constant $\varepsilon_0 \in (0,1)$ such that many popular reconfiguration problems are <b>PSPACE</b>-hard to approximate within a factor of $1-\varepsilon_0$, including those of $\textsf{3-SAT}$, $\textsf{Independent Set}$, $\textsf{Vertex Cover}$, $\textsf{Clique}$, $\textsf{Dominating Set}$, and $\textsf{Set Cover}$.
-				This may not be achieved only by gap amplification of Ohsaka, which makes the alphabet size gigantic depending on $\varepsilon^-1$.
+				This may not be achieved only by gap amplification of Ohsaka, which makes the alphabet size gigantic depending on $\varepsilon^{-1}$.
 				</p>
 			</div>
 
@@ -127,12 +134,12 @@
 			</li>
 			<div id="ICALP2024_SetCoverReconf_abst" class="collapse">
 				<p>
-					In the <span style="font-variant: small-caps;">Minmax Set Cover Reconfiguration</span> problem, given a set system $\mathcal{F}$ over a universe and its two covers $\mathcal{C}^\mathsf{start}$ and $\mathcal{C}^\mathsf{goal}$ of size $k$, we wish to transform $\mathcal{C}^\mathsf{start}$ into $\mathcal{C}^\mathsf{goal}$ by repeatedly adding or removing a single set of $\mathcal{F}$ while covering the universe in any intermediate state.
+					In the <span class="small-caps">Minmax Set Cover Reconfiguration</span> problem, given a set system $\mathcal{F}$ over a universe and its two covers $\mathcal{C}^\mathsf{start}$ and $\mathcal{C}^\mathsf{goal}$ of size $k$, we wish to transform $\mathcal{C}^\mathsf{start}$ into $\mathcal{C}^\mathsf{goal}$ by repeatedly adding or removing a single set of $\mathcal{F}$ while covering the universe in any intermediate state.
 					Then, the objective is to minimize the maximize size of any intermediate cover during transformation.
-					We prove that <span style="font-variant: small-caps;">Minmax Set Cover Reconfiguration</span> and <span style="font-variant: small-caps;">Minmax Dominating Set Reconfiguration</span> are $\mathsf{PSPACE}$-hard to approximate within a factor of $2-\frac{1}{\operatorname{polyloglog} N}$, where $N$ is the size of the universe and the number of vertices in a graph, respectively, improving upon Ohsaka (SODA 2024) and Karthik C. S. and Manurangsi (2023).
+					We prove that <span class="small-caps">Minmax Set Cover Reconfiguration</span> and <span class="small-caps">Minmax Dominating Set Reconfiguration</span> are $\mathsf{PSPACE}$-hard to approximate within a factor of $2-\frac{1}{\operatorname{polyloglog} N}$, where $N$ is the size of the universe and the number of vertices in a graph, respectively, improving upon Ohsaka (SODA 2024) and Karthik C. S. and Manurangsi (2023).
 					This is the first result that exhibits a sharp threshold for the approximation factor of any reconfiguration problem because both problems admit a $2$-factor approximation algorithm as per Ito, Demaine, Harvey, Papadimitriou, Sideri, Uehara, and Uno (Theor. Comput. Sci., 2011).
 					Our proof is based on a reconfiguration analogue of the FGLSS reduction from Probabilistically Checkable Reconfiguration Proofs of Hirahara and Ohsaka (2024).
-					We also prove that for any constant $\varepsilon \in (0,1)$, <span style="font-variant: small-caps;">Minmax Hypergraph Vertex Cover Reconfiguration</span> on $\operatorname{poly}(\varepsilon^{-1})$-uniform hypergraphs is $\mathsf{PSPACE}$-hard to approximate within a factor of $2-\varepsilon$.
+					We also prove that for any constant $\varepsilon \in (0,1)$, <span class="small-caps">Minmax Hypergraph Vertex Cover Reconfiguration</span> on $\operatorname{poly}(\varepsilon^{-1})$-uniform hypergraphs is $\mathsf{PSPACE}$-hard to approximate within a factor of $2-\varepsilon$.
 				</p>
 			</div>
 
@@ -209,9 +216,9 @@
 					Any $\mathsf{PSPACE}$ computation can be encoded into an exponentially long sequence of polynomially long proofs such that every adjacent pair of the proofs differs in at most one bit, and every proof can be probabilistically checked by reading a constant number of bits.
 				</p>
 				<p>
-					Using the new characterization, we prove $\mathsf{PSPACE}$-completeness of approximate versions of many reconfiguration problems, such as the <span style="font-variant: small-caps;">Maxmin 3-SAT Reconfiguration</span> problem.
+					Using the new characterization, we prove $\mathsf{PSPACE}$-completeness of approximate versions of many reconfiguration problems, such as the <span class="small-caps">Maxmin 3-SAT Reconfiguration</span> problem.
 					This resolves the open problem posed by Ito, Demaine, Harvey, Papadimitriou, Sideri, Uehara, and Uno (ISAAC 2008; Theor. Comput. Sci. 2011) as well as the Reconfiguration Inapproximability Hypothesis by Ohsaka (STACS 2023) affirmatively.
-					We also present $\mathsf{PSPACE}$-completeness of approximating the <span style="font-variant: small-caps;">Maxmin Clique Reconfiguration</span> problem to within a factor of $n^\varepsilon$ for some constant $\varepsilon > 0$.
+					We also present $\mathsf{PSPACE}$-completeness of approximating the <span class="small-caps">Maxmin Clique Reconfiguration</span> problem to within a factor of $n^\varepsilon$ for some constant $\varepsilon > 0$.
 				</p>
 			</div>
 
@@ -257,15 +264,15 @@
 			</li>
 			<div id="Algorithmica2024_abst" class="collapse">
 				<p>
-					In the <span style="font-variant: small-caps;">Determinant Maximization</span> problem, given an $n \times n$ positive semi-definite matrix $\mathbf{A}$ in $\mathbb{Q}^{n \times n}$ and an integer $k$, we are required to find a $k \times k$ principal submatrix of $\mathbf{A}$ having the maximum determinant.
+					In the <span class="small-caps">Determinant Maximization</span> problem, given an $n \times n$ positive semi-definite matrix $\mathbf{A}$ in $\mathbb{Q}^{n \times n}$ and an integer $k$, we are required to find a $k \times k$ principal submatrix of $\mathbf{A}$ having the maximum determinant.
 					This problem is known to be <b>NP</b>-hard and further proven to be <b>W[1]</b>-hard with respect to $k$ by Koutis; i.e., a $f(k)n^{\mathcal{O}(1)}$-time algorithm is unlikely to exist for any computable function $f$.
 					However, there is still room to explore its parameterized complexity in the <i>restricted case</i>, in the hope of overcoming the general-case parameterized intractability.
-					In this study, we rule out the fixed-parameter tractability of <span style="font-variant: small-caps;">Determinant Maximization</span> even if an input matrix is extremely sparse or low rank, or an approximate solution is acceptable.
-					We first prove that <span style="font-variant: small-caps;">Determinant Maximization</span> is <b>NP</b>-hard and <b>W[1]</b>-hard even if an input matrix is an <i>arrowhead matrix</i>; i.e., the underlying graph formed by nonzero entries is a star, implying that the structural sparsity is not helpful.
-					By contrast, we show that <span style="font-variant: small-caps;">Determinant Maximization</span> is solvable in polynomial time on <i>tridiagonal matrices</i>.
+					In this study, we rule out the fixed-parameter tractability of <span class="small-caps">Determinant Maximization</span> even if an input matrix is extremely sparse or low rank, or an approximate solution is acceptable.
+					We first prove that <span class="small-caps">Determinant Maximization</span> is <b>NP</b>-hard and <b>W[1]</b>-hard even if an input matrix is an <i>arrowhead matrix</i>; i.e., the underlying graph formed by nonzero entries is a star, implying that the structural sparsity is not helpful.
+					By contrast, we show that <span class="small-caps">Determinant Maximization</span> is solvable in polynomial time on <i>tridiagonal matrices</i>.
 					Thereafter, we demonstrate the <b>W[1]</b>-hardness with respect to the <i>rank</i> $r$ of an input matrix.
 					Our result is stronger than Koutis' result in the sense that any $k \times k$ principal submatrix is singular whenever $k > r$.
-					We finally give evidence that it is <b>W[1]</b>-hard to approximate <span style="font-variant: small-caps;">Determinant Maximization</span> parameterized by $k$ within a factor of $2^{-c\sqrt{k}}$ for some universal constant $c > 0$.
+					We finally give evidence that it is <b>W[1]</b>-hard to approximate <span class="small-caps">Determinant Maximization</span> parameterized by $k$ within a factor of $2^{-c\sqrt{k}}$ for some universal constant $c > 0$.
 					Our hardness result is conditional on the <i>Parameterized Inapproximability Hypothesis</i> posed by Lokshtanov, Ramanujan, Saurab, and Zehavi, which asserts that a gap version of Binary Constraint Satisfaction Problem is <b>W[1]</b>-hard.
 					To complement this result, we develop an $\varepsilon$-additive approximation algorithm that runs in $\varepsilon^{-r^2} \cdot r^{\mathcal{O}(r^3)} \cdot n^{\mathcal{O}(1)}$ time for the rank $r$ of an input matrix, provided that the diagonal entries are bounded.
 				</p>
@@ -1012,7 +1019,7 @@
 					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
 				</a>
 				<a href="./slides/NIPS2015.pdf">
-					<span class="btn btn-success btn-xs"><i class="glyphicon glyphicon-film"></i>Poster</span>
+					<span class="btn btn-success btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Poster</span>
 				</a>
 			</li>
 
@@ -1071,13 +1078,13 @@
 
 
 
-		<h2>Invited talks</h2>
+		<h3>Invited Talks</h3>
 		<ul>
 
 
 			<li>
 				<span class="label label-info">New!!</span>On the Complexity of Approximating Reconfiguration Problems. <br>
-				October 8th, 2024 @ <a href="http://www.dais.is.tohoku.ac.jp/take/core2024/">5th Combinatorial Reconfiguration Workshop</a>. <br>
+				October 8th, 2024 @ <a href="http://www.dais.is.tohoku.ac.jp/take/core2024/">5th Combinatorial Reconfiguration Workshop</a>, Fukuoka, Japan. <br>
 				<a href="./slides/CoRe2024.pdf">
 					<span class="btn btn-success btn-xs"><i class="glyphicon glyphicon-film"></i>Slide</span>
 				</a>
@@ -1086,7 +1093,7 @@
 
 			<li>
 				Gap Amplification for Reconfiguration Problems. <br>
-				March 14th, 2024 @ <a href="https://ken.ieice.org/ken/program/index.php?mode=program&tgs_regid=a0f21f6f9b668b1ad7dab8960fbda529b9066cb460752da595c30e659e715485&tgid=COMP&layout=&lang=eng">Theoretical Foundations of Computing (COMP)</a> (Japanese). <br>
+				March 14th, 2024 @ <a href="https://ken.ieice.org/ken/program/index.php?mode=program&tgs_regid=a0f21f6f9b668b1ad7dab8960fbda529b9066cb460752da595c30e659e715485&tgid=COMP&layout=&lang=eng">Theoretical Foundations of Computing (COMP)</a>, Tokyo, Japan (Japanese). <br>
 				<a href="./slides/COMP2024.pdf">
 					<span class="btn btn-success btn-xs"><i class="glyphicon glyphicon-film"></i>Slide</span>
 				</a>
@@ -1095,7 +1102,7 @@
 
 			<li>
 				Reconfiguration Problems, Hardness of Approximation, and Gap Amplification: What Are They? <br>
-				January 19th, 2024 @ <a href="https://kklab.nii.ac.jp/seminars/2023/12/reconfiguration-problems-hardness-of-approximation-and-gap-amplification-what-are-they.html">Kawarabayashi Lab Seminar</a>, the University of Tokyo (Japanese). <br>
+				January 19th, 2024 @ <a href="https://kklab.nii.ac.jp/seminars/2023/12/reconfiguration-problems-hardness-of-approximation-and-gap-amplification-what-are-they.html">Kawarabayashi Lab Seminar</a>, Tokyo, Japan (Japanese). <br>
 				<a href="./slides/AFSA2024.pdf">
 					<span class="btn btn-success btn-xs"><i class="glyphicon glyphicon-film"></i>Slide</span>
 				</a>
@@ -1104,7 +1111,7 @@
 
 			<li>
 				On Reconfigurability of Target Sets. <br>
-				January 6th, 2022 @ <a href="https://core.dais.is.tohoku.ac.jp/en/report/past-event/detail/---id-96.html">20th CoRe Seminar</a> (Japanese). <br>
+				January 6th, 2022 @ <a href="https://core.dais.is.tohoku.ac.jp/en/report/past-event/detail/---id-96.html">20th CoRe Seminar</a>, Online (Japanese). <br>
 			</li>
 
 
@@ -1116,7 +1123,7 @@
 
 
 
-		<h2>Preprints</h2>
+		<h3>Preprints</h3>
 
 		<ol reversed>
 
@@ -1132,26 +1139,26 @@
 			<div id="ReconfAsymptoticApprox_abst" class="collapse">
 				<p>
 					We study the hardness of approximating two reconfiguration problems.
-					One problem is <span style="font-variant: small-caps;">Maxmin $k$-Cut Reconfiguration</span>, which is a reconfiguration analogue of <span style="font-variant: small-caps;">Max $k$-Cut</span>.
+					One problem is <span class="small-caps">Maxmin <span class="initial">$k$</span>-Cut Reconfiguration</span>, which is a reconfiguration analogue of <span class="small-caps">Max <span class="initial">$k$</span>-Cut</span>.
 					Given a graph $G$ and its two $k$-colorings $f_\mathsf{start},f_\mathsf{end}$, we are required to transform $f_\mathsf{start}$ into $f_\mathsf{end}$ by repeatedly recoloring a single vertex so as to maximize the minimum fraction of bichromatic edges of $G$ at any intermediate state.
-					The other is <span style="font-variant: small-caps;">Maxmin E$k$-SAT Reconfiguration</span>, which is a reconfiguration analogue of <span style="font-variant: small-caps;">Max E$k$-SAT</span>.
+					The other is <span class="small-caps">Maxmin E<span class="initial">$k$</span>-SAT Reconfiguration</span>, which is a reconfiguration analogue of <span class="small-caps">Max E<span class="initial">$k$</span>-SAT</span>.
 					For a $k$-CNF formula $\varphi$ where every clause contains exactly $k$ literals and its two satisfying assignments $\alpha_\mathsf{start},\alpha_\mathsf{end}$, we are asked to transform $\alpha_\mathsf{start}$ into $\alpha_\mathsf{end}$ by flipping a single variable assignment at a time so that the minimum fraction of satisfied clauses of $\varphi$ is maximized.
-					The <i>Probabilistically Checkable Reconfiguration Proof</i> theorem due to Hirahara and Ohsaka (STOC 2024) and Karthik C. S. and Manurangsi (2023) implies that <span style="font-variant: small-caps;">Maxmin 4-Cut Reconfiguration</span> and <span style="font-variant: small-caps;">Maxmin E3-SAT Reconfiguration</span> are $\textsf{PSPACE}$-hard to approximate within a constant factor.
+					The <i>Probabilistically Checkable Reconfiguration Proof</i> theorem due to Hirahara and Ohsaka (STOC 2024) and Karthik C. S. and Manurangsi (2023) implies that <span class="small-caps">Maxmin 4-Cut Reconfiguration</span> and <span class="small-caps">Maxmin E3-SAT Reconfiguration</span> are $\textsf{PSPACE}$-hard to approximate within a constant factor.
 					However, the <i>asymptotic</i> behavior of approximability for these problems with respect to $k$ is not well understood.
 				</p>
 
 				<p>
-					In this paper, we present the following hardness-of-approximation results and approximation algorithms for <span style="font-variant: small-caps;">Maxmin $k$-Cut Reconfiguration</span> and <span style="font-variant: small-caps;">Maxmin E$k$-SAT Reconfiguration</span>:
+					In this paper, we present the following hardness-of-approximation results and approximation algorithms for <span class="small-caps">Maxmin <span class="initial">$k$</span>-Cut Reconfiguration</span> and <span class="small-caps">Maxmin E<span class="initial">$k$</span>-SAT Reconfiguration</span>:
 				<ul>
 					<li>
-						For every $k \geq 2$, <span style="font-variant: small-caps;">Maxmin $k$-Cut Reconfiguration</span> is $\textsf{PSPACE}$-hard to approximate within a factor of $1 - \Omega\left(\frac{1}{k}\right)$, whereas it can be approximated within a factor of $1-\frac{2}{k}$.
+						For every $k \geq 2$, <span class="small-caps">Maxmin <span class="initial">$k$</span>-Cut Reconfiguration</span> is $\textsf{PSPACE}$-hard to approximate within a factor of $1 - \Omega\left(\frac{1}{k}\right)$, whereas it can be approximated within a factor of $1-\frac{2}{k}$.
 						Our lower and upper bounds demonstrate that
-						<span style="font-variant: small-caps;">Maxmin $k$-Cut Reconfiguration</span> exhibits the asymptotically same approximability as <span style="font-variant: small-caps;">Max $k$-Cut</span>.
+						<span class="small-caps">Maxmin <span class="initial">$k$</span>-Cut Reconfiguration</span> exhibits the asymptotically same approximability as <span class="small-caps">Max <span class="initial">$k$</span>-Cut</span>.
 					</li>
 
 					<li>
-						For every $k \geq 3$, <span style="font-variant: small-caps;">Maxmin E$k$-SAT Reconfiguration</span> is $\textsf{PSPACE}$-hard (resp. $\textsf{NP}$-hard) to approximate within a factor of $1-\Omega\left(\frac{1}{9^{\sqrt{k}}}\right)$ (resp. $1-\frac{1}{8k}$).
-						On the other hand, it admits a deterministic $\left(1-\frac{2.5}{k}\right)$-factor approximation algorithm, implying that <span style="font-variant: small-caps;">Maxmin E$k$-SAT Reconfiguration</span> displays an asymptotically approximation threshold <i>different</i> from <span style="font-variant: small-caps;">Max E$k$-SAT</span>.
+						For every $k \geq 3$, <span class="small-caps">Maxmin E<span class="initial">$k$</span>-SAT Reconfiguration</span> is $\textsf{PSPACE}$-hard (resp. $\textsf{NP}$-hard) to approximate within a factor of $1-\Omega\left(\frac{1}{9^{\sqrt{k}}}\right)$ (resp. $1-\frac{1}{8k}$).
+						On the other hand, it admits a deterministic $\left(1-\frac{2.5}{k}\right)$-factor approximation algorithm, implying that <span class="small-caps">Maxmin E<span class="initial">$k$</span>-SAT Reconfiguration</span> displays an asymptotically approximation threshold <i>different</i> from <span class="small-caps">Max E<span class="initial">$k$</span>-SAT</span>.
 					</li>
 				</ul>
 				</p>
@@ -1191,16 +1198,16 @@
 			<div id="lcreconf_abst" class="collapse">
 				<p>
 					Given a two-prover game $G$ and its two satisfying labelings $\psi_\mathsf{s}$ and $\psi_\mathsf{t}$,
-					the <span style="font-variant: small-caps;">Label Cover Reconfiguration</span> problem asks whether $\psi_\mathsf{s}$ can be transformed into $\psi_\mathsf{t}$ by repeatedly changing the value of a vertex while preserving any intermediate labeling satisfying $G$.
-					We consider an optimization variant of <span style="font-variant: small-caps;">Label Cover Reconfiguration</span> by relaxing the feasibility of labelings, referred to as <span style="font-variant: small-caps;">Maxmin Label Cover Reconfiguration</span>:
+					the <span class="small-caps">Label Cover Reconfiguration</span> problem asks whether $\psi_\mathsf{s}$ can be transformed into $\psi_\mathsf{t}$ by repeatedly changing the value of a vertex while preserving any intermediate labeling satisfying $G$.
+					We consider an optimization variant of <span class="small-caps">Label Cover Reconfiguration</span> by relaxing the feasibility of labelings, referred to as <span class="small-caps">Maxmin Label Cover Reconfiguration</span>:
 					we are allowed to transform by passing through any non-satisfying labelings, but required to maximize the minimum fraction of satisfied edges during transformation from $\psi_\mathsf{s}$ to $\psi_\mathsf{t}$.
 					Since the parallel repetition theorem of Raz (SIAM J. Comput., 1998), which implies <b>NP</b>-hardness of Label Cover within any constant factor, produces strong inapproximability results for many <b>NP</b>-hard problems,
-					one may think of using <span style="font-variant: small-caps;">Maxmin Label Cover Reconfiguration</span> to derive inapproximability results for reconfiguration problems.
-					We prove the following results on <span style="font-variant: small-caps;">Maxmin Label Cover Reconfiguration</span>, which display different trends from those of <span style="font-variant: small-caps;">Label Cover</span> and the parallel repetition theorem:
+					one may think of using <span class="small-caps">Maxmin Label Cover Reconfiguration</span> to derive inapproximability results for reconfiguration problems.
+					We prove the following results on <span class="small-caps">Maxmin Label Cover Reconfiguration</span>, which display different trends from those of <span class="small-caps">Label Cover</span> and the parallel repetition theorem:
 				<ul>
-					<li><span style="font-variant: small-caps;">Maxmin Label Cover Reconfiguration</span> can be approximated within a factor of nearly $\frac{1}{4}$ for restricted graph classes, including slightly dense graphs and balanced bipartite graphs.</li>
-					<li>A naive parallel repetition of <span style="font-variant: small-caps;">Maxmin Label Cover Reconfiguration</span> does not decrease the optimal objective value.</li>
-					<li><span style="font-variant: small-caps;">Label Cover Reconfiguration</span> on projection games can be decided in polynomial time.</li>
+					<li><span class="small-caps">Maxmin Label Cover Reconfiguration</span> can be approximated within a factor of nearly $\frac{1}{4}$ for restricted graph classes, including slightly dense graphs and balanced bipartite graphs.</li>
+					<li>A naive parallel repetition of <span class="small-caps">Maxmin Label Cover Reconfiguration</span> does not decrease the optimal objective value.</li>
+					<li><span class="small-caps">Label Cover Reconfiguration</span> on projection games can be decided in polynomial time.</li>
 				</ul>
 				The above results suggest that a reconfiguration analogue of the parallel repetition theorem is unlikely.
 				</p>
@@ -1214,7 +1221,7 @@
 
 		<hr>
 
-		<h2>Fox photos taken by me </h2>
+		<h3>Fox photos taken by me </h3>
 
 		<div class="container">
 			<div class="row">
@@ -1242,10 +1249,10 @@
 		<hr>
 		<a href="./rejections.txt">
 			CV of Failures
-		</a>
+		</a>		
 
 		<div id="footer" class="navbar">
-			<p class="muted pull-right">Last modified: October 12th, 2024</p>
+			<p class="muted pull-right">Last modified: November 9th, 2024</p>
 		</div>
 
 		<script src="js/bootstrap.min.js"></script>
