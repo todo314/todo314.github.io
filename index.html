@@ -1,11 +1,17 @@
-<html>
+<html lang="en">
 
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" CONTENT="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>Naoto Ohsaka</title>
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<script src="js/bootstrap.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<!-- Bootstrap CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
+
+	<!-- MathJax -->
 	<script type="text/x-mathjax-config">
 			MathJax.Hub.Config({
 				tex2jax: {
@@ -13,58 +19,279 @@
 					displayMath: [ ['$$','$$'] ]
 				}
 			});
-		</script>
+	</script>
 	<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"> </script>
-	<meta http-equiv="X-UA-Compatible" CONTENT="IE=EmulateIE7" />
 
 	<meta name="google-site-verification" content="9AHKTefKNmaaQ_D-OTrx9gcYwaA5kUWE_Q46e72Wlr0" />
 	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-1BDFTVC8SN"></script>
 	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
-	gtag('config', 'G-1BDFTVC8SN');
+		gtag('config', 'G-1BDFTVC8SN');
 	</script>
 
 	<style type="text/css">
 		li {
-			padding-top: 3px;
-			padding-bottom: 3px;
+			padding-top: 4px;
+			padding-bottom: 4px;
 		}
 
 		.small-caps {
 			font-variant-caps: small-caps;
 		}
+
 		.initial {
 			font-variant-caps: initial;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+
+		.collapsing {
+			transition: height 0.35s ease;
 		}
 	</style>
 </head>
 
 
 <body style='font-family: "Comic Sans MS", "Comic Sans";'>
-	<div class="container">
+	<div class="container m-auto py-3">
 		<h1>Welcome to my homepage!!</h1>
 		<h2>Naoto Ohsaka</h2>
-		<div><a href="./photo.jpg">Photo (by Koyo Hayashi, January 2024)</a></div>
-		<div><a href="./cv.pdf">Curriculum Vitae</a></div>
-		<div>Email: <a href="mailto:naoto.ohsaka@gmail.com">naoto.ohsaka@gmail.com</a></div>
-		<div>Google Scholar author ID: <a href="https://scholar.google.co.jp/citations?user=Qgkc9DgAAAAJ">Qgkc9DgAAAAJ</a></div>
-		<div>ORCID: <a href="https://orcid.org/0000-0001-9584-4764">0000-0001-9584-4764</a></div>
-		<div>DBLP: <a href="https://dblp.org/pid/81/10779.html">81/10779</a></div>
+		<div><i class="bi bi-camera-fill"></i> <a href="./photo.jpg">Photo</a> (taken by <a href="https://sites.google.com/view/koyo-hayashi">Koyo Hayashi</a>, January 2024)</div>
+		<div><i class="bi bi-person-circle"></i> <a href="./cv.pdf">Curriculum Vitae</a></div>
+		<div><i class="bi bi-envelope"></i> Email: <a href="mailto:naoto.ohsaka@gmail.com">naoto.ohsaka@gmail.com</a> <small>(recommended) or</small> <a href="mailto:ohsaka_naoto@cyberagent.co.jp">ohsaka_naoto@cyberagent.co.jp</a> <small class="text-body-tertiary">(previously: ohsaka@is.s.u-tokyo.ac.jp, ohsaka@nec.com)</small></div>
+		<div><i class="ai ai-google-scholar ai-lg"></i> Google Scholar: <a href="https://scholar.google.co.jp/citations?user=Qgkc9DgAAAAJ">Qgkc9DgAAAAJ</a></div>
+		<div><i class="ai ai-orcid"></i> ORCID: <a href="https://orcid.org/0000-0001-9584-4764">0000-0001-9584-4764</a></div>
+		<div><i class="ai ai-dblp ai-lg"></i> DBLP: <a href="https://dblp.org/pid/81/10779.html">81/10779</a></div>
 
 		<hr>
 
-		<h3>Research Interests</h3>
-		Theoretical Computer Science, especially Combinatorial Reconfiguration, Hardness of Approximation,  Probabilistically Checkable Proofs, and Computational Complexity Theory.
+		<h3>About Me</h3>
+		<p>
+			I am a research scientist at <a href="https://research.cyberagent.ai/">CyberAgent, Inc.</a> in Japan since December 2021.
+			I have a broad interest in Theoretical Computer Science with an emphasis on
+			<a href="https://en.wikipedia.org/wiki/Reconfiguration">Combinatorial Reconfiguration</a>,
+			<a href="https://en.wikipedia.org/wiki/Hardness_of_approximation">Hardness of Approximation</a>,
+			<a href="https://en.wikipedia.org/wiki/Probabilistically_checkable_proof">Probabilistically Checkable Proofs</a>, and
+			<a href="https://en.wikipedia.org/wiki/Computational_complexity_theory">Computational Complexity Theory</a>.
+			I received my Ph.D. from Univesity of Tokyo in March 2018, and
+			was a researcher at <a href="https://www.nec.com/en/global/rd/">NEC</a> in Japan from April 2018 to November 2021.
+		</p>
+
 
 		<hr>
 
-		<h3>Publications</h3>
+
+		<h3>Selected Publications</h3>
+
+		<ol>
+			<li>
+				Gap Preserving Reductions Between Reconfiguration Problems.<br>
+				<u>Naoto Ohsaka</u>.<br>
+				<a href="https://www.conferences.uni-hamburg.de/event/272/page/153-home">40th International Symposium on Theoretical Aspects of Computer Science (STACS 2023)</a>. <br>
+				<a class="btn btn-primary" href="https://doi.org/10.4230/LIPIcs.STACS.2023.49" role="button">
+					<i class="bi bi-file-pdf-fill"></i>Paper
+				</a>
+				<a class="btn btn-primary" href="https://arxiv.org/abs/2212.04207" role="button">
+					<i class="ai ai-arxiv"></i>arXiv
+				</a>
+				<a class="btn btn-success" href="./slides/STACS2023.pdf" role="button">
+					<i class="bi bi-file-slides-fill"></i>Slides
+				</a>
+				<div class="card card-body">
+					<p class="card-text">
+						<span class="badge text-bg-secondary"><i class="bi bi-magic"></i>Highlight </span>
+						Whan I started studying reconfiguration problems, I was strongly motivated by <b>PSPACE</b>-hardness of approximation for them,
+						which was posed as an open problem by Ito, Demaine, Harvey, Papadimitriou, Sideri, Uehara, and Uno (ISAAC 2008 & TCS 2011).
+						Towards its resolution,
+						I came up with the <i>Reconfiguration Inapproximability Hypothesis</i> (RIH) as a reconfiguration analogue of the PCP theorem.
+						Starting from RIH, I created a series of gap-preserving reductions to give evidence that many reconfiguration problems are <b>PSPACE</b>-hard to approximate within a constant factor,
+						including those of <span class="small-caps">3-SAT</span>, <span class="small-caps">2-CSP</span>, <span class="small-caps">Independent Set</span>, and <span class="small-caps">Vertex Cover</span>.
+						Subsequently, in a joint work with <a href="https://researchmap.jp/shuichi.hirahara">Shuichi Hirahara</a> (STOC 2024), RIH has been proven to be true.
+					</p>
+				</div>
+			</li>
+			<li>
+				Gap Amplification for Reconfiguration Problems.<br>
+				<u>Naoto Ohsaka</u>.<br>
+				<a href="https://www.siam.org/conferences/cm/conference/soda24">35th Annual ACM-SIAM Symposium on Discrete Algorithms (SODA 2024)</a>. <br>
+				<a class="btn btn-primary" href="https://doi.org/10.1137/1.9781611977912.54" role="button">
+					<i class="bi bi-file-pdf-fill"></i>Paper
+				</a>
+				<a class="btn btn-primary" href="https://arxiv.org/abs/2310.14160" role="button">
+					<i class="ai ai-arxiv"></i>arXiv
+				</a>
+				<a class="btn btn-success" href="./slides/SODA2024.pdf" role="button">
+					<i class="bi bi-file-slides-fill"></i>Slides
+				</a>
+				<div class="card card-body">
+					<p class="card-text">
+						<span class="badge text-bg-secondary"><i class="bi bi-magic"></i>Highlight</span>
+						One limitation of using RIH (STACS 2023) was that inapproximability factors are not explicit.
+						Say, even 0.999…999-approximation for <span class="small-caps">2-CSP Reconfiguration</span> would not be ruled out.
+						In the <b>NP</b> regime, the <i>parallel repetition theorem</i> can be used to derive many strong inapproximability results.
+						Unfortunately, applying a “naive” parallel repetition to a reconfiguration analogue of the two-prover one-round game does not reduce its soundness error (Inf. Process. Lett., 2025).
+						<br />
+						In this paper, I was able to develop Dinur's style <i>gap amplification</i> for reconfiguration problems.
+						Our main result is that <span class="small-caps">Maxmin 2-CSP Reconfiguration</span> is <b>PSPACE</b>-hard to approximate within a factor of 0.9942 only assuming RIH.
+						As an application, I further demonstrated that <span class="small-caps">Minmax Set Cover Reconfiguration</span> and <span class="small-caps">Minmax Dominating Set Reconfiguration</span> are <b>PSPACE</b>-hard to approximate within a factor of 1.0029 under RIH.
+					</p>
+				</div>
+			</li>
+
+			<li>
+				Probabilistically Checkable Reconfiguration Proofs and Inapproximability of Reconfiguration Problems.<br>
+				<a href="https://researchmap.jp/shuichi.hirahara">Shuichi Hirahara</a> and
+				<u>Naoto Ohsaka</u>.<br>
+				<a href="http://acm-stoc.org/stoc2024/">56th Annual ACM Symposium on Theory of Computing (STOC 2024)</a>. <br>
+				<a class="btn btn-primary" href="https://doi.org/10.1145/3618260.3649667" role="button">
+					<i class="bi bi-file-pdf-fill"></i>Paper
+				</a>
+				<a class="btn btn-primary" href="https://arxiv.org/abs/2401.00474" role="button">
+					<i class="ai ai-arxiv"></i>arXiv
+				</a>
+				<a class="btn btn-primary" href="https://eccc.weizmann.ac.il/report/2024/023" role="button">
+					<i class="bi bi-file-pdf-fill"></i>ECCC
+				</a>
+				<a class="btn btn-success" href="./slides/STOC2024.pdf" role="button">
+					<i class="bi bi-file-slides-fill"></i>Slides
+				</a>
+				<a class="btn btn-danger" href="https://www.youtube.com/watch?v=nBY5s2k4Zx0" role="button">
+					<i class="bi bi-youtube"></i>Video
+				</a>
+				<div class="card card-body">
+					<p class="card-text">
+						<span class="badge text-bg-secondary"><i class="bi bi-magic"></i>Highlight</span>
+						We presented a new PCP-like characterization of <b>PSPACE</b>, namely <i>probabilistically checkable reconfiguration proofs</i> (PCRP).
+						Our PCRP theorem states that any <b>PSPACE</b> computation can be encoded into an exponentially long reconfiguration sequence of polynomial length proofs,
+						each of which is probabilistically checkable.
+						Using the new characterization, we proved RIH, thereby affirmatively resolving the open problem posed by Ito, Demaine, Harvey, Papadimitriou, Sideri, Uehara, and Uno (ISAAC 2008 & TCS 2011).
+						In particular, my previous results (STACS 2023 & SODA 2024) now hold unconditioanlly.
+						<br />
+						Independently, <a href="https://cskarthikcs.github.io/">Karthik C. S.</a> and <a href="https://pasin30055.github.io/">Pasin Manurangsi</a> also <a href="https://eccc.weizmann.ac.il/report/2024/007/">proved</a> RIH.
+					</p>
+				</div>
+			</li>
+
+			<li>
+				Optimal PSPACE-hardness of Approximating Set Cover Reconfiguration.<br>
+				<a href="https://researchmap.jp/shuichi.hirahara">Shuichi Hirahara</a> and
+				<u>Naoto Ohsaka</u>.<br>
+				<a href="https://compose.ioc.ee/icalp2024/">51st EATCS International Colloquium on Automata, Languages, and Programming (ICALP 2024)</a>. <br>
+
+				<a class="btn btn-primary" href="https://doi.org/10.4230/LIPIcs.ICALP.2024.85" role="button">
+					<i class="bi bi-file-pdf-fill"></i>Paper
+				</a>
+				<a class="btn btn-primary" href="https://arxiv.org/abs/2402.12645" role="button">
+					<i class="ai ai-arxiv"></i>arXiv
+				</a>
+				<a class="btn btn-primary" href="https://eccc.weizmann.ac.il/report/2024/039" role="button">
+					<i class="bi bi-file-pdf-fill"></i>ECCC
+				</a>
+				<a class="btn btn-success" href="./slides/ICALP2024_SetCoverReconf.pdf" role="button">
+					<i class="bi bi-file-slides-fill"></i>Slides
+				</a>
+				<div class="card card-body">
+					<p class="card-text">
+						<span class="badge text-bg-secondary"><i class="bi bi-magic"></i>Highlight</span>
+						<span class="small-caps">Minmax Set Cover Reconfiguration</span> is a natural reconfiguration analogue of <span class="small-caps">Minimum Set Cover</span> and admits a simple $2$-factor approximation algorithm.
+						We proved that this is optimal:
+						<span class="small-caps">Minmax Set Cover Reconfiguration</span> is <b>PSPACE</b>-hard to approximate within a factor of $2-\frac{1}{\operatorname{polyloglog} N}$,
+						where $N$ is the size of the universe.
+						This is the first sharp result for <b>PSPACE</b>-hardness of approximating reconfiguration problems.
+						Similar hardness results hold for <span class="small-caps">Dominating Set Reconfiguration</span> and <span class="small-caps">Hypergraph Vertex Cover</span>.
+					</p>
+				</div>
+			</li>
+		</ol>
+
+
+		<hr>
+
+
+		<h3>Invited Talks</h3>
+		<ol>
+			<li>
+				On Reconfigurability of Target Sets. <br>
+				January 6th, 2022 @ <a href="https://core.dais.is.tohoku.ac.jp/en/report/past-event/detail/---id-96.html">20th CoRe Seminar</a>, Online (Japanese). <br>
+			</li>
+
+			<li>
+				Reconfiguration Problems, Hardness of Approximation, and Gap Amplification: What Are They? <br>
+				January 19th, 2024 @ <a href="https://kklab.nii.ac.jp/seminars/2023/12/reconfiguration-problems-hardness-of-approximation-and-gap-amplification-what-are-they.html">Kawarabayashi Lab Seminar</a>, Tokyo, Japan (Japanese). <br>
+				<a class="btn btn-success" href="./slides/AFSA2024.pdf" role="button">
+					<i class="bi bi-file-slides-fill"></i>Slides
+				</a>
+			</li>
+
+			<li>
+				Gap Amplification for Reconfiguration Problems. <br>
+				March 14th, 2024 @ <a href="https://ken.ieice.org/ken/program/index.php?mode=program&tgs_regid=a0f21f6f9b668b1ad7dab8960fbda529b9066cb460752da595c30e659e715485&tgid=COMP&layout=&lang=eng">Theoretical Foundations of Computing (COMP)</a>, Tokyo, Japan (Japanese). <br>
+				<a class="btn btn-success" href="./slides/COMP2024.pdf" role="button">
+					<i class="bi bi-file-slides-fill"></i>Slides
+				</a>
+			</li>
+
+			<li>
+				<span class="badge bg-info text-dark">New!!</span> On the Complexity of Approximating Reconfiguration Problems. <br>
+				October 8th, 2024 @ <a href="http://www.dais.is.tohoku.ac.jp/take/core2024/">5th Combinatorial Reconfiguration Workshop</a>, Fukuoka, Japan. <br>
+				<a class="btn btn-success" href="./slides/CoRe2024.pdf" role="button">
+					<i class="bi bi-file-slides-fill"></i>Slides
+				</a>
+			</li>
+
+		</ol>
+
+
+		<hr>
+
+
+		<h3>Journal Articles & Refereed Conference Proceedings</h3>
 
 		<ol reversed>
+
+			<li>
+				<span class="badge bg-info text-dark">New!!</span> On Approximate Reconfigurability of Label Cover.<br>
+				<u>Naoto Ohsaka</u>.<br>
+				<a href="https://www.journals.elsevier.com/information-processing-letters">Information Processing Letters</a>. <br>
+				<button type="button" class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#IPL2025_abst" aria-expanded="false" aria-controls="IPL2025_abst">
+					<i class="bi bi-chevron-expand"></i>Abstract
+				</button>
+				<a class="btn btn-primary" href="https://doi.org/10.1016/j.ipl.2024.106556" role="button">
+					<i class="bi bi-file-pdf-fill"></i>Paper
+				</a>
+				<a class="btn btn-primary" href="https://arxiv.org/abs/2304.08746" role="button">
+					<i class="ai ai-arxiv"></i>arXiv
+				</a>
+			</li>
+			<div class="collapse" id="IPL2025_abst">
+				<p>
+					Given a two-prover game $G$ and its two satisfying labelings $\psi_\mathsf{ini}$ and $\psi_\mathsf{tar}$,
+					the <span class="small-caps">Label Cover Reconfiguration</span> problem asks whether $\psi_\mathsf{ini}$ can be transformed into $\psi_\mathsf{tar}$ by repeatedly changing the label of a single vertex while preserving any intermediate labeling satisfying $G$.
+					We consider its optimization version by relaxing the feasibility of labelings, referred to as <span class="small-caps">Maxmin Label Cover Reconfiguration</span>:
+					We are allowed to pass through any <i>non-satisfying</i> labelings, but required to maximize the “soundness error,” which is defined as the <i>minimum</i> fraction of satisfied edges during transformation from $\psi_\mathsf{ini}$ to $\psi_\mathsf{tar}$.
+					Since the parallel repetition theorem of Raz (SIAM J. Comput., 1998), which implies <b>NP</b>-hardness of approximating <span class="small-caps">Label Cover</span> within any constant factor, gives strong inapproximability results for many <b>NP</b>-hard problems,
+					one may think of using <span class="small-caps">Maxmin Label Cover Reconfiguration</span> to derive inapproximability results for reconfiguration problems.
+					We prove the following results on <span class="small-caps">Maxmin Label Cover Reconfiguration</span>, which display different trends from those of <span class="small-caps">Label Cover</span> and the parallel repetition theorem:
+					<ul>
+						<li><span class="small-caps">Maxmin Label Cover Reconfiguration</span> can be approximated within a factor of $\frac{1}{4} - o(1)$ for restricted graph classes, including biregular graphs, balanced bipartite graphs with no isolated vertices, and superconstant average degree graphs.</li>
+						<li>
+							A “naive” parallel repetition of <span class="small-caps">Maxmin Label Cover Reconfiguration</span> does not decrease the soundness error for <i>every</i> two-prover game.</li>
+						<li><span class="small-caps">Label Cover Reconfiguration</span> on <i>projection games</i> can be decided in polynomial time.</li>
+					</ul>
+					The above results suggest that a reconfiguration analogue of the parallel repetition theorem is unlikely.
+				</p>
+			</div>
+
 
 			<li>
 				Matroid Semi-Bandits in Sublinear Time.<br>
@@ -72,41 +299,45 @@
 				<u>Naoto Ohsaka</u>, and
 				Kaito Ariu.<br>
 				<a href="https://icml.cc/Conferences/2024">40th International Conference on Machine Learning (ICML 2024)</a>. <br>
-				<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#ICML2024_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
-				<a href="https://openreview.net/forum?id=MwQ53xAIPs">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
+				<button type="button" class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#ICML2024_abst" aria-expanded="false" aria-controls="ICML2024_abst">
+					<i class="bi bi-chevron-expand"></i>Abstract
+				</button>
+				<a class="btn btn-primary" href="https://openreview.net/forum?id=MwQ53xAIPs" role="button">
+					<i class="bi bi-file-pdf-fill"></i>Paper
 				</a>
-				<a href="https://arxiv.org/abs/2405.17968">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>arXiv</span>
+				<a class="btn btn-primary" href="https://arxiv.org/abs/2405.17968" role="button">
+					<i class="ai ai-arxiv"></i>arXiv
 				</a>
-				<div id="ICML2024_abst" class="collapse">
-					<p>
-						We study the matroid semi-bandits problem, where at each round the learner plays a subset of $K$ arms from a feasible set, and the goal is to maximize the expected cumulative linear rewards.
-						Existing algorithms have per-round time complexity at least $\Omega(K)$, which becomes expensive when $K$ is large.
-						To address this computational issue, we propose FasterCUCB whose sampling rule takes time sublinear in $K$ for common classes of matroids: $\mathcal{O}(D\,\mathrm{polylog}(K)\,\mathrm{polylog}(T))$ for uniform matroids, partition matroids, and graphical matroids, and $\mathcal{O}(D\sqrt{K}\mathrm{polylog}(T))$ for transversal matroids.
-						Here, $D$ is the maximum number of elements in any feasible subset of arms, and $T$ is the horizon.
-						Our technique is based on dynamic maintenance of an approximate maximum-weight basis over inner-product weights. Although the introduction of an approximate maximum-weight basis presents a challenge in regret analysis, we can still guarantee an upper bound on regret as tight as CUCB in the sense that it matches the gap-dependent lower bound by Kveton et al. (2014a) asymptotically.
-					</p>
-				</div>
 			</li>
+			<div class="collapse" id="ICML2024_abst">
+				<p>
+					We study the matroid semi-bandits problem, where at each round the learner plays a subset of $K$ arms from a feasible set, and the goal is to maximize the expected cumulative linear rewards.
+					Existing algorithms have per-round time complexity at least $\Omega(K)$, which becomes expensive when $K$ is large.
+					To address this computational issue, we propose FasterCUCB whose sampling rule takes time sublinear in $K$ for common classes of matroids: $\mathcal{O}(D\,\mathrm{polylog}(K)\,\mathrm{polylog}(T))$ for uniform matroids, partition matroids, and graphical matroids, and $\mathcal{O}(D\sqrt{K}\mathrm{polylog}(T))$ for transversal matroids.
+					Here, $D$ is the maximum number of elements in any feasible subset of arms, and $T$ is the horizon.
+					Our technique is based on dynamic maintenance of an approximate maximum-weight basis over inner-product weights. Although the introduction of an approximate maximum-weight basis presents a challenge in regret analysis, we can still guarantee an upper bound on regret as tight as CUCB in the sense that it matches the gap-dependent lower bound by Kveton et al. (2014a) asymptotically.
+				</p>
+			</div>
 
 
 			<li>
 				Alphabet Reduction for Reconfiguration Problems.<br>
 				<u>Naoto Ohsaka</u>.<br>
 				<a href="https://compose.ioc.ee/icalp2024/">51st EATCS International Colloquium on Automata, Languages, and Programming (ICALP 2024)</a>. <br>
-				<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#ICALP2024_ABCReductReconf_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
-				<a href="https://doi.org/10.4230/LIPIcs.ICALP.2024.113">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
+				<button type="button" class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#ICALP2024_ABCReductReconf_abst" aria-expanded="false" aria-controls="ICALP2024_ABCReductReconf_abst">
+					<i class="bi bi-chevron-expand"></i>Abstract
+				</button>
+				<a class="btn btn-primary" href="https://doi.org/10.4230/LIPIcs.ICALP.2024.113" role="button">
+					<i class="bi bi-file-pdf-fill"></i>Paper
 				</a>
-				<a href="https://arxiv.org/abs/2402.10627">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>arXiv</span>
+				<a class="btn btn-primary" href="https://arxiv.org/abs/2402.10627" role="button">
+					<i class="ai ai-arxiv"></i>arXiv
 				</a>
-				<a href="./slides/ICALP2024_ABCReductReconf.pdf">
-					<span class="btn btn-success btn-xs"><i class="glyphicon glyphicon-film"></i>Slide</span>
+				<a class="btn btn-success" href="./slides/ICALP2024_ABCReductReconf.pdf" role="button">
+					<i class="bi bi-file-slides-fill"></i>Slides
 				</a>
 			</li>
-			<div id="ICALP2024_ABCReductReconf_abst" class="collapse">
+			<div class="collapse" id="ICALP2024_ABCReductReconf_abst">
 				<p>
 					We present a reconfiguration analogue of <i>alphabet reduction</i> à la Dinur (J. ACM, 2007) and its applications.
 					Given a binary constraint graph $G$ and its two satisfying assignments $\psi^\mathsf{ini}$ and $\psi^\mathsf{tar}$, the $\textsf{Maxmin 2-CSP Reconfiguration}$ problem requests to transform $\psi^\mathsf{ini}$ into $\psi^\mathsf{tar}$ by repeatedly changing the value of a single vertex so that the minimum fraction of satisfied edges is maximized.
@@ -129,21 +360,23 @@
 				<a href="https://researchmap.jp/shuichi.hirahara">Shuichi Hirahara</a> and
 				<u>Naoto Ohsaka</u>.<br>
 				<a href="https://compose.ioc.ee/icalp2024/">51st EATCS International Colloquium on Automata, Languages, and Programming (ICALP 2024)</a>. <br>
-				<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#ICALP2024_SetCoverReconf_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
-				<a href="https://doi.org/10.4230/LIPIcs.ICALP.2024.85">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
+				<button type="button" class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#ICALP2024_SetCoverReconf_abst" aria-expanded="false" aria-controls="ICALP2024_SetCoverReconf_abst">
+					<i class="bi bi-chevron-expand"></i>Abstract
+				</button>
+				<a class="btn btn-primary" href="https://doi.org/10.4230/LIPIcs.ICALP.2024.85" role="button">
+					<i class="bi bi-file-pdf-fill"></i>Paper
 				</a>
-				<a href="https://arxiv.org/abs/2402.12645">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>arXiv</span>
+				<a class="btn btn-primary" href="https://arxiv.org/abs/2402.12645" role="button">
+					<i class="ai ai-arxiv"></i>arXiv
 				</a>
-				<a href="https://eccc.weizmann.ac.il/report/2024/039/">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>ECCC</span>
+				<a class="btn btn-primary" href="https://eccc.weizmann.ac.il/report/2024/039" role="button">
+					<i class="bi bi-file-pdf-fill"></i>ECCC
 				</a>
-				<a href="./slides/ICALP2024_SetCoverReconf.pdf">
-					<span class="btn btn-success btn-xs"><i class="glyphicon glyphicon-film"></i>Slide</span>
+				<a class="btn btn-success" href="./slides/ICALP2024_SetCoverReconf.pdf" role="button">
+					<i class="bi bi-file-slides-fill"></i>Slides
 				</a>
 			</li>
-			<div id="ICALP2024_SetCoverReconf_abst" class="collapse">
+			<div class="collapse" id="ICALP2024_SetCoverReconf_abst">
 				<p>
 					In the <span class="small-caps">Minmax Set Cover Reconfiguration</span> problem, given a set system $\mathcal{F}$ over a universe and its two covers $\mathcal{C}^\mathsf{start}$ and $\mathcal{C}^\mathsf{goal}$ of size $k$, we wish to transform $\mathcal{C}^\mathsf{start}$ into $\mathcal{C}^\mathsf{goal}$ by repeatedly adding or removing a single set of $\mathcal{F}$ while covering the universe in any intermediate state.
 					Then, the objective is to minimize the maximize size of any intermediate cover during transformation.
@@ -159,15 +392,17 @@
 				Computational Complexity of Normalizing Constants for the Product of Determinantal Point Processes.<br>
 				Tatsuya Matsuoka and <u>Naoto Ohsaka</u>.<br>
 				<a href="https://www.sciencedirect.com/journal/theoretical-computer-science">Theoretical Computer Science</a> (Full version of ICML 2020). <br>
-				<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#TCS2024_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
-				<a href="https://doi.org/10.1016/j.tcs.2024.114513">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
+				<button type="button" class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#TCS2024_abst" aria-expanded="false" aria-controls="TCS2024_abst">
+					<i class="bi bi-chevron-expand"></i>Abstract
+				</button>
+				<a class="btn btn-primary" href="https://doi.org/10.1016/j.tcs.2024.114513" role="button">
+					<i class="bi bi-file-pdf-fill"></i>Paper
 				</a>
-				<a href="https://arxiv.org/abs/2111.14148">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>arXiv</span>
+				<a class="btn btn-primary" href="https://arxiv.org/abs/2111.14148" role="button">
+					<i class="ai ai-arxiv"></i>arXiv
 				</a>
 			</li>
-			<div id="TCS2024_abst" class="collapse">
+			<div class="collapse" id="TCS2024_abst">
 				<p>
 					We consider the product of determinantal point processes (DPPs), a point process whose probability mass is proportional to the product of principal minors of multiple matrices, as a natural, promising generalization of DPPs.
 					We study the computational complexity of computing its normalizing constant, which is among the most essential probabilistic inference tasks.
@@ -204,24 +439,26 @@
 				<a href="https://researchmap.jp/shuichi.hirahara">Shuichi Hirahara</a> and
 				<u>Naoto Ohsaka</u>.<br>
 				<a href="http://acm-stoc.org/stoc2024/">56th Annual ACM Symposium on Theory of Computing (STOC 2024)</a>. <br>
-				<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#STOC2024_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
-				<a href="https://doi.org/10.1145/3618260.3649667">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
+				<button type="button" class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#STOC2024_abst" aria-expanded="false" aria-controls="STOC2024_abst">
+					<i class="bi bi-chevron-expand"></i>Abstract
+				</button>
+				<a class="btn btn-primary" href="https://doi.org/10.1145/3618260.3649667" role="button">
+					<i class="bi bi-file-pdf-fill"></i>Paper
 				</a>
-				<a href="https://arxiv.org/abs/2401.00474">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>arXiv</span>
+				<a class="btn btn-primary" href="https://arxiv.org/abs/2401.00474" role="button">
+					<i class="ai ai-arxiv"></i>arXiv
 				</a>
-				<a href="https://eccc.weizmann.ac.il/report/2024/023/">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>ECCC</span>
+				<a class="btn btn-primary" href="https://eccc.weizmann.ac.il/report/2024/023" role="button">
+					<i class="bi bi-file-pdf-fill"></i>ECCC
 				</a>
-				<a href="./slides/STOC2024.pdf">
-					<span class="btn btn-success btn-xs"><i class="glyphicon glyphicon-film"></i>Slide</span>
+				<a class="btn btn-success" href="./slides/STOC2024.pdf" role="button">
+					<i class="bi bi-file-slides-fill"></i>Slides
 				</a>
-				<a href="https://www.youtube.com/watch?v=nBY5s2k4Zx0">
-					<span class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-facetime-video"></i>Video</span>
+				<a class="btn btn-danger" href="https://www.youtube.com/watch?v=nBY5s2k4Zx0" role="button">
+					<i class="bi bi-youtube"></i>Video
 				</a>
 			</li>
-			<div id="STOC2024_abst" class="collapse">
+			<div class="collapse" id="STOC2024_abst">
 				<p>
 					Motivated by the inapproximability of reconfiguration problems, we present a new PCP-type characterization of $\mathsf{PSPACE}$, which we call a <i>probabilistically checkable reconfiguration proof</i> (PCRP):
 					Any $\mathsf{PSPACE}$ computation can be encoded into an exponentially long sequence of polynomially long proofs such that every adjacent pair of the proofs differs in at most one bit, and every proof can be probabilistically checked by reading a constant number of bits.
@@ -241,15 +478,17 @@
 				<u>Naoto Ohsaka</u>, and
 				Tetsuro Morimura.<br>
 				<a href="https://iclr.cc/Conferences/2024">12th International Conference on Learning Representations (ICLR 2024)</a>. <br>
-				<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#ICLR2024_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
-				<a href="https://openreview.net/forum?id=yarUvgEXq3">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
+				<button type="button" class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#ICLR2024_abst" aria-expanded="false" aria-controls="ICLR2024_abst">
+					<i class="bi bi-chevron-expand"></i>Abstract
+				</button>
+				<a class="btn btn-primary" href="https://openreview.net/forum?id=yarUvgEXq3" role="button">
+					<i class="bi bi-file-pdf-fill"></i>Paper
 				</a>
-				<a href="https://arxiv.org/abs/2306.05292">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>arXiv</span>
+				<a class="btn btn-primary" href="https://arxiv.org/abs/2306.05292" role="button">
+					<i class="ai ai-arxiv"></i>arXiv
 				</a>
 			</li>
-			<div id="ICLR2024_abst" class="collapse">
+			<div class="collapse" id="ICLR2024_abst">
 				<p>
 					Excellent tail performance is crucial for modern machine learning tasks, such as algorithmic fairness, class imbalance, and risk-sensitive decision making, as it ensures the effective handling of challenging samples within a dataset.
 					Tail performance is also a vital determinant of success for personalised recommender systems to reduce the risk of losing users with low satisfaction.
@@ -265,15 +504,17 @@
 				On the Parameterized Intractability of Determinant Maximization.<br>
 				<u>Naoto Ohsaka</u>.<br>
 				<a href="https://link.springer.com/collections/gecffbehde">Algorithmica</a> (Special issue of ISAAC 2022). <br>
-				<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#Algorithmica2024_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
-				<a href="https://doi.org/10.1007/s00453-023-01205-0">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
+				<button type="button" class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#Algorithmica2024_abst" aria-expanded="false" aria-controls="Algorithmica2024_abst">
+					<i class="bi bi-chevron-expand"></i>Abstract
+				</button>
+				<a class="btn btn-primary" href="https://doi.org/10.1007/s00453-023-01205-0" role="button">
+					<i class="bi bi-file-pdf-fill"></i>Paper
 				</a>
-				<a href="https://arxiv.org/abs/2209.12519">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>arXiv</span>
+				<a class="btn btn-primary" href="https://arxiv.org/abs/2209.12519" role="button">
+					<i class="ai ai-arxiv"></i>arXiv
 				</a>
 			</li>
-			<div id="Algorithmica2024_abst" class="collapse">
+			<div class="collapse" id="Algorithmica2024_abst">
 				<p>
 					In the <span class="small-caps">Determinant Maximization</span> problem, given an $n \times n$ positive semi-definite matrix $\mathbf{A}$ in $\mathbb{Q}^{n \times n}$ and an integer $k$, we are required to find a $k \times k$ principal submatrix of $\mathbf{A}$ having the maximum determinant.
 					This problem is known to be <b>NP</b>-hard and further proven to be <b>W[1]</b>-hard with respect to $k$ by Koutis; i.e., a $f(k)n^{\mathcal{O}(1)}$-time algorithm is unlikely to exist for any computable function $f$.
@@ -294,18 +535,20 @@
 				Gap Amplification for Reconfiguration Problems.<br>
 				<u>Naoto Ohsaka</u>.<br>
 				<a href="https://www.siam.org/conferences/cm/conference/soda24">35th Annual ACM-SIAM Symposium on Discrete Algorithms (SODA 2024)</a>. <br>
-				<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#SODA2024_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
-				<a href="https://doi.org/10.1137/1.9781611977912.54">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
+				<button type="button" class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#SODA2024_abst" aria-expanded="false" aria-controls="SODA2024_abst">
+					<i class="bi bi-chevron-expand"></i>Abstract
+				</button>
+				<a class="btn btn-primary" href="https://doi.org/10.1137/1.9781611977912.54" role="button">
+					<i class="bi bi-file-pdf-fill"></i>Paper
 				</a>
-				<a href="https://arxiv.org/abs/2310.14160">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>arXiv</span>
+				<a class="btn btn-primary" href="https://arxiv.org/abs/2310.14160" role="button">
+					<i class="ai ai-arxiv"></i>arXiv
 				</a>
-				<a href="./slides/SODA2024.pdf">
-					<span class="btn btn-success btn-xs"><i class="glyphicon glyphicon-film"></i>Slide</span>
+				<a class="btn btn-success" href="./slides/SODA2024.pdf" role="button">
+					<i class="bi bi-file-slides-fill"></i>Slides
 				</a>
 			</li>
-			<div id="SODA2024_abst" class="collapse">
+			<div class="collapse" id="SODA2024_abst">
 				<p>
 					<i>Combinatorial reconfiguration</i> is an emerging field of theoretical computer science that studies the reachability between a pair of feasible solutions for a particular combinatorial problem.
 					We study the hardness of accomplishing “approximate” reconfigurability, which affords to relax the feasibility of solutions.
@@ -335,15 +578,17 @@
 				Yuriko Hashizume, and
 				<u>Naoto Ohsaka</u>.<br>
 				<a href="https://recsys.acm.org/recsys23">17th ACM Conference on Recommender Systems (RecSys 2023)</a>. <br>
-				<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#RecSys2023_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
-				<a href="https://doi.org/10.1145/3604915.3608774">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
+				<button type="button" class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#RecSys2023_abst" aria-expanded="false" aria-controls="RecSys2023_abst">
+					<i class="bi bi-chevron-expand"></i>Abstract
+				</button>
+				<a class="btn btn-primary" href="https://doi.org/10.1145/3604915.3608774" role="button">
+					<i class="bi bi-file-pdf-fill"></i>Paper
 				</a>
-				<a href="https://arxiv.org/abs/2306.09060">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>arXiv</span>
+				<a class="btn btn-primary" href="https://arxiv.org/abs/2306.09060" role="button">
+					<i class="ai ai-arxiv"></i>arXiv
 				</a>
 			</li>
-			<div id="RecSys2023_abst" class="collapse">
+			<div class="collapse" id="RecSys2023_abst">
 				<p>
 					In matching markets such as job posting and online dating platforms, the recommender system plays a critical role in the success of the platform.
 					Unlike standard recommender systems that suggest items to users, reciprocal recommender systems (RRSs) that suggest other users must take into account the mutual interests of users.
@@ -363,18 +608,20 @@
 				<a href="https://riktor.github.io/">Riku Togashi</a>.
 				<br>
 				<a href="https://sigir.org/sigir2023">46th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR 2023)</a>. <br>
-				<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#SIGIR2023_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
-				<a href="https://doi.org/10.1145/3539618.3591623">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
+				<button type="button" class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#SIGIR2023_ILD_abst" aria-expanded="false" aria-controls="SIGIR2023_ILD_abst">
+					<i class="bi bi-chevron-expand"></i>Abstract
+				</button>
+				<a class="btn btn-primary" href="https://doi.org/10.1145/3539618.3591623" role="button">
+					<i class="bi bi-file-pdf-fill"></i>Paper
 				</a>
-				<a href="https://arxiv.org/abs/2305.13801">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>arXiv</span>
+				<a class="btn btn-primary" href="https://arxiv.org/abs/2305.13801" role="button">
+					<i class="ai ai-arxiv"></i>arXiv
 				</a>
-				<a href="./slides/SIGIR2023.pdf">
-					<span class="btn btn-success btn-xs"><i class="glyphicon glyphicon-film"></i>Slide</span>
+				<a class="btn btn-success" href="./slides/SIGIR2023.pdf" role="button">
+					<i class="bi bi-file-slides-fill"></i>Slides
 				</a>
 			</li>
-			<div id="SIGIR2023_abst" class="collapse">
+			<div class="collapse" id="SIGIR2023_ILD_abst">
 				<p>
 					Diversification of recommendation results is a promising approach for coping with the uncertainty associated with users' information needs.
 					Of particular importance in diversified recommendation is to define and optimize an appropriate diversity objective.
@@ -398,15 +645,17 @@
 				(equal contribution).
 				<br>
 				<a href="https://sigir.org/sigir2023">46th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR 2023)</a>. <br>
-				<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#sigir23_lowdim_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
-				<a href="https://doi.org/10.1145/3539618.3591659">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
+				<button type="button" class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#SIGIR23_LowDim_abst" aria-expanded="false" aria-controls="SIGIR23_LowDim_abst">
+					<i class="bi bi-chevron-expand"></i>Abstract
+				</button>
+				<a class="btn btn-primary" href="https://doi.org/10.1145/3539618.3591659" role="button">
+					<i class="bi bi-file-pdf-fill"></i>Paper
 				</a>
-				<a href="https://arxiv.org/abs/2305.13597">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>arXiv</span>
+				<a class="btn btn-primary" href="https://arxiv.org/abs/2305.13597" role="button">
+					<i class="ai ai-arxiv"></i>arXiv
 				</a>
 			</li>
-			<div id="sigir23_lowdim_abst" class="collapse">
+			<div class="collapse" id="SIGIR23_LowDim_abst">
 				<p>
 					Beyond accuracy, there are a variety of aspects to the quality of recommender systems, such as diversity, fairness, and robustness.
 					We argue that many of the prevalent problems in recommender systems are partly due to <i>low-dimensionality</i> of user and item embeddings, particularly when dot-product models, such as matrix factorization, are used.
@@ -423,18 +672,20 @@
 				Gap Preserving Reductions Between Reconfiguration Problems.<br>
 				<u>Naoto Ohsaka</u>.<br>
 				<a href="https://www.conferences.uni-hamburg.de/event/272/page/153-home">40th International Symposium on Theoretical Aspects of Computer Science (STACS 2023)</a>. <br>
-				<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#STACS2023_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
-				<a href="https://doi.org/10.4230/LIPIcs.STACS.2023.49">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
+				<button type="button" class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#STACS2023_abst" aria-expanded="false" aria-controls="STACS2023_abst">
+					<i class="bi bi-chevron-expand"></i>Abstract
+				</button>
+				<a class="btn btn-primary" href="https://doi.org/10.4230/LIPIcs.STACS.2023.49" role="button">
+					<i class="bi bi-file-pdf-fill"></i>Paper
 				</a>
-				<a href="https://arxiv.org/abs/2212.04207">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>arXiv</span>
+				<a class="btn btn-primary" href="https://arxiv.org/abs/2212.04207" role="button">
+					<i class="ai ai-arxiv"></i>arXiv
 				</a>
-				<a href="./slides/STACS2023.pdf">
-					<span class="btn btn-success btn-xs"><i class="glyphicon glyphicon-film"></i>Slide</span>
+				<a class="btn btn-success" href="./slides/STACS2023.pdf" role="button">
+					<i class="bi bi-file-slides-fill"></i>Slides
 				</a>
 			</li>
-			<div id="STACS2023_abst" class="collapse">
+			<div class="collapse" id="STACS2023_abst">
 				<p>
 					<i>Combinatorial reconfiguration</i> is a growing research field studying problems on the transformability between a pair of solutions of a search problem.
 					For example, in SAT Reconfiguration, for a Boolean formula $\varphi$ and two satisfying truth assignments $\sigma_\mathsf{s}$ and $\sigma_\mathsf{t}$ for $\varphi$, we are asked to determine whether there is a sequence of satisfying truth assignments for $\varphi$ starting from $\sigma_\mathsf{s}$ and ending with $\sigma_\mathsf{t}$, each resulting from the previous one by flipping a single variable assignment.
@@ -458,15 +709,17 @@
 				On Reconfigurability of Target Sets.<br>
 				<u>Naoto Ohsaka</u>.<br>
 				<a href="https://www.sciencedirect.com/journal/theoretical-computer-science">Theoretical Computer Science</a>. <br>
-				<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#TCS2022_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
-				<a href="https://doi.org/10.1016/j.tcs.2022.11.036">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
+				<button type="button" class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#TCS2022_abst" aria-expanded="false" aria-controls="TCS2022_abst">
+					<i class="bi bi-chevron-expand"></i>Abstract
+				</button>
+				<a class="btn btn-primary" href="https://doi.org/10.1016/j.tcs.2022.11.036" role="button">
+					<i class="bi bi-file-pdf-fill"></i>Paper
 				</a>
-				<a href="https://arxiv.org/abs/2107.09885">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>arXiv</span>
+				<a class="btn btn-primary" href="https://arxiv.org/abs/2107.09885" role="button">
+					<i class="ai ai-arxiv"></i>arXiv
 				</a>
 			</li>
-			<div id="TCS2022_abst" class="collapse">
+			<div class="collapse" id="TCS2022_abst">
 				<p>
 					We study the problem of deciding reconfigurability of target sets of a graph.
 					Given a graph $G$ with vertex thresholds $\tau$, consider a dynamic process in which vertex $v$ becomes activated once at least $\tau(v)$ of its neighbors are activated.
@@ -484,18 +737,20 @@
 				On the Parameterized Intractability of Determinant Maximization.<br>
 				<u>Naoto Ohsaka</u>.<br>
 				<a href="https://isa.hanyang.ac.kr/isaac2022/">33rd International Symposium on Algorithms and Computation (ISAAC 2022)</a>. <br>
-				<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#ISAAC2022_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
-				<a href="https://doi.org/10.4230/LIPIcs.ISAAC.2022.46">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
+				<button type="button" class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#ISAAC2022_abst" aria-expanded="false" aria-controls="ISAAC2022_abst">
+					<i class="bi bi-chevron-expand"></i>Abstract
+				</button>
+				<a class="btn btn-primary" href="https://doi.org/10.4230/LIPIcs.ISAAC.2022.46" role="button">
+					<i class="bi bi-file-pdf-fill"></i>Paper
 				</a>
-				<a href="https://arxiv.org/abs/2209.12519">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>arXiv</span>
+				<a class="btn btn-primary" href="https://arxiv.org/abs/2209.12519" role="button">
+					<i class="ai ai-arxiv"></i>arXiv
 				</a>
-				<a href="./slides/ISAAC2022.pdf">
-					<span class="btn btn-success btn-xs"><i class="glyphicon glyphicon-film"></i>Slide</span>
+				<a class="btn btn-success" href="./slides/ISAAC2022.pdf" role="button">
+					<i class="bi bi-file-slides-fill"></i>Slides
 				</a>
 			</li>
-			<div id="ISAAC2022_abst" class="collapse">
+			<div class="collapse" id="ISAAC2022_abst">
 				<p>
 					In the Determinant Maximization problem, given an $n \times n$ positive semi-definite matrix $\mathbf{A}$ in $\mathbb{Q}^{n \times n}$ and an integer $k$, we are required to find a $k \times k$ principal submatrix of $\mathbf{A}$ having the maximum determinant.
 					This problem is known to be <b>NP</b>-hard and further proven to be <b>W[1]</b>-hard with respect to $k$ by Koutis; i.e., a $f(k)n^{\mathcal{O}(1)}$-time algorithm is unlikely to exist for any computable function $f$.
@@ -516,15 +771,17 @@
 				Some Inapproximability Results of MAP Inference and Exponentiated Determinantal Point Processes.<br>
 				<u>Naoto Ohsaka</u>.<br>
 				<a href="https://www.jair.org">Journal of Artificial Intelligence Research</a> (Full version of AISTATS 2021). <br>
-				<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#JAIR2022_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
-				<a href="https://doi.org/10.1613/jair.1.13288">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
+				<button type="button" class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#JAIR2022_abst" aria-expanded="false" aria-controls="JAIR2022_abst">
+					<i class="bi bi-chevron-expand"></i>Abstract
+				</button>
+				<a class="btn btn-primary" href="https://doi.org/10.1613/jair.1.13288" role="button">
+					<i class="bi bi-file-pdf-fill"></i>Paper
 				</a>
-				<a href="https://arxiv.org/abs/2109.00727">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>arXiv</span>
+				<a class="btn btn-primary" href="https://arxiv.org/abs/2109.00727" role="button">
+					<i class="ai ai-arxiv"></i>arXiv
 				</a>
 			</li>
-			<div id="JAIR2022_abst" class="collapse">
+			<div class="collapse" id="JAIR2022_abst">
 				<p>
 					We study the computational complexity of two hard problems on determinantal point processes (DPPs).
 					One is maximum a posteriori (MAP) inference, i.e., to find a principal submatrix having the maximum determinant.
@@ -543,15 +800,17 @@
 				Reconfiguration Problems on Submodular Functions.<br>
 				<u>Naoto Ohsaka</u> and Tatsuya Matsuoka<br>
 				<a href="https://www.wsdm-conference.org/2022/">15th ACM International Conference on Web Search and Data Mining (WSDM 2022)</a>. <br>
-				<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#WSDM2022_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
-				<a href="https://doi.org/10.1145/3488560.3498382">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
+				<button type="button" class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#WSDM2022_abst" aria-expanded="false" aria-controls="WSDM2022_abst">
+					<i class="bi bi-chevron-expand"></i>Abstract
+				</button>
+				<a class="btn btn-primary" href="https://doi.org/10.1145/3488560.3498382" role="button">
+					<i class="bi bi-file-pdf-fill"></i>Paper
 				</a>
-				<a href="https://arxiv.org/abs/2111.14030">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>arXiv</span>
+				<a class="btn btn-primary" href="https://arxiv.org/abs/2111.14030" role="button">
+					<i class="ai ai-arxiv"></i>arXiv
 				</a>
 			</li>
-			<div id="WSDM2022_abst" class="collapse">
+			<div class="collapse" id="WSDM2022_abst">
 				<p>
 					Reconfiguration problems require finding a step-by-step transformation between a pair of feasible solutions for a particular problem.
 					The primary concern in Theoretical Computer Science has been revealing their computational complexity for classical problems.
@@ -575,12 +834,14 @@
 				On the Convex Combination of Determinantal Point Processes.<br>
 				Tatsuya Matsuoka, <u>Naoto Ohsaka</u>, and Akihiro Yabe<br>
 				<a href="http://www.acml-conf.org/2021/">13th Asian Conference on Machine Learning (ACML 2021)</a>. <br>
-				<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#ACML2021_DPP_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
-				<a href="https://proceedings.mlr.press/v157/matsuoka21a.html">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
+				<button type="button" class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#ACML2021_DPP_abst" aria-expanded="false" aria-controls="ACML2021_DPP_abst">
+					<i class="bi bi-chevron-expand"></i>Abstract
+				</button>
+				<a class="btn btn-primary" href="https://proceedings.mlr.press/v157/matsuoka21a.html" role="button">
+					<i class="bi bi-file-pdf-fill"></i>Paper
 				</a>
 			</li>
-			<div id="ACML2021_DPP_abst" class="collapse">
+			<div class="collapse" id="ACML2021_DPP_abst">
 				<p>
 					Determinantal point processes (DPPs) are attractive probabilistic models for expressing item quality and set diversity simultaneously.
 					Although DPPs are widely-applicable to many subset selection tasks, there exist simple small-size probability distributions that any DPP cannot express.
@@ -597,12 +858,14 @@
 				Maximization of Monotone $k$-Submodular Functions with Bounded Curvature and Non-$k$-Submodular Functions.<br>
 				Tatsuya Matsuoka and <u>Naoto Ohsaka</u>.<br>
 				<a href="http://www.acml-conf.org/2021/">13th Asian Conference on Machine Learning (ACML 2021)</a>. <br>
-				<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#ACML2021_KSFM_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
-				<a href="https://proceedings.mlr.press/v157/matsuoka21b.html">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
+				<button type="button" class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#ACML2021_KSFM_abst" aria-expanded="false" aria-controls="ACML2021_KSFM_abst">
+					<i class="bi bi-chevron-expand"></i>Abstract
+				</button>
+				<a class="btn btn-primary" href="https://proceedings.mlr.press/v157/matsuoka21b.html" role="button">
+					<i class="bi bi-file-pdf-fill"></i>Paper
 				</a>
 			</li>
-			<div id="ACML2021_KSFM_abst" class="collapse">
+			<div class="collapse" id="ACML2021_KSFM_abst">
 				<p>
 					The concept of $k$-submodularity is an extension of submodularity, of which maximization has various applications, such as influence maximization and sensor placement.
 					In such situations, to model complicated real problems, we want to deal with multiple factors, such as, more detailed parameter representing a property of a given function or a constraint which should be imposed for a given function, simultaneously.
@@ -615,12 +878,14 @@
 				Approximation Algorithm for Submodular Maximization under Submodular Cover.<br>
 				<u>Naoto Ohsaka</u> and Tatsuya Matsuoka.<br>
 				<a href="https://www.auai.org/uai2021/">37th Conference on Uncertainty in Artificial Intelligence (UAI 2021)</a>. <br>
-				<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#UAI2021_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
-				<a href="https://proceedings.mlr.press/v161/ohsaka21a.html">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
+				<button type="button" class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#UAI2021_abst" aria-expanded="false" aria-controls="UAI2021_abst">
+					<i class="bi bi-chevron-expand"></i>Abstract
+				</button>
+				<a class="btn btn-primary" href="https://proceedings.mlr.press/v161/ohsaka21a.html" role="button">
+					<i class="bi bi-file-pdf-fill"></i>Paper
 				</a>
 			</li>
-			<div id="UAI2021_abst" class="collapse">
+			<div class="collapse" id="UAI2021_abst">
 				<p>
 					We study a new optimization problem called submodular maximization under submodular cover (SMSC), which requires to find a fixed-size set such that one monotone submodular function $f$ is maximized subject to that another monotone submodular function $g$ is maximized approximately.
 					SMSC is preferable to submodular function maximization when one wants to maximize two objective functions simultaneously.
@@ -635,15 +900,17 @@
 				A Fully Polynomial Parameterized Algorithm for Counting the Number of Reachable Vertices in a Digraph.<br>
 				<u>Naoto Ohsaka</u>.<br>
 				<a href="https://www.journals.elsevier.com/information-processing-letters">Information Processing Letters</a>. <br>
-				<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#IPL2021_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
-				<a href="https://doi.org/10.1016/j.ipl.2021.106137">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
+				<button type="button" class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#IPL2021_abst" aria-expanded="false" aria-controls="IPL2021_abst">
+					<i class="bi bi-chevron-expand"></i>Abstract
+				</button>
+				<a class="btn btn-primary" href="https://doi.org/10.1016/j.ipl.2021.106137" role="button">
+					<i class="bi bi-file-pdf-fill"></i>Paper
 				</a>
-				<a href="https://arxiv.org/abs/2103.04595">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>arXiv</span>
+				<a class="btn btn-primary" href="https://arxiv.org/abs/2103.04595" role="button">
+					<i class="ai ai-arxiv"></i>arXiv
 				</a>
 			</li>
-			<div id="IPL2021_abst" class="collapse">
+			<div class="collapse" id="IPL2021_abst">
 				<p>
 					We consider the problem of counting the number of vertices reachable from each vertex in a digraph $G$, which is equal to computing all the out-degrees of the transitive closure of $G$.
 					The current (theoretically) fastest algorithms run in quadratic time; however, Borassi has shown that this problem is not solvable in truly subquadratic time unless the Strong Exponential Time Hypothesis fails [Inf. Process. Lett., 116(10):628--630, 2016].
@@ -657,15 +924,17 @@
 				Spanning Tree Constrained Determinantal Point Processes are Hard to (Approximately) Evaluate.<br>
 				Tatsuya Matsuoka and <u>Naoto Ohsaka</u>.<br>
 				<a href="https://www.journals.elsevier.com/operations-research-letters">Operations Research Letters</a>. <br>
-				<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#ORL2021_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
-				<a href="https://doi.org/10.1016/j.orl.2021.02.004">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
+				<button type="button" class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#ORL2021_abst" aria-expanded="false" aria-controls="ORL2021_abst">
+					<i class="bi bi-chevron-expand"></i>Abstract
+				</button>
+				<a class="btn btn-primary" href="https://doi.org/10.1016/j.orl.2021.02.004" role="button">
+					<i class="bi bi-file-pdf-fill"></i>Paper
 				</a>
-				<a href="https://arxiv.org/abs/2102.12646">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>arXiv</span>
+				<a class="btn btn-primary" href="https://arxiv.org/abs/2102.12646" role="button">
+					<i class="ai ai-arxiv"></i>arXiv
 				</a>
 			</li>
-			<div id="ORL2021_abst" class="collapse">
+			<div class="collapse" id="ORL2021_abst">
 				<p>
 					We consider determinantal point processes (DPPs) constrained by spanning trees.
 					Given a graph $G=(V,E)$ and a positive semi-definite matrix $\mathbf{A}$ indexed by $E$, a spanning-tree DPP defines a distribution such that we draw $S\subseteq E$ with probability proportional to $\det(\mathbf{A}_S)$ only if $S$ induces a spanning tree.
@@ -678,12 +947,14 @@
 				Unconstrained MAP Inference, Exponentiated Determinantal Point Processes, and Exponential Inapproximability.<br>
 				<u>Naoto Ohsaka</u>.<br>
 				<a href="https://aistats.org/aistats2021">24th International Conference on Artificial Intelligence and Statistics (AISTATS 2021)</a>. <br>
-				<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#AISTATS2021_DPP_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
-				<a href="http://proceedings.mlr.press/v130/ohsaka21a.html">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
+				<button type="button" class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#AISTATS2021_DPP_abst" aria-expanded="false" aria-controls="AISTATS2021_DPP_abst">
+					<i class="bi bi-chevron-expand"></i>Abstract
+				</button>
+				<a class="btn btn-primary" href="http://proceedings.mlr.press/v130/ohsaka21a.html" role="button">
+					<i class="bi bi-file-pdf-fill"></i>Paper
 				</a>
 			</li>
-			<div id="AISTATS2021_DPP_abst" class="collapse">
+			<div class="collapse" id="AISTATS2021_DPP_abst">
 				<p>
 					We study the computational complexity of two hard problems on determinantal point processes (DPPs).
 					One is maximum a posteriori (MAP) inference, i.e., to find a principal submatrix having the maximum determinant.
@@ -708,12 +979,14 @@
 				<a href="https://jpn.nec.com/rd/people/shinji_ito.html">Shinji Ito</a>, and
 				<u>Naoto Ohsaka</u>.<br>
 				<a href="https://aistats.org/aistats2021">24th International Conference on Artificial Intelligence and Statistics (AISTATS 2021)</a>. <br>
-				<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#AISTATS2021_OSO_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
-				<a href="http://proceedings.mlr.press/v130/matsuoka21a.html">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
+				<button type="button" class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#AISTATS2021_OSO_abst" aria-expanded="false" aria-controls="AISTATS2021_OSO_abst">
+					<i class="bi bi-chevron-expand"></i>Abstract
+				</button>
+				<a class="btn btn-primary" href="http://proceedings.mlr.press/v130/matsuoka21a.html" role="button">
+					<i class="bi bi-file-pdf-fill"></i>Paper
 				</a>
 			</li>
-			<div id="AISTATS2021_OSO_abst" class="collapse">
+			<div class="collapse" id="AISTATS2021_OSO_abst">
 				<p>
 					In this paper, we propose algorithms for online submodular optimization with tracking regret bounds.
 					Online submodular optimization is a generic framework for sequential decision making used to select subsets.
@@ -731,15 +1004,17 @@
 				<a href="https://t-sakai-kure.github.io/">Tomoya Sakai</a> and
 				<u>Naoto Ohsaka</u>.<br>
 				<a href="https://www.siam.org/conferences/cm/conference/sdm21">2021 SIAM International Conference on Data Mining (SDM 2021)</a>. <br>
-				<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#SDM2021_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
-				<a href="https://doi.org/10.1137/1.9781611976700.42">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
+				<button type="button" class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#SDM2021_abst" aria-expanded="false" aria-controls="SDM2021_abst">
+					<i class="bi bi-chevron-expand"></i>Abstract
+				</button>
+				<a class="btn btn-primary" href="https://doi.org/10.1137/1.9781611976700.42" role="button">
+					<i class="bi bi-file-pdf-fill"></i>Paper
 				</a>
-				<a href="https://arxiv.org/abs/2101.06233">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>arXiv</span>
+				<a class="btn btn-primary" href="https://arxiv.org/abs/2101.06233" role="button">
+					<i class="ai ai-arxiv"></i>arXiv
 				</a>
 			</li>
-			<div id="SDM2021_abst" class="collapse">
+			<div class="collapse" id="SDM2021_abst">
 				<p>
 					Prediction in a new domain without any training sample, called zero-shot domain adaptation (ZSDA), is an important task in domain adaptation.
 					While prediction in a new domain has gained much attention in recent years, in this paper, we investigate another potential of ZSDA.
@@ -756,15 +1031,17 @@
 				On the (In)tractability of Computing Normalizing Constants for the Product of Determinantal Point Processes.<br>
 				<u>Naoto Ohsaka</u> and Tatsuya Matsuoka.<br>
 				<a href="https://icml.cc/Conferences/2020/">37th International Conference on Machine Learning (ICML 2020)</a>. <br>
-				<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#ICML2020_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
-				<a href="http://proceedings.mlr.press/v119/ohsaka20a.html">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
+				<button type="button" class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#ICML2020_abst" aria-expanded="false" aria-controls="ICML2020_abst">
+					<i class="bi bi-chevron-expand"></i>Abstract
+				</button>
+				<a class="btn btn-primary" href="http://proceedings.mlr.press/v119/ohsaka20a.html" role="button">
+					<i class="bi bi-file-pdf-fill"></i>Paper
 				</a>
-				<a href="https://icml.cc/virtual/2020/poster/6379">
-					<span class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-facetime-video"></i>Video</span>
+				<a class="btn btn-danger" href="https://icml.cc/virtual/2020/poster/6379" role="button">
+					<i class="bi bi-youtube"></i>Video
 				</a>
 			</li>
-			<div id="ICML2020_abst" class="collapse">
+			<div class="collapse" id="ICML2020_abst">
 				<p>
 					We consider the product of determinantal point processes (DPPs), a point process whose probability mass is proportional to the product of principal minors of multiple matrices as a natural, promising generalization of DPPs.
 					We study the computational complexity of computing its normalizing constant, which is among the most essential probabilistic inference tasks.
@@ -791,19 +1068,22 @@
 				</p>
 			</div>
 
+
 			<li>
 				The Solution Distribution of Influence Maximization: A High-level Experimental Study on Three Algorithmic Approaches.<br>
 				<u>Naoto Ohsaka</u>.<br>
 				<a href="https://sigmod2020.org/">ACM SIGMOD International Conference on Management of Data 2020 (SIGMOD 2020)</a>. <br>
-				<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#SIGMOD2020_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
-				<a href="https://doi.org/10.1145/3318464.3380564">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
+				<button type="button" class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#SIGMOD2020_abst" aria-expanded="false" aria-controls="SIGMOD2020_abst">
+					<i class="bi bi-chevron-expand"></i>Abstract
+				</button>
+				<a class="btn btn-primary" href="https://doi.org/10.1145/3318464.3380564" role="button">
+					<i class="bi bi-file-pdf-fill"></i>Paper
 				</a>
-				<a href="https://arxiv.org/abs/2003.09816">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>arXiv</span>
+				<a class="btn btn-primary" href="https://arxiv.org/abs/2003.09816" role="button">
+					<i class="ai ai-arxiv"></i>arXiv
 				</a>
 			</li>
-			<div id="SIGMOD2020_abst" class="collapse">
+			<div class="collapse" id="SIGMOD2020_abst">
 				<p>
 					Influence maximization is among the most fundamental algorithmic problems in social influence analysis.
 					Over the last decade, a great effort has been devoted to developing efficient algorithms for influence maximization, so that identifying the ``best'' algorithm has become a demanding task.
@@ -827,12 +1107,14 @@
 				<a href="https://t-sakai-kure.github.io/">Tomoya Sakai</a>, and
 				<a href="https://jpn.nec.com/rd/people/akihiro_yabe.html">Akihiro Yabe.</a><br>
 				<a href="https://www.siam.org/conferences/cm/conference/sdm20">2020 SIAM International Conference on Data Mining (SDM 2020)</a>. <br>
-				<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#SDM2020_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
-				<a href="https://doi.org/10.1137/1.9781611976236.20">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
+				<button type="button" class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#SDM2020_abst" aria-expanded="false" aria-controls="SDM2020_abst">
+					<i class="bi bi-chevron-expand"></i>Abstract
+				</button>
+				<a class="btn btn-primary" href="https://doi.org/10.1137/1.9781611976236.20" role="button">
+					<i class="bi bi-file-pdf-fill"></i>Paper
 				</a>
 			</li>
-			<div id="SDM2020_abst" class="collapse">
+			<div class="collapse" id="SDM2020_abst">
 				<p>
 					Predictive optimization is a framework for designing an entire data-analysis pipeline that comprises both prediction and optimization, to be able to maximize overall throughput performance.
 					In practical demand analysis, a knowledge of hierarchies, which might be geographical or categorical, is recognized as useful, though such additional knowledge has not been taken into account in existing predictive optimization.
@@ -852,15 +1134,17 @@
 				Sumio Fujita, and
 				<a href="http://research.nii.ac.jp/~k_keniti/">Ken-ichi Kawarabayashi.</a><br>
 				<a href="http://www.dexa.org/dexa2018">29th International Conference on Database and Expert Systems Applications (DEXA 2018)</a>. <br>
-				<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#DEXA2018_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
-				<a href="https://doi.org/10.1007/978-3-319-98809-2_26">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
+				<button type="button" class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#DEXA2018_abst" aria-expanded="false" aria-controls="DEXA2018_abst">
+					<i class="bi bi-chevron-expand"></i>Abstract
+				</button>
+				<a class="btn btn-primary" href="https://doi.org/10.1007/978-3-319-98809-2_26" role="button">
+					<i class="bi bi-file-pdf-fill"></i>Paper
 				</a>
-				<a href="./slides/DEXA2018.pdf">
-					<span class="btn btn-success btn-xs"><i class="glyphicon glyphicon-film"></i>Slide</span>
+				<a class="btn btn-success" href="./slides/DEXA2018.pdf" role="button">
+					<i class="bi bi-file-slides-fill"></i>Slides
 				</a>
 			</li>
-			<div id="DEXA2018_abst" class="collapse">
+			<div class="collapse" id="DEXA2018_abst">
 				<p>
 					We consider and formulate problems of PageRank score boosting motivated by applications such as effective web advertising.
 					More precisely, given a graph and target vertices, one is required to find a fixed-size set of missing edges that maximizes the minimum PageRank score among the targets.
@@ -872,18 +1156,20 @@
 			</div>
 
 			<li>
-				NoSingles: a Space-Efficient Algorithm for Influence Maximization.<br>
+				NoSingles: A Space-Efficient Algorithm for Influence Maximization.<br>
 				Diana Popova,
 				<u>Naoto Ohsaka,</u>
 				<a href="http://research.nii.ac.jp/~k_keniti/">Ken-ichi Kawarabayashi,</a> and
 				<a href="http://webhome.cs.uvic.ca/~thomo/">Alex Thomo.</a><br>
 				<a href="http://ssdbm2018.inf.unibz.it/">30th International Conference on Scientific and Statistical Database Management (SSDBM 2018)</a>. <br>
-				<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#SSDBM2018_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
-				<a href="https://doi.org/10.1145/3221269.3221291">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
+				<button type="button" class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#SSDBM2018_abst" aria-expanded="false" aria-controls="SSDBM2018_abst">
+					<i class="bi bi-chevron-expand"></i>Abstract
+				</button>
+				<a class="btn btn-primary" href="https://doi.org/10.1145/3221269.3221291" role="button">
+					<i class="bi bi-file-pdf-fill"></i>Paper
 				</a>
 			</li>
-			<div id="SSDBM2018_abst" class="collapse">
+			<div class="collapse" id="SSDBM2018_abst">
 				<p>
 					Algorithmic problems of computing influence estimation and influence maximization have been actively researched for decades.
 					We developed a novel algorithm, NoSingles, based on the Reverse Influence Sampling method proposed by Borgs et al. in 2013.
@@ -901,21 +1187,24 @@
 				Tomoaki Ogasawara, and
 				<u>Naoto Ohsaka.</u><br>
 				<a href="https://stacs2018.sciencesconf.org/">35th International Symposium on Theoretical Aspects of Computer Science (STACS 2018)</a>. <br>
-				<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#STACS2018_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
-				<a href="https://doi.org/10.4230/LIPIcs.STACS.2018.41">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
+				<button type="button" class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#STACS2018_abst" aria-expanded="false" aria-controls="STACS2018_abst">
+					<i class="bi bi-chevron-expand"></i>Abstract
+				</button>
+				<a class="btn btn-primary" href="https://doi.org/10.4230/LIPIcs.STACS.2018.41" role="button">
+					<i class="bi bi-file-pdf-fill"></i>Paper
+				</a>
+				<a class="btn btn-primary" href="https://arxiv.org/abs/1710.04376" role="button">
+					<i class="ai ai-arxiv"></i>arXiv
 				</a>
 			</li>
-			<div id="STACS2018_abst" class="collapse">
+			<div class="collapse" id="STACS2018_abst">
 				<p>
 					There are many classical problems in P whose time complexities have not been improved over the past decades.
 					Recent studies of ``Hardness in P'' have revealed that, for several of such problems, the current fastest algorithm is the best possible under some complexity assumptions.
 					To bypass this difficulty, Fomin et al. (SODA 2017) introduced the concept of fully polynomial FPT algorithms.
 					For a problem with the current best time complexity $O(n^c)$, the goal is to design an algorithm running in $k^{O(1)}n^{c'}$ time for a parameter $k$ and a constant $c' < c$. <br>
 						In this paper, we investigate the complexity of graph problems in P parameterized by tree-depth, a graph parameter related to tree-width.
-						We show that a simple divide-and-conquer method can solve many graph problems, including
-						Weighted Matching, Negative Cycle Detection, Minimum Weight Cycle, Replacement Paths, and 2-hop Cover,
-						in $O(\mathrm{td}\cdot m)$ time or $O(\mathrm{td}\cdot (m+n\log n))$ time, where $\mathrm{td}$ is the tree-depth of the input graph.
+						We show that a simple divide-and-conquer method can solve many graph problems, including Weighted Matching, Negative Cycle Detection, Minimum Weight Cycle, Replacement Paths, and 2-hop Cover, in $O(\mathrm{td}\cdot m)$ time or $O(\mathrm{td}\cdot (m+n\log n))$ time, where $\mathrm{td}$ is the tree-depth of the input graph.
 						Because any graph of tree-width $\mathrm{tw}$ has tree-depth at most $(\mathrm{tw}+1)\log_2 n$, our algorithms also run in $O(\mathrm{tw}\cdot m\log n)$ time or $O(\mathrm{tw}\cdot (m+n\log n)\log n)$ time.
 						These results match or improve the previous best algorithms parameterized by tree-width.
 						Especially, we solve an open problem of fully polynomial FPT algorithm for Weighted Matching parameterized by tree-width posed by Fomin et al.
@@ -930,18 +1219,20 @@
 				Sumio Fujita, and
 				<a href="http://research.nii.ac.jp/~k_keniti/">Ken-ichi Kawarabayashi.</a><br>
 				<a href="http://sigmod2017.org/">ACM SIGMOD International Conference on Management of Data 2017 (SIGMOD 2017)</a>. <br>
-				<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#SIGMOD2017_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
-				<a href="https://doi.org/10.1145/3035918.3064045">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
+				<button type="button" class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#SIGMOD2017_abst" aria-expanded="false" aria-controls="SIGMOD2017_abst">
+					<i class="bi bi-chevron-expand"></i>Abstract
+				</button>
+				<a class="btn btn-primary" href="https://doi.org/10.1145/3035918.3064045" role="button">
+					<i class="bi bi-file-pdf-fill"></i>Paper
 				</a>
-				<a href="./slides/SIGMOD2017.pdf">
-					<span class="btn btn-success btn-xs"><i class="glyphicon glyphicon-film"></i>Slide</span>
+				<a class="btn btn-success" href="./slides/SIGMOD2017.pdf" role="button">
+					<i class="bi bi-file-slides-fill"></i>Slides
 				</a>
-				<a href="https://github.com/chronotable/coarsening-infnet">
-					<span class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-cloud"></i>Code</span>
+				<a class="btn btn-danger" href="https://github.com/chronotable/coarsening-infnet" role="button">
+					<i class="bi bi-github"></i>Code
 				</a>
 			</li>
-			<div id="SIGMOD2017_abst" class="collapse">
+			<div class="collapse" id="SIGMOD2017_abst">
 				<p>
 					Fueled by the increasing popularity of online social networks, social influence analysis has attracted a great deal of research attention in the past decade.
 					The diffusion process is often modeled using influence graphs, and there has been a line of research that involves algorithmic problems in influence graphs.
@@ -966,15 +1257,17 @@
 				<u>Naoto Ohsaka</u> and
 				<a href="http://research.nii.ac.jp/~yyoshida/">Yuichi Yoshida.</a><br>
 				<a href="http://www.www2017.com.au/">International Conference on World Wide Web (WWW 2017)</a>.<br>
-				<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#WWW2017_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
-				<a href="https://doi.org/10.1145/3038912.3052628">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
+				<button type="button" class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#WWW2017_abst" aria-expanded="false" aria-controls="WWW2017_abst">
+					<i class="bi bi-chevron-expand"></i>Abstract
+				</button>
+				<a class="btn btn-primary" href="https://doi.org/10.1145/3038912.3052628" role="button">
+					<i class="bi bi-file-pdf-fill"></i>Paper
 				</a>
-				<a href="./slides/WWW2017.pdf">
-					<span class="btn btn-success btn-xs"><i class="glyphicon glyphicon-film"></i>Slide</span>
+				<a class="btn btn-success" href="./slides/WWW2017.pdf" role="button">
+					<i class="bi bi-file-slides-fill"></i>Slides
 				</a>
 			</li>
-			<div id="WWW2017_abst" class="collapse">
+			<div class="collapse" id="WWW2017_abst">
 				<p>
 					Motivated by viral marketing, stochastic diffusion processes that model influence spread on a network have been studied intensively.
 					The primary interest in such models has been to find a seed set of a fixed size that maximizes the expected size of the cascade from it.
@@ -993,11 +1286,11 @@
 				<a href="http://www.graco.c.u-tokyo.ac.jp/labs/kakimura/">Naonori Kakimura</a>, and
 				<a href="http://research.nii.ac.jp/~k_keniti/">Ken-ichi Kawarabayashi.</a><br>
 				<a href="http://www.ecmlpkdd2016.org/">European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD 2016)</a>.<br>
-				<a href="https://doi.org/10.1007/978-3-319-46128-1_9">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
+				<a class="btn btn-primary" href="https://doi.org/10.1007/978-3-319-46128-1_9" role="button">
+					<i class="bi bi-file-pdf-fill"></i>Paper
 				</a>
-				<a href="./slides/ECMLPKDD2016.pdf">
-					<span class="btn btn-success btn-xs"><i class="glyphicon glyphicon-film"></i>Slide</span>
+				<a class="btn btn-success" href="./slides/ECMLPKDD2016.pdf" role="button">
+					<i class="bi bi-file-slides-fill"></i>Slides
 				</a>
 			</li>
 
@@ -1009,14 +1302,14 @@
 				<a href="http://research.nii.ac.jp/~yyoshida/">Yuichi Yoshida</a>, and
 				<a href="http://research.nii.ac.jp/~k_keniti/">Ken-ichi Kawarabayashi.</a><br>
 				<a href="http://www.vldb.org/pvldb/vol9.html">Proceedings of the VLDB Endowment (PVLDB 16)</a>.<br>
-				<a href="http://www.vldb.org/pvldb/vol9/p1077-ohsaka.pdf">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
+				<a class="btn btn-primary" href="http://www.vldb.org/pvldb/vol9/p1077-ohsaka.pdf" role="button">
+					<i class="bi bi-file-pdf-fill"></i>Paper
 				</a>
-				<a href="./slides/VLDB2016.pdf">
-					<span class="btn btn-success btn-xs"><i class="glyphicon glyphicon-film"></i>Slide</span>
+				<a class="btn btn-success" href="./slides/VLDB2016.pdf" role="button">
+					<i class="bi bi-file-slides-fill"></i>Slides
 				</a>
-				<a href="https://github.com/todo314/dynamic-influence-analysis">
-					<span class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-cloud"></i>Code</span>
+				<a class="btn btn-danger" href="https://github.com/todo314/dynamic-influence-analysis" role="button">
+					<i class="bi bi-github"></i>Code
 				</a>
 			</li>
 
@@ -1026,11 +1319,11 @@
 				<u>Naoto Ohsaka</u> and
 				<a href="http://research.nii.ac.jp/~yyoshida/">Yuichi Yoshida</a><br>
 				<a href="https://nips.cc/Conferences/2015/">Annual Conference on Neural Information Processing Systems (NIPS 2015)</a>.<br>
-				<a href="http://papers.nips.cc/paper/5709-monotone-k-submodular-function-maximization-with-size-constraints">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
+				<a class="btn btn-primary" href="http://papers.nips.cc/paper/5709-monotone-k-submodular-function-maximization-with-size-constraints" role="button">
+					<i class="bi bi-file-pdf-fill"></i>Paper
 				</a>
-				<a href="./slides/NIPS2015.pdf">
-					<span class="btn btn-success btn-xs"><i class="glyphicon glyphicon-download-alt"></i>Poster</span>
+				<a class="btn btn-success" href="./slides/NIPS2015.pdf" role="button">
+					<i class="bi bi-file-pdf-fill"></i>Poster
 				</a>
 			</li>
 
@@ -1041,11 +1334,11 @@
 				<a href="http://www.prefield.com/">Takanori Maehara</a>, and
 				<a href="http://research.nii.ac.jp/~k_keniti/">Ken-ichi Kawarabayashi.</a><br>
 				<a href="http://www.kdd.org/kdd2015/">ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD 2015)</a>.<br>
-				<a href="https://doi.org/10.1145/2783258.2783297">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
+				<a class="btn btn-primary" href="https://doi.org/10.1145/2783258.2783297" role="button">
+					<i class="bi bi-file-pdf-fill"></i>Paper
 				</a>
-				<a href="./slides/KDD2015.pdf">
-					<span class="btn btn-success btn-xs"><i class="glyphicon glyphicon-film"></i>Slide</span>
+				<a class="btn btn-success" href="./slides/KDD2015.pdf" role="button">
+					<i class="bi bi-file-slides-fill"></i>Slides
 				</a>
 			</li>
 
@@ -1057,14 +1350,14 @@
 				<a href="http://research.nii.ac.jp/~yyoshida/">Yuichi Yoshida</a>, and
 				<a href="http://research.nii.ac.jp/~k_keniti/">Ken-ichi Kawarabayashi.</a><br>
 				<a href="http://www.aaai.org/Conferences/AAAI/aaai14.php">AAAI Conference on Artificial Intelligence (AAAI 2014)</a>.<br>
-				<a href="https://www.aaai.org/ocs/index.php/AAAI/AAAI14/paper/view/8455">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
+				<a class="btn btn-primary" href="https://www.aaai.org/ocs/index.php/AAAI/AAAI14/paper/view/8455" role="button">
+					<i class="bi bi-file-pdf-fill"></i>Paper
 				</a>
-				<a href="./slides/AAAI2014.pdf">
-					<span class="btn btn-success btn-xs"><i class="glyphicon glyphicon-film"></i>Slide</span>
+				<a class="btn btn-success" href="./slides/AAAI2014.pdf" role="button">
+					<i class="bi bi-file-slides-fill"></i>Slides
 				</a>
-				<a href="https://github.com/todo314/pruned-monte-carlo">
-					<span class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-cloud"></i>Code</span>
+				<a class="btn btn-danger" href="https://github.com/todo314/pruned-monte-carlo" role="button">
+					<i class="bi bi-github"></i>Code
 				</a>
 			</li>
 
@@ -1073,12 +1366,12 @@
 				<u>Naoto Ohsaka</u>,
 				<a href="http://tokyo-ct.net/usr/kitakosi/">Daisuke Kitakoshi</a>, and
 				Masato Suzuki.<br>
-				IEEE International Conference on Granular Computing (GrC 2011).<br>
-				<a href="https://doi.org/10.1109/GRC.2011.6122650">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>Paper</span>
+				<a href="https://ieeexplore.ieee.org/xpl/conhome/6112290/proceeding">2011 IEEE International Conference on Granular Computing (GrC 2011)</a>.<br>
+				<a class="btn btn-primary" href="https://doi.org/10.1109/GRC.2011.6122650" role="button">
+					<i class="bi bi-file-pdf-fill"></i>Paper
 				</a>
-				<a href="./slides/GrC2011.pdf">
-					<span class="btn btn-success btn-xs"><i class="glyphicon glyphicon-film"></i>Slide</span>
+				<a class="btn btn-success" href="./slides/GrC2011.pdf" role="button">
+					<i class="bi bi-file-slides-fill"></i>Slides
 				</a>
 			</li>
 
@@ -1089,49 +1382,6 @@
 
 
 
-		<h3>Invited Talks</h3>
-		<ul>
-
-
-			<li>
-				<span class="label label-info">New!!</span>On the Complexity of Approximating Reconfiguration Problems. <br>
-				October 8th, 2024 @ <a href="http://www.dais.is.tohoku.ac.jp/take/core2024/">5th Combinatorial Reconfiguration Workshop</a>, Fukuoka, Japan. <br>
-				<a href="./slides/CoRe2024.pdf">
-					<span class="btn btn-success btn-xs"><i class="glyphicon glyphicon-film"></i>Slide</span>
-				</a>
-			</li>
-
-
-			<li>
-				Gap Amplification for Reconfiguration Problems. <br>
-				March 14th, 2024 @ <a href="https://ken.ieice.org/ken/program/index.php?mode=program&tgs_regid=a0f21f6f9b668b1ad7dab8960fbda529b9066cb460752da595c30e659e715485&tgid=COMP&layout=&lang=eng">Theoretical Foundations of Computing (COMP)</a>, Tokyo, Japan (Japanese). <br>
-				<a href="./slides/COMP2024.pdf">
-					<span class="btn btn-success btn-xs"><i class="glyphicon glyphicon-film"></i>Slide</span>
-				</a>
-			</li>
-
-
-			<li>
-				Reconfiguration Problems, Hardness of Approximation, and Gap Amplification: What Are They? <br>
-				January 19th, 2024 @ <a href="https://kklab.nii.ac.jp/seminars/2023/12/reconfiguration-problems-hardness-of-approximation-and-gap-amplification-what-are-they.html">Kawarabayashi Lab Seminar</a>, Tokyo, Japan (Japanese). <br>
-				<a href="./slides/AFSA2024.pdf">
-					<span class="btn btn-success btn-xs"><i class="glyphicon glyphicon-film"></i>Slide</span>
-				</a>
-			</li>
-
-
-			<li>
-				On Reconfigurability of Target Sets. <br>
-				January 6th, 2022 @ <a href="https://core.dais.is.tohoku.ac.jp/en/report/past-event/detail/---id-96.html">20th CoRe Seminar</a>, Online (Japanese). <br>
-			</li>
-
-
-		</ul>
-
-
-
-		<hr>
-
 
 
 		<h3>Preprints</h3>
@@ -1139,15 +1389,17 @@
 		<ol reversed>
 
 			<li>
-				<span class="label label-info">New!!</span>Asymptotic Inapproximability of Reconfiguration Problems: Maxmin $k$-Cut and Maxmin E$k$-SAT.<br>
+				<span class="badge bg-info text-dark">New!!</span>Asymptotic Inapproximability of Reconfiguration Problems: Maxmin $k$-Cut and Maxmin E$k$-SAT.<br>
 				<a href="https://researchmap.jp/shuichi.hirahara">Shuichi Hirahara</a> and
 				<u>Naoto Ohsaka</u>.<br>
-				<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#ReconfAsymptoticApprox_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
-				<a href="https://arxiv.org/abs/2410.03416">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>arXiv</span>
+				<button type="button" class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#ReconfAsymptoticApprox_abst" aria-expanded="false" aria-controls="ReconfAsymptoticApprox_abst">
+					<i class="bi bi-chevron-expand"></i>Abstract
+				</button>
+				<a class="btn btn-primary" href="https://arxiv.org/abs/2410.03416" role="button">
+					<i class="ai ai-arxiv"></i>arXiv
 				</a>
 			</li>
-			<div id="ReconfAsymptoticApprox_abst" class="collapse">
+			<div class="collapse" id="ReconfAsymptoticApprox_abst">
 				<p>
 					We study the hardness of approximating two reconfiguration problems.
 					One problem is <span class="small-caps">Maxmin <span class="initial">$k$</span>-Cut Reconfiguration</span>, which is a reconfiguration analogue of <span class="small-caps">Max <span class="initial">$k$</span>-Cut</span>.
@@ -1180,12 +1432,14 @@
 			<li>
 				Tight Inapproximability of Target Set Reconfiguration.<br>
 				<u>Naoto Ohsaka</u>.<br>
-				<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#TSReconfApprox_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
-				<a href="https://arxiv.org/abs/2402.15076">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>arXiv</span>
+				<button type="button" class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#TSReconfApprox_abst" aria-expanded="false" aria-controls="TSReconfApprox_abst">
+					<i class="bi bi-chevron-expand"></i>Abstract
+				</button>
+				<a class="btn btn-primary" href="https://arxiv.org/abs/2402.15076" role="button">
+					<i class="ai ai-arxiv"></i>arXiv
 				</a>
 			</li>
-			<div id="TSReconfApprox_abst" class="collapse">
+			<div class="collapse" id="TSReconfApprox_abst">
 				<p>
 					Given a graph $G$ with a vertex threshold function $\tau$, consider a dynamic process in which any inactive vertex $v$ becomes activated whenever at least $\tau(v)$ of its neighbors are activated.
 					A vertex set $S$ is called a <i>target set</i> if all vertices of $G$ would be activated when initially activating vertices of $S$.
@@ -1198,31 +1452,6 @@
 
 
 
-			<li>
-				On Approximate Reconfigurability of Label Cover.<br>
-				<u>Naoto Ohsaka</u>.<br>
-				<span class="btn btn-warning btn-xs" data-toggle="collapse" data-target="#lcreconf_abst"><i class="glyphicon glyphicon-plus"></i>Abstract</span>
-				<a href="https://arxiv.org/abs/2304.08746">
-					<span class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-file"></i>arXiv</span>
-				</a>
-			</li>
-			<div id="lcreconf_abst" class="collapse">
-				<p>
-					Given a two-prover game $G$ and its two satisfying labelings $\psi_\mathsf{s}$ and $\psi_\mathsf{t}$,
-					the <span class="small-caps">Label Cover Reconfiguration</span> problem asks whether $\psi_\mathsf{s}$ can be transformed into $\psi_\mathsf{t}$ by repeatedly changing the value of a vertex while preserving any intermediate labeling satisfying $G$.
-					We consider an optimization variant of <span class="small-caps">Label Cover Reconfiguration</span> by relaxing the feasibility of labelings, referred to as <span class="small-caps">Maxmin Label Cover Reconfiguration</span>:
-					we are allowed to transform by passing through any non-satisfying labelings, but required to maximize the minimum fraction of satisfied edges during transformation from $\psi_\mathsf{s}$ to $\psi_\mathsf{t}$.
-					Since the parallel repetition theorem of Raz (SIAM J. Comput., 1998), which implies <b>NP</b>-hardness of Label Cover within any constant factor, produces strong inapproximability results for many <b>NP</b>-hard problems,
-					one may think of using <span class="small-caps">Maxmin Label Cover Reconfiguration</span> to derive inapproximability results for reconfiguration problems.
-					We prove the following results on <span class="small-caps">Maxmin Label Cover Reconfiguration</span>, which display different trends from those of <span class="small-caps">Label Cover</span> and the parallel repetition theorem:
-				<ul>
-					<li><span class="small-caps">Maxmin Label Cover Reconfiguration</span> can be approximated within a factor of nearly $\frac{1}{4}$ for restricted graph classes, including slightly dense graphs and balanced bipartite graphs.</li>
-					<li>A naive parallel repetition of <span class="small-caps">Maxmin Label Cover Reconfiguration</span> does not decrease the optimal objective value.</li>
-					<li><span class="small-caps">Label Cover Reconfiguration</span> on projection games can be decided in polynomial time.</li>
-				</ul>
-				The above results suggest that a reconfiguration analogue of the parallel repetition theorem is unlikely.
-				</p>
-			</div>
 
 
 
@@ -1232,41 +1461,42 @@
 
 		<hr>
 
-		<h3>Fox photos taken by me </h3>
+		<h3>Fox Photos Taken By Me </h3>
 
 		<div class="container">
-			<div class="row">
-				<div class="col-xs-6">
-					<a href="img/fox1.jpg" class="thumbnail"><img src="img/fox1_small.jpg" alt="" /></a>
+			<div class="row p-2">
+				<div class="col">
+					<a href="img/fox1.jpg"><img src="img/fox1_small.jpg" class="img-thumbnail"></a>
 				</div>
-				<div class="col-xs-6">
-					<a href="img/fox2.jpg" class="thumbnail"><img src="img/fox2_small.jpg" alt="" /></a>
+				<div class="col">
+					<a href="img/fox2.jpg"><img src="img/fox2_small.jpg" class="img-thumbnail"></a>
 				</div>
-				<div class="col-xs-6">
-					<a href="img/fox3.jpg" class="thumbnail"><img src="img/fox3_small.jpg" alt="" /></a>
+			</div>
+			<div class="row p-2">
+				<div class="col">
+					<a href="img/fox3.jpg"><img src="img/fox3_small.jpg" class="img-thumbnail"></a>
 				</div>
-				<div class="col-xs-6">
-					<a href="img/fox4.jpg" class="thumbnail"><img src="img/fox4_small.jpg" alt="" /></a>
+				<div class="col">
+					<a href="img/fox4.jpg"><img src="img/fox4_small.jpg" class="img-thumbnail"></a>
 				</div>
-				<div class="col-xs-6">
-					<a href="img/fox5.jpg" class="thumbnail"><img src="img/fox5_small.jpg" alt="" /></a>
+			</div>
+			<div class="row p-2">
+				<div class="col">
+					<a href="img/fox5.jpg"><img src="img/fox5_small.jpg" class="img-thumbnail"></a>
 				</div>
-				<div class="col-xs-6">
-					<a href="img/fox6.jpg" class="thumbnail"><img src="img/fox6_small.jpg" alt="" /></a>
+				<div class="col">
+					<a href="img/fox6.jpg"><img src="img/fox6_small.jpg" class="img-thumbnail"></a>
 				</div>
 			</div>
 		</div>
 
 		<hr>
-		<a href="./rejections.txt">
-			CV of Failures
-		</a>		
 
-		<div id="footer" class="navbar">
-			<p class="muted pull-right">Last modified: November 9th, 2024</p>
-		</div>
+		<div class="lead"><a href="./rejections.txt">My rejection history</a></div>
+		<div>Last modified: January 12th, 2025</div>
+	</div>
 
-		<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
