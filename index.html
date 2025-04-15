@@ -278,7 +278,7 @@
 			</li>
 
 			<li>
-				<span class="badge bg-info text-dark">New!!</span> On the Complexity of Approximating Reconfiguration Problems. <br>
+				On the Complexity of Approximating Reconfiguration Problems. <br>
 				October 8th, 2024 @ <a href="http://www.dais.is.tohoku.ac.jp/take/core2024/">5th Combinatorial Reconfiguration Workshop</a>, Fukuoka, Japan. <br>
 				<a class="btn btn-success" href="./slides/CoRe2024.pdf" role="button">
 					<i class="bi bi-file-slides-fill"></i> Slides
@@ -295,8 +295,44 @@
 
 		<ol reversed>
 
+
+
 			<li>
-				<span class="badge bg-info text-dark">New!!</span> On Approximate Reconfigurability of Label Cover.<br>
+				<span class="badge bg-info text-dark">New!!</span> Yet Another Simple Proof of the PCRP Theorem.<br>
+				<u>Naoto Ohsaka</u>.<br>
+				<a href="https://conferences.au.dk/icalp2025">52nd EATCS International Colloquium on Automata, Languages, and Programming (ICALP 2025)</a>. <br>
+				<button type="button" class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#ICALP2025_SimplePCRP_abst" aria-expanded="false" aria-controls="ICALP2025_SimplePCRP_abst">
+					<i class="bi bi-chevron-expand"></i> Abstract
+				</button>
+			</li>
+			<div class="collapse" id="ICALP2025_SimplePCRP_abst">
+				<p>
+					Coming soon...
+				</p>
+			</div>
+
+
+			<li>
+				<span class="badge bg-info text-dark">New!!</span> Asymptotically Optimal Inapproximability of Maxmin $k$-Cut Reconfiguration.<br>
+				<a href="https://researchmap.jp/shuichi.hirahara">Shuichi Hirahara</a> and
+				<u>Naoto Ohsaka</u>.<br>
+				<a href="https://conferences.au.dk/icalp2025">52nd EATCS International Colloquium on Automata, Languages, and Programming (ICALP 2025)</a>. <br>
+				<button type="button" class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#ICALP2025_kCutReconf_abst" aria-expanded="false" aria-controls="ICALP2025_kCutReconf_abst">
+					<i class="bi bi-chevron-expand"></i> Abstract
+				</button>
+				<a class="btn btn-primary" href="https://arxiv.org/abs/2410.03416" role="button">
+					<i class="ai ai-arxiv"></i> arXiv
+				</a>
+			</li>
+			<div class="collapse" id="ICALP2025_kCutReconf_abst">
+				<p>
+					Coming soon...
+				</p>
+			</div>
+
+
+			<li>
+				On Approximate Reconfigurability of Label Cover.<br>
 				<u>Naoto Ohsaka</u>.<br>
 				<a href="https://www.journals.elsevier.com/information-processing-letters">Information Processing Letters</a>. <br>
 				<button type="button" class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#IPL2025_abst" aria-expanded="false" aria-controls="IPL2025_abst">
@@ -1431,47 +1467,6 @@
 		<ol reversed>
 
 			<li>
-				<span class="badge bg-info text-dark">New!!</span> Asymptotic Inapproximability of Reconfiguration Problems: Maxmin $k$-Cut and Maxmin E$k$-SAT.<br>
-				<a href="https://researchmap.jp/shuichi.hirahara">Shuichi Hirahara</a> and
-				<u>Naoto Ohsaka</u>.<br>
-				<button type="button" class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#ReconfAsymptoticApprox_abst" aria-expanded="false" aria-controls="ReconfAsymptoticApprox_abst">
-					<i class="bi bi-chevron-expand"></i> Abstract
-				</button>
-				<a class="btn btn-primary" href="https://arxiv.org/abs/2410.03416" role="button">
-					<i class="ai ai-arxiv"></i> arXiv
-				</a>
-			</li>
-			<div class="collapse" id="ReconfAsymptoticApprox_abst">
-				<p>
-					We study the hardness of approximating two reconfiguration problems.
-					One problem is <span class="small-caps">Maxmin <span class="initial">$k$</span>-Cut Reconfiguration</span>, which is a reconfiguration analogue of <span class="small-caps">Max <span class="initial">$k$</span>-Cut</span>.
-					Given a graph $G$ and its two $k$-colorings $f_\mathsf{start},f_\mathsf{end}$, we are required to transform $f_\mathsf{start}$ into $f_\mathsf{end}$ by repeatedly recoloring a single vertex so as to maximize the minimum fraction of bichromatic edges of $G$ at any intermediate state.
-					The other is <span class="small-caps">Maxmin E<span class="initial">$k$</span>-SAT Reconfiguration</span>, which is a reconfiguration analogue of <span class="small-caps">Max E<span class="initial">$k$</span>-SAT</span>.
-					For a $k$-CNF formula $\varphi$ where every clause contains exactly $k$ literals and its two satisfying assignments $\alpha_\mathsf{start},\alpha_\mathsf{end}$, we are asked to transform $\alpha_\mathsf{start}$ into $\alpha_\mathsf{end}$ by flipping a single variable assignment at a time so that the minimum fraction of satisfied clauses of $\varphi$ is maximized.
-					The <i>Probabilistically Checkable Reconfiguration Proof</i> theorem due to Hirahara and Ohsaka (STOC 2024) and Karthik C. S. and Manurangsi (2023) implies that <span class="small-caps">Maxmin 4-Cut Reconfiguration</span> and <span class="small-caps">Maxmin E3-SAT Reconfiguration</span> are $\textsf{PSPACE}$-hard to approximate within a constant factor.
-					However, the <i>asymptotic</i> behavior of approximability for these problems with respect to $k$ is not well understood.
-				</p>
-
-				<p>
-					In this paper, we present the following hardness-of-approximation results and approximation algorithms for <span class="small-caps">Maxmin <span class="initial">$k$</span>-Cut Reconfiguration</span> and <span class="small-caps">Maxmin E<span class="initial">$k$</span>-SAT Reconfiguration</span>:
-				<ul>
-					<li>
-						For every $k \geq 2$, <span class="small-caps">Maxmin <span class="initial">$k$</span>-Cut Reconfiguration</span> is $\textsf{PSPACE}$-hard to approximate within a factor of $1 - \Omega\left(\frac{1}{k}\right)$, whereas it can be approximated within a factor of $1-\frac{2}{k}$.
-						Our lower and upper bounds demonstrate that
-						<span class="small-caps">Maxmin <span class="initial">$k$</span>-Cut Reconfiguration</span> exhibits the asymptotically same approximability as <span class="small-caps">Max <span class="initial">$k$</span>-Cut</span>.
-					</li>
-
-					<li>
-						For every $k \geq 3$, <span class="small-caps">Maxmin E<span class="initial">$k$</span>-SAT Reconfiguration</span> is $\textsf{PSPACE}$-hard (resp. $\textsf{NP}$-hard) to approximate within a factor of $1-\Omega\left(\frac{1}{9^{\sqrt{k}}}\right)$ (resp. $1-\frac{1}{8k}$).
-						On the other hand, it admits a deterministic $\left(1-\frac{2.5}{k}\right)$-factor approximation algorithm, implying that <span class="small-caps">Maxmin E<span class="initial">$k$</span>-SAT Reconfiguration</span> displays an asymptotically approximation threshold <i>different</i> from <span class="small-caps">Max E<span class="initial">$k$</span>-SAT</span>.
-					</li>
-				</ul>
-				</p>
-			</div>
-
-
-
-			<li>
 				Tight Inapproximability of Target Set Reconfiguration.<br>
 				<u>Naoto Ohsaka</u>.<br>
 				<button type="button" class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#TSReconfApprox_abst" aria-expanded="false" aria-controls="TSReconfApprox_abst">
@@ -1491,11 +1486,6 @@
 					The proof is based on a gap-preserving reduction from $\textsf{Target Set Selection}$ to $\textsf{Minmax Target Set Reconfiguration}$, where <b>NP</b>-hardness of approximation for the former problem is proven by Chen (SIAM J. Discrete Math., 2009) and Charikar, Naamad, and Wirth (APPROX/RANDOM 2016).
 				</p>
 			</div>
-
-
-
-
-
 
 		</ol>
 
@@ -1535,7 +1525,7 @@
 		<hr>
 
 		<div class="lead"><a href="./rejections.txt">My Rejection History</a></div>
-		<div class="float-end">Last modified: February 12th, 2025</div>
+		<div class="float-end">Last modified: April 15th, 2025</div>
 	</div>
 
 	<script src="js/bootstrap.bundle.min.js"></script>
