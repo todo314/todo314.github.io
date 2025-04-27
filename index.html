@@ -296,7 +296,6 @@
 		<ol reversed>
 
 
-
 			<li>
 				<span class="badge bg-info text-dark">New!!</span> Yet Another Simple Proof of the PCRP Theorem.<br>
 				<u>Naoto Ohsaka</u>.<br>
@@ -307,11 +306,26 @@
 			</li>
 			<div class="collapse" id="ICALP2025_SimplePCRP_abst">
 				<p>
-					Coming soon...
+				The <i>Probabilistically Checkable Reconfiguration Proof</i> (PCRP) theorem, proven by Hirahara and Ohsaka (STOC 2024) and Karthik C. S. and Manurangsi, provides a new PCP-type characterization of <b>PSPACE</b>:
+				A language $L$ is in <b>PSPACE</b> if and only if there exists a probabilistic verifier $\mathcal{V}$ and a pair of polynomial-time computable proofs $\pi^\mathsf{ini}, \pi^\mathsf{end}$ such that the following hold for every input $x$:
+				<ul>
+					<li>
+						If $x \in L$, then $\pi^\mathsf{ini}(x)$ can be transformed into $\pi^\mathsf{end}(x)$ by repeatedly flipping a single bit of the proof at a time, while making $\mathcal{V}(x)$ to accept every intermediate proof with probability $1$.
+					</li>
+					<li>
+						If $x \notin L$, then any such transformation induces a proof that is rejected by $\mathcal{V}(x)$ with probability more than $\frac{1}{2}$.
+					</li>
+				</ul>
+				The PCRP theorem finds many applications in <b>PSPACE</b>-hardness of approximation for reconfiguration problems.
+				</p>
+				<p>
+					In this paper, we present an alternative proof of the PCRP theorem that is “simpler” than those of Hirahara and Ohsaka and Karthik C. S. and Manurangsi.
+					Our PCRP system is obtained by combining simple <i>robustization</i> and <i>composition</i> steps in a modular fashion, which renders its analysis more intuitive.
+					The crux of implementing the robustization step is an error-correcting code that enjoys both <i>list decodability</i> and <i>reconfigurability</i>, the latter of which enables to reconfigure between a pair of codewords, while avoiding getting too close to any other codewords.
 				</p>
 			</div>
 
-
+			
 			<li>
 				<span class="badge bg-info text-dark">New!!</span> Asymptotically Optimal Inapproximability of Maxmin $k$-Cut Reconfiguration.<br>
 				<a href="https://researchmap.jp/shuichi.hirahara">Shuichi Hirahara</a> and
@@ -1525,7 +1539,7 @@
 		<hr>
 
 		<div class="lead"><a href="./rejections.txt">My Rejection History</a></div>
-		<div class="float-end">Last modified: April 15th, 2025</div>
+		<div class="float-end">Last modified: April 27th, 2025</div>
 	</div>
 
 	<script src="js/bootstrap.bundle.min.js"></script>
