@@ -306,8 +306,8 @@
 			</li>
 			<div class="collapse" id="ICALP2025_SimplePCRP_abst">
 				<p>
-				The <i>Probabilistically Checkable Reconfiguration Proof</i> (PCRP) theorem, proven by Hirahara and Ohsaka (STOC 2024) and Karthik C. S. and Manurangsi, provides a new PCP-type characterization of <b>PSPACE</b>:
-				A language $L$ is in <b>PSPACE</b> if and only if there exists a probabilistic verifier $\mathcal{V}$ and a pair of polynomial-time computable proofs $\pi^\mathsf{ini}, \pi^\mathsf{end}$ such that the following hold for every input $x$:
+					The <i>Probabilistically Checkable Reconfiguration Proof</i> (PCRP) theorem, proven by Hirahara and Ohsaka (STOC 2024) and Karthik C. S. and Manurangsi, provides a new PCP-type characterization of <b>PSPACE</b>:
+					A language $L$ is in <b>PSPACE</b> if and only if there exists a probabilistic verifier $\mathcal{V}$ and a pair of polynomial-time computable proofs $\pi^\mathsf{ini}, \pi^\mathsf{end}$ such that the following hold for every input $x$:
 				<ul>
 					<li>
 						If $x \in L$, then $\pi^\mathsf{ini}(x)$ can be transformed into $\pi^\mathsf{end}(x)$ by repeatedly flipping a single bit of the proof at a time, while making $\mathcal{V}(x)$ to accept every intermediate proof with probability $1$.
@@ -325,7 +325,7 @@
 				</p>
 			</div>
 
-			
+
 			<li>
 				<span class="badge bg-info text-dark">New!!</span> Asymptotically Optimal Inapproximability of Maxmin $k$-Cut Reconfiguration.<br>
 				<a href="https://researchmap.jp/shuichi.hirahara">Shuichi Hirahara</a> and
@@ -340,7 +340,18 @@
 			</li>
 			<div class="collapse" id="ICALP2025_kCutReconf_abst">
 				<p>
-					Coming soon...
+					<span class="small-caps">$k$-Coloring Reconfiguration</span> is one of the most well-studied reconfiguration problems, which asks to
+					transform a given proper $k$-coloring of a graph to another by repeatedly recoloring a single vertex.
+					Its approximate version, <span class="small-caps">Maxmin $k$-Cut Reconfiguration</span>,
+					is defined as an optimization problem of maximizing the minimum fraction of bichromatic edges during the transformation between (not necessarily proper) $k$-colorings.
+					In this paper,
+					we demonstrate that the optimal approximation factor of this problem is $1 - \Theta\left(\frac{1}{k}\right)$ for every $k \geq 2$.
+					Specifically, we prove the $\mathsf{PSPACE}$-hardness of approximating the objective value within a factor of $1 - \frac{\varepsilon}{k}$ for some universal constant $\varepsilon > 0$,
+					whereas we develop a deterministic polynomial-time algorithm that achieves the approximation factor of $1 - \frac{2}{k}$.
+				</p>
+				<p>
+					To prove the hardness result, we propose a new probabilistic verifier that tests a “striped” pattern.
+					Our approximation algorithm is based on a random transformation that passes through a random $k$-coloring.
 				</p>
 			</div>
 
@@ -1539,7 +1550,7 @@
 		<hr>
 
 		<div class="lead"><a href="./rejections.txt">My Rejection History</a></div>
-		<div class="float-end">Last modified: April 27th, 2025</div>
+		<div class="float-end">Last modified: May 4th, 2025</div>
 	</div>
 
 	<script src="js/bootstrap.bundle.min.js"></script>
