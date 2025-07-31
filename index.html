@@ -116,13 +116,13 @@
 				<div class="card card-body">
 					<p class="card-text">
 						<span class="badge text-bg-secondary"><i class="bi bi-magic"></i> Highlight</span>
-						When I started studying reconfiguration problems, I was strongly motivated by <b>PSPACE</b>-hardness of approximation for them,
-						which was posed as an open problem by Ito, Demaine, Harvey, Papadimitriou, Sideri, Uehara, and Uno (ISAAC 2008 & TCS 2011).
+						When I started studying reconfiguration problems, I was very intrigued by <b>PSPACE</b>-hardness of approximation for them,
+						which was posed as an open problem by Ito, Demaine, Harvey, Papadimitriou, Sideri, Uehara, and Uno (ISAAC 2008; TCS 2011).
 						Towards its resolution,
-						I came up with the <i>Reconfiguration Inapproximability Hypothesis</i> (RIH) as a reconfiguration analogue of the PCP theorem.
+						I came up with what I call the <i>Reconfiguration Inapproximability Hypothesis</i> (RIH) as a reconfiguration analogue of the PCP theorem.
 						Starting from RIH, I created a series of gap-preserving reductions to give evidence that many reconfiguration problems are <b>PSPACE</b>-hard to approximate within a constant factor,
 						including those of <span class="small-caps">3-SAT</span>, <span class="small-caps">2-CSP</span>, <span class="small-caps">Independent Set</span>, and <span class="small-caps">Vertex Cover</span>.
-						Subsequently, in a joint work with <a href="https://researchmap.jp/shuichi.hirahara">Shuichi Hirahara</a> (STOC 2024), RIH has been proven to be true.
+						Subsequently, in a joint work with <a href="https://researchmap.jp/shuichi.hirahara">Shuichi Hirahara</a> (STOC 2024), we were able to prove RIH.
 					</p>
 				</div>
 			</li>
@@ -142,14 +142,13 @@
 				<div class="card card-body">
 					<p class="card-text">
 						<span class="badge text-bg-secondary"><i class="bi bi-magic"></i> Highlight</span>
-						One limitation of using RIH (STACS 2023) was that inapproximability factors are not explicit.
+						One limitation of using RIH (STACS 2023) was that it did not give explicit inapproximability factors.
 						Say, even 0.999…999-approximation for <span class="small-caps">2-CSP Reconfiguration</span> would not be ruled out.
 						In the <b>NP</b> regime, the <i>parallel repetition theorem</i> can be used to derive many strong inapproximability results.
-						Unfortunately, applying a “naive” parallel repetition to a reconfiguration analogue of the two-prover one-round game does not reduce its soundness error (Inf. Process. Lett., 2025).
-						<br />
-						In this paper, I was able to develop Dinur's style <i>gap amplification</i> for reconfiguration problems.
+						Unfortunately, for a reconfiguration analogue of two-prover one-round games, a “naive” parallel repetition does not reduce its soundness error (IPL 2025).
+						In this paper, I managed to develop Dinur's style <i>gap amplification</i> for reconfiguration problems.
 						Our main result is that <span class="small-caps">Maxmin 2-CSP Reconfiguration</span> is <b>PSPACE</b>-hard to approximate within a factor of 0.9942 only assuming RIH.
-						As an application, I further demonstrated that <span class="small-caps">Minmax Set Cover Reconfiguration</span> and <span class="small-caps">Minmax Dominating Set Reconfiguration</span> are <b>PSPACE</b>-hard to approximate within a factor of 1.0029 under RIH.
+						As an application, I showed that <span class="small-caps">Minmax Set Cover Reconfiguration</span> and <span class="small-caps">Minmax Dominating Set Reconfiguration</span> are <b>PSPACE</b>-hard to approximate within a factor of 1.0029 under RIH.
 					</p>
 				</div>
 			</li>
@@ -177,11 +176,11 @@
 				<div class="card card-body">
 					<p class="card-text">
 						<span class="badge text-bg-secondary"><i class="bi bi-magic"></i> Highlight</span>
-						We presented a new PCP-type characterization of <b>PSPACE</b>, namely <i>probabilistically checkable reconfiguration proofs</i> (PCRP).
+						We presented a new PCP-type characterization of <b>PSPACE</b>, namely <i>probabilistically checkable reconfiguration proof</i> (PCRP).
 						Our PCRP theorem states that any <b>PSPACE</b> computation can be encoded into an exponentially long reconfiguration sequence of polynomial length proofs,
 						each of which is probabilistically checkable.
-						Using the new characterization, we proved RIH, thereby affirmatively resolving the open problem posed by Ito, Demaine, Harvey, Papadimitriou, Sideri, Uehara, and Uno (ISAAC 2008 & TCS 2011).
-						In particular, my previous results (STACS 2023 & SODA 2024) now hold unconditioanlly.
+						Using the new characterization, we proved RIH, thereby affirmatively resolving the open problem posed by Ito, Demaine, Harvey, Papadimitriou, Sideri, Uehara, and Uno (ISAAC 2008; TCS 2011).
+						In particular, my previous <b>PSPACE</b>-hardness results (STACS 2023; SODA 2024) now hold unconditioanlly.
 						<br />
 						Independently, <a href="https://cskarthikcs.github.io/">Karthik C. S.</a> and <a href="https://pasin30055.github.io/">Pasin Manurangsi</a> also <a href="https://eccc.weizmann.ac.il/report/2024/007/">proved</a> RIH.
 					</p>
@@ -209,11 +208,11 @@
 				<div class="card card-body">
 					<p class="card-text">
 						<span class="badge text-bg-secondary"><i class="bi bi-magic"></i> Highlight</span>
-						<span class="small-caps">Minmax Set Cover Reconfiguration</span> is a natural reconfiguration analogue of <span class="small-caps">Minimum Set Cover</span> and admits a simple $2$-factor approximation algorithm.
+						<span class="small-caps">Minmax Set Cover Reconfiguration</span> is a natural reconfiguration analogue of <span class="small-caps">Min Set Cover</span> and admits a simple $2$-factor approximation algorithm.
 						We proved that this is optimal:
 						<span class="small-caps">Minmax Set Cover Reconfiguration</span> is <b>PSPACE</b>-hard to approximate within a factor of $2-\frac{1}{\operatorname{polyloglog} N}$,
 						where $N$ is the size of the universe.
-						This is the first sharp result for <b>PSPACE</b>-hardness of approximating reconfiguration problems.
+						This is the first sharp result for <b>PSPACE</b>-hardness of approximating any reconfiguration problems.
 						Similar hardness results hold for <span class="small-caps">Dominating Set Reconfiguration</span> and <span class="small-caps">Hypergraph Vertex Cover</span>.
 					</p>
 				</div>
@@ -239,11 +238,65 @@
 						Given the resolution of RIH,
 						there was still not a “universal” PCRP system for <b>PSPACE</b> having <i>explicit values</i> of soundness, query complexity, and alphabet size.
 						One reason was that gap amplification (SODA 2024) makes alphabet size gigantic (that depends on PCRP's gap).
-						<br />
-						In this paper, I developed alphabet reduction à la Dinur (J. ACM, 2007).
-						Putting (STACS 2023, SODA 2024, STOC 2024) together, I obtained a PCRP system with
+						In this paper, I developed alphabet reduction à la Dinur (JACM 2007).
+						Putting (STACS 2023; SODA 2024; STOC 2024) together, I obtained a PCRP system with
 						soundness $\varepsilon = 10^{-18}$, query complexity $q = 2$, alphabet size $W = 2{,}000{,}000$.
 						Even though this result is too far from optimal, I hope optimal PCRPs would be found in the near future.
+					</p>
+				</div>
+			</li>
+
+
+			<li>
+				Asymptotically Optimal Inapproximability of Maxmin $k$-Cut Reconfiguration.<br>
+				<a href="https://researchmap.jp/shuichi.hirahara">Shuichi Hirahara</a> and
+				<u>Naoto Ohsaka</u>.<br>
+				<a href="https://conferences.au.dk/icalp2025">52nd EATCS International Colloquium on Automata, Languages, and Programming (ICALP 2025)</a>. <br>
+
+				<a class="btn btn-primary" href="https://doi.org/10.4230/LIPIcs.ICALP.2025.96" role="button">
+					<i class="ai ai-open-access ai-lg"></i> Paper
+				</a>
+				<a class="btn btn-primary" href="https://arxiv.org/abs/2410.03416" role="button">
+					<i class="ai ai-arxiv"></i> arXiv
+				</a>
+				<a class="btn btn-success" href="./slides/ICALP2025_kCutReconf.pdf" role="button">
+					<i class="bi bi-file-slides-fill"></i> Slides
+				</a>
+				<div class="card card-body">
+					<p class="card-text">
+						<span class="badge text-bg-secondary"><i class="bi bi-magic"></i> Highlight</span>
+						We showed that the optimal approximation factor for <span class="small-caps">Maxmin <span class="initial">$k$</span>-Cut Reconfiguration</span> is $1-\Theta\left(\frac{1}{k}\right)$.
+						This problem is a natural reconfiguration analogue of <span class="small-caps">Max <span class="initial">$k$</span>-Cut</span>, and
+						it can be thought of as an “approximate version” of the famous <span class="small-caps"><span class="initial">$k$</span>-Coloring Reconfiguration</span> problem.
+						Specifically, we developed a $\left(1-\frac{2}{k}\right)$-factor approximation algorithm and
+						proved the <b>PSPACE</b>-hardness of $\left(1 - \frac{\varepsilon}{k}\right)$-factor approximation.
+						Our result is no surprise at all since <span class="small-caps">Max <span class="initial">$k$</span>-Cut</span> has the (asymptotically) same approximation threshold.
+						On the other hand, existing reductions for <span class="small-caps">Max <span class="initial">$k$</span>-Cut</span> do not work as expected in the reconfiguration regime.
+						The conceptual message is that to prove the hardness result, we had to design a completely different (and fairly technical) reduction.
+					</p>
+				</div>
+			</li>
+
+
+			<li>
+				Yet Another Simple Proof of the PCRP Theorem.<br>
+				<u>Naoto Ohsaka</u>.<br>
+				<a href="https://conferences.au.dk/icalp2025">52nd EATCS International Colloquium on Automata, Languages, and Programming (ICALP 2025)</a>. <br>
+				<a class="btn btn-primary" href="https://doi.org/10.4230/LIPIcs.ICALP.2025.122" role="button">
+					<i class="ai ai-open-access ai-lg"></i> Paper
+				</a>
+				<a class="btn btn-success" href="./slides/ICALP2025_SimplePCRP.pdf" role="button">
+					<i class="bi bi-file-slides-fill"></i> Slides
+				</a>
+				<div class="card card-body">
+					<p class="card-text">
+						<span class="badge text-bg-secondary"><i class="bi bi-magic"></i> Highlight</span>
+						Even after proving the PCRP theorem, I still felt that its proof is a bit “awkward.”
+						In this paper, I gave an alternative proof of the PCRP theorem that I think is simpler than those of Hirahara and Ohsaka (STOC 2024) and Karthik C. S. and Manurangsi.
+						Specifically, I was able to build a PCRP system by combining simple <i>robustization</i> and <i>composition</i> steps in a modular fashion.
+						The crux of implementing the robustization step is a special error-correcting code that enjoys both <i>list decodability</i> and <i>reconfigurability</i> (ICALP 2024).
+						I believe that my new construction is more streamlined and
+						that the concept of reconfigurability of error-correcting codes will find further applications.
 					</p>
 				</div>
 			</li>
@@ -297,11 +350,12 @@
 			This is a common practice in mathematics.
 			See also <a href="https://www.ams.org/profession/leaders/culture/JointResearchandItsPublicationfinal.pdf">here</a> and <a href="https://www.ams.org/learning-careers/leaders/CultureStatement04.pdf">here</a>.
 		</div>
+		<!-- <span class="badge text-bg-secondary">contribution-based order</span> -->
 		<ol reversed>
 
 
 			<li>
-				<span class="badge bg-info text-dark">New!!</span> Asymptotically Optimal Inapproximability of E$k$-SAT Reconfiguration.<br>
+				<span class="badge text-bg-info">New!!</span> Asymptotically Optimal Inapproximability of E$k$-SAT Reconfiguration.<br>
 				<a href="https://researchmap.jp/shuichi.hirahara">Shuichi Hirahara</a> and
 				<u>Naoto Ohsaka</u>.<br>
 				<a href="https://focs.computer.org/2025/">66th IEEE Symposium on Foundations of Computer Science (FOCS 2025)</a>. <br>
@@ -1577,7 +1631,7 @@
 		<hr>
 
 		<div class="lead"><a href="./rejections.txt">My Rejection History</a></div>
-		<div class="float-end">Last modified: July 26th, 2025</div>
+		<div class="float-end">Last modified: August 1st, 2025</div>
 	</div>
 
 	<script src="js/bootstrap.bundle.min.js"></script>
