@@ -56,7 +56,7 @@
 		}
 
 		.collapsing {
-			transition: height 0.35s ease;
+			transition: height 0.3s ease;
 		}
 
 		/* https://stackoverflow.com/questions/31793894/comic-sans-font-not-showing-on-mobile */
@@ -70,16 +70,17 @@
 
 <body style='font-family: "Comic Sans MS", "Comic Sans";'>
 	<div class="container m-auto py-3">
+		<img src="img/ohsaka.jpg" class="img-thumbnail float-end" style="max-width: 200px;">
 		<h1>Welcome to My Homepage!!</h1>
 		<h2>Naoto Ohsaka</h2>
-		<div><i class="bi bi-camera-fill"></i> <a href="./photo.jpg">Photo</a> (taken by <a href="https://sites.google.com/view/koyo-hayashi">Koyo Hayashi</a>, January 2024)</div>
+		<div><i class="bi bi-camera-fill"></i> <a href="./img/photo2024.jpg">Photo</a> (taken by <a href="https://sites.google.com/view/koyo-hayashi">Koyo Hayashi</a>, January 2024)</div>
 		<div><i class="bi bi-person-circle"></i> <a href="./cv.pdf">Curriculum Vitae</a></div>
 		<div><i class="bi bi-envelope"></i> Email: <a href="mailto:naoto.ohsaka@gmail.com">naoto.ohsaka@gmail.com</a> <small>(recommended) or</small> <a href="mailto:ohsaka_naoto@cyberagent.co.jp">ohsaka_naoto@cyberagent.co.jp</a> <small class="text-body-tertiary">(previously: ohsaka@is.s.u-tokyo.ac.jp, ohsaka@nec.com)</small></div>
 		<div><i class="ai ai-google-scholar ai-lg"></i> Google Scholar: <a href="https://scholar.google.co.jp/citations?user=Qgkc9DgAAAAJ">Qgkc9DgAAAAJ</a></div>
 		<div><i class="ai ai-orcid"></i> ORCID: <a href="https://orcid.org/0000-0001-9584-4764">0000-0001-9584-4764</a></div>
-		<div><i class="ai ai-dblp ai-lg"></i> DBLP: <a href="https://dblp.org/pid/81/10779.html">81/10779</a></div>
+		<div><i class="ai ai-dblp ai-lg"></i> DBLP: <a href="https://dblp.org/pid/81/10779.html">81/10779</a></div>		
 
-		<hr>
+		<hr style="clear: both;">
 
 		<h3>About Me</h3>
 		<p>
@@ -116,13 +117,12 @@
 				<div class="card card-body">
 					<p class="card-text">
 						<span class="badge text-bg-secondary"><i class="bi bi-magic"></i> Highlight</span>
-						When I started studying reconfiguration problems, I was very intrigued by <b>PSPACE</b>-hardness of approximation for them,
-						which was posed as an open problem by Ito, Demaine, Harvey, Papadimitriou, Sideri, Uehara, and Uno (ISAAC 2008; TCS 2011).
+						When I started studying reconfiguration problems, I was very intrigued by <b>PSPACE</b>-hardness of approximation,
+						which was posed as an open problem by  (Ito, Demaine, Harvey, Papadimitriou, Sideri, Uehara, and Uno. ISAAC 2008; TCS 2011).
 						Towards its resolution,
 						I came up with what I call the <i>Reconfiguration Inapproximability Hypothesis</i> (RIH) as a reconfiguration analogue of the PCP theorem.
-						Starting from RIH, I created a series of gap-preserving reductions to give evidence that many reconfiguration problems are <b>PSPACE</b>-hard to approximate within a constant factor,
-						including those of <span class="small-caps">3-SAT</span>, <span class="small-caps">2-CSP</span>, <span class="small-caps">Independent Set</span>, and <span class="small-caps">Vertex Cover</span>.
-						Subsequently, in a joint work with <a href="https://researchmap.jp/shuichi.hirahara">Shuichi Hirahara</a> (STOC 2024), we were able to prove RIH.
+						Starting from RIH, I created a series of gap-preserving reductions to give evidence that several reconfiguration problems are <b>PSPACE</b>-hard to approximate.
+						Subsequently, in a joint work with <a href="https://researchmap.jp/shuichi.hirahara?lang=en">Shuichi Hirahara</a> (STOC 2024), we were able to prove RIH.
 					</p>
 				</div>
 			</li>
@@ -142,20 +142,20 @@
 				<div class="card card-body">
 					<p class="card-text">
 						<span class="badge text-bg-secondary"><i class="bi bi-magic"></i> Highlight</span>
-						One limitation of using RIH (STACS 2023) was that it did not give explicit inapproximability factors.
-						Say, even 0.999…999-approximation for <span class="small-caps">2-CSP Reconfiguration</span> would not be ruled out.
-						In the <b>NP</b> regime, the <i>parallel repetition theorem</i> can be used to derive many strong inapproximability results.
-						Unfortunately, for a reconfiguration analogue of two-prover one-round games, a “naive” parallel repetition does not reduce its soundness error (IPL 2025).
+						One limitation of using RIH (STACS 2023) was that inapproximability factors are not explicit.
+						Say, even 0.999…999-approximation would not be ruled out.
+						In the <b>NP</b> regime, the parallel repetition theorem can be used to derive many strong inapproximability results.
+						Unfortunately, such an idea does not work as expected in the reconfiguration regime (IPL 2025).
 						In this paper, I managed to develop Dinur's style <i>gap amplification</i> for reconfiguration problems.
-						Our main result is that <span class="small-caps">Maxmin 2-CSP Reconfiguration</span> is <b>PSPACE</b>-hard to approximate within a factor of 0.9942 only assuming RIH.
-						As an application, I showed that <span class="small-caps">Minmax Set Cover Reconfiguration</span> and <span class="small-caps">Minmax Dominating Set Reconfiguration</span> are <b>PSPACE</b>-hard to approximate within a factor of 1.0029 under RIH.
+						The main result is that <span class="small-caps">Maxmin 2-CSP Reconfiguration</span> is <b>PSPACE</b>-hard to approximate within a factor of 0.9942 only assuming RIH.
+						As an application, I showed that <span class="small-caps">Minmax Set Cover Reconfiguration</span> is <b>PSPACE</b>-hard to approximate within a factor of 1.0029 under RIH.
 					</p>
 				</div>
 			</li>
 
 			<li>
 				Probabilistically Checkable Reconfiguration Proofs and Inapproximability of Reconfiguration Problems.<br>
-				<a href="https://researchmap.jp/shuichi.hirahara">Shuichi Hirahara</a> and
+				<a href="https://researchmap.jp/shuichi.hirahara?lang=en">Shuichi Hirahara</a> and
 				<u>Naoto Ohsaka</u>.<br>
 				<a href="http://acm-stoc.org/stoc2024/">56th Annual ACM Symposium on Theory of Computing (STOC 2024)</a>. <br>
 				<a class="btn btn-primary" href="https://doi.org/10.1145/3618260.3649667" role="button">
@@ -179,7 +179,7 @@
 						We presented a new PCP-type characterization of <b>PSPACE</b>, namely <i>probabilistically checkable reconfiguration proof</i> (PCRP).
 						Our PCRP theorem states that any <b>PSPACE</b> computation can be encoded into an exponentially long reconfiguration sequence of polynomial length proofs,
 						each of which is probabilistically checkable.
-						Using the new characterization, we proved RIH, thereby affirmatively resolving the open problem posed by Ito, Demaine, Harvey, Papadimitriou, Sideri, Uehara, and Uno (ISAAC 2008; TCS 2011).
+						Using the new characterization, we proved RIH, thereby affirmatively resolving the open problem posed by (Ito, Demaine, Harvey, Papadimitriou, Sideri, Uehara, and Uno. ISAAC 2008; TCS 2011).
 						In particular, my previous <b>PSPACE</b>-hardness results (STACS 2023; SODA 2024) now hold unconditioanlly.
 						<br />
 						Independently, <a href="https://cskarthikcs.github.io/">Karthik C. S.</a> and <a href="https://pasin30055.github.io/">Pasin Manurangsi</a> also <a href="https://eccc.weizmann.ac.il/report/2024/007/">proved</a> RIH.
@@ -189,7 +189,7 @@
 
 			<li>
 				Optimal PSPACE-hardness of Approximating Set Cover Reconfiguration.<br>
-				<a href="https://researchmap.jp/shuichi.hirahara">Shuichi Hirahara</a> and
+				<a href="https://researchmap.jp/shuichi.hirahara?lang=en">Shuichi Hirahara</a> and
 				<u>Naoto Ohsaka</u>.<br>
 				<a href="https://compose.ioc.ee/icalp2024/">51st EATCS International Colloquium on Automata, Languages, and Programming (ICALP 2024)</a>. <br>
 
@@ -213,7 +213,7 @@
 						<span class="small-caps">Minmax Set Cover Reconfiguration</span> is <b>PSPACE</b>-hard to approximate within a factor of $2-\frac{1}{\operatorname{polyloglog} N}$,
 						where $N$ is the size of the universe.
 						This is the first sharp result for <b>PSPACE</b>-hardness of approximating any reconfiguration problems.
-						Similar hardness results hold for <span class="small-caps">Dominating Set Reconfiguration</span> and <span class="small-caps">Hypergraph Vertex Cover</span>.
+						Similar hardness results hold also for <span class="small-caps">Dominating Set Reconfiguration</span> and <span class="small-caps">Hypergraph Vertex Cover</span>.
 					</p>
 				</div>
 			</li>
@@ -237,8 +237,8 @@
 						<span class="badge text-bg-secondary"><i class="bi bi-magic"></i> Highlight</span>
 						Given the resolution of RIH,
 						there was still not a “universal” PCRP system for <b>PSPACE</b> having <i>explicit values</i> of soundness, query complexity, and alphabet size.
-						One reason was that gap amplification (SODA 2024) makes alphabet size gigantic (that depends on PCRP's gap).
-						In this paper, I developed alphabet reduction à la Dinur (JACM 2007).
+						<!--One reason was that gap amplification (SODA 2024) makes alphabet size gigantic (that depends on PCRP's gap).-->
+						In this paper, I developed alphabet reduction à la (Dinur. JACM 2007).
 						Putting (STACS 2023; SODA 2024; STOC 2024) together, I obtained a PCRP system with
 						soundness $\varepsilon = 10^{-18}$, query complexity $q = 2$, alphabet size $W = 2{,}000{,}000$.
 						Even though this result is too far from optimal, I hope optimal PCRPs would be found in the near future.
@@ -249,7 +249,7 @@
 
 			<li>
 				Asymptotically Optimal Inapproximability of Maxmin $k$-Cut Reconfiguration.<br>
-				<a href="https://researchmap.jp/shuichi.hirahara">Shuichi Hirahara</a> and
+				<a href="https://researchmap.jp/shuichi.hirahara?lang=en">Shuichi Hirahara</a> and
 				<u>Naoto Ohsaka</u>.<br>
 				<a href="https://conferences.au.dk/icalp2025">52nd EATCS International Colloquium on Automata, Languages, and Programming (ICALP 2025)</a>. <br>
 
@@ -266,13 +266,12 @@
 					<p class="card-text">
 						<span class="badge text-bg-secondary"><i class="bi bi-magic"></i> Highlight</span>
 						We showed that the optimal approximation factor for <span class="small-caps">Maxmin <span class="initial">$k$</span>-Cut Reconfiguration</span> is $1-\Theta\left(\frac{1}{k}\right)$.
-						This problem is a natural reconfiguration analogue of <span class="small-caps">Max <span class="initial">$k$</span>-Cut</span>, and
-						it can be thought of as an “approximate version” of the famous <span class="small-caps"><span class="initial">$k$</span>-Coloring Reconfiguration</span> problem.
+						This problem is a reconfiguration analogue of <span class="small-caps">Max <span class="initial">$k$</span>-Cut</span>, and
+						is an “approximate version” of the famous <span class="small-caps"><span class="initial">$k$</span>-Coloring Reconfiguration</span> problem.
 						Specifically, we developed a $\left(1-\frac{2}{k}\right)$-factor approximation algorithm and
 						proved the <b>PSPACE</b>-hardness of $\left(1 - \frac{\varepsilon}{k}\right)$-factor approximation.
 						Our result is no surprise at all since <span class="small-caps">Max <span class="initial">$k$</span>-Cut</span> has the (asymptotically) same approximation threshold.
-						On the other hand, existing reductions for <span class="small-caps">Max <span class="initial">$k$</span>-Cut</span> do not work as expected in the reconfiguration regime.
-						The conceptual message is that to prove the hardness result, we had to design a completely different (and fairly technical) reduction.
+						The conceptual message is that we may need to design a completely different (and fairly technical) reduction from that of the <b>NP</b> analogue.
 					</p>
 				</div>
 			</li>
@@ -294,9 +293,36 @@
 						Even after proving the PCRP theorem, I still felt that its proof is a bit “awkward.”
 						In this paper, I gave an alternative proof of the PCRP theorem that I think is simpler than those of Hirahara and Ohsaka (STOC 2024) and Karthik C. S. and Manurangsi.
 						Specifically, I was able to build a PCRP system by combining simple <i>robustization</i> and <i>composition</i> steps in a modular fashion.
-						The crux of implementing the robustization step is a special error-correcting code that enjoys both <i>list decodability</i> and <i>reconfigurability</i> (ICALP 2024).
+						<!--The crux of implementing the robustization step is a special error-correcting code that enjoys both <i>list decodability</i> and <i>reconfigurability</i> (ICALP 2024).-->
 						I believe that my new construction is more streamlined and
-						that the concept of reconfigurability of error-correcting codes will find further applications.
+						that the concept of “reconfigurability” of error-correcting codes (ICALP 2024) will find further applications.
+					</p>
+				</div>
+			</li>
+
+
+			<li>
+				<span class="badge text-bg-info">New!!</span> Asymptotically Optimal Inapproximability of E$k$-SAT Reconfiguration.<br>
+				<a href="https://researchmap.jp/shuichi.hirahara?lang=en">Shuichi Hirahara</a> and
+				<u>Naoto Ohsaka</u>.<br>
+				<a href="https://focs.computer.org/2025/">66th IEEE Symposium on Foundations of Computer Science (FOCS 2025)</a>. <br>
+
+				<a class="btn btn-primary" href="https://arxiv.org/abs/2508.00276" role="button">
+					<i class="ai ai-arxiv"></i> arXiv
+				</a>
+				<a class="btn btn-primary" href="https://eccc.weizmann.ac.il/report/2025/120" role="button">
+					<i class="bi bi-file-pdf-fill"></i> ECCC
+				</a>
+				<div class="card card-body">
+					<p class="card-text">
+						<span class="badge text-bg-secondary"><i class="bi bi-magic"></i> Highlight</span>
+						We discovered that the optimal approximation factor for the <span class="small-caps">E<span class="initial">$k$</span>-SAT Reconfiguration</span> problem is $1-\Theta\left(\frac{1}{k}\right)$.
+						Specifically, we proved that this problem is <b>PSPACE</b>-hard to approximate within a factor of $1-\frac{1}{10k}$ for every sufficiently large $k$, and
+						we developed a $\left(1-\frac{1}{k-1}-\frac{1}{k}\right)$-factor approximation algorithm.
+						This result is surprising (at least to me) in a sense that
+						<span class="small-caps">E<span class="initial">$k$</span>-SAT Reconfiguration</span> is (asymptotically) “harder” than
+						its <b>NP</b> analogue (i.e., <span class="small-caps">E<span class="initial">$k$</span>-SAT</span>) in terms of approximability.
+						Moreover, in proving the <b>PSPACE</b>-hardness result, we needed to come up with what we call a “non-monotone” test—whose behavior is (totally) useless in the standard PCP regime.
 					</p>
 				</div>
 			</li>
@@ -350,13 +376,32 @@
 			This is a common practice in mathematics.
 			See also <a href="https://www.ams.org/profession/leaders/culture/JointResearchandItsPublicationfinal.pdf">here</a> and <a href="https://www.ams.org/learning-careers/leaders/CultureStatement04.pdf">here</a>.
 		</div>
-		<!-- <span class="badge text-bg-secondary">contribution-based order</span> -->
 		<ol reversed>
 
 
 			<li>
+				<span class="badge text-bg-info">New!!</span> Reachability of Independent Sets and Vertex Covers Under Extended Reconfiguration Rules.<br>
+				<a href="https://researchmap.jp/shuichi.hirahara?lang=en">Shuichi Hirahara</a>,
+				<u>Naoto Ohsaka</u>,
+				Tatsuhiro Suga,
+				<a href="https://www.ecei.tohoku.ac.jp/alg/suzuki">Akira Suzuki</a>,
+				<a href="https://www.ecei.tohoku.ac.jp/alg/tamura">Yuma Tamura</a>, and
+				<a href="https://www.ecei.tohoku.ac.jp/alg/zhou/index.html">Xiao Zhou</a>. <br>
+				<a href="https://isaac2025.csie.ncku.edu.tw/">36th International Symposium on Algorithms and Computation (ISAAC 2025)</a>. <br>
+				<button type="button" class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#ISAAC2025_abst" aria-expanded="false" aria-controls="ISAAC2025_abst">
+					<i class="bi bi-chevron-expand"></i> Abstract
+				</button>
+			</li>
+			<div class="collapse" id="ISAAC2025_abst">
+				<p>
+					Coming soon...
+				</p>
+			</div>
+
+
+			<li>
 				<span class="badge text-bg-info">New!!</span> Asymptotically Optimal Inapproximability of E$k$-SAT Reconfiguration.<br>
-				<a href="https://researchmap.jp/shuichi.hirahara">Shuichi Hirahara</a> and
+				<a href="https://researchmap.jp/shuichi.hirahara?lang=en">Shuichi Hirahara</a> and
 				<u>Naoto Ohsaka</u>.<br>
 				<a href="https://focs.computer.org/2025/">66th IEEE Symposium on Foundations of Computer Science (FOCS 2025)</a>. <br>
 				<button type="button" class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#FOCS2025_abst" aria-expanded="false" aria-controls="FOCS2025_abst">
@@ -364,6 +409,9 @@
 				</button>
 				<a class="btn btn-primary" href="https://arxiv.org/abs/2508.00276" role="button">
 					<i class="ai ai-arxiv"></i> arXiv
+				</a>
+				<a class="btn btn-primary" href="https://eccc.weizmann.ac.il/report/2025/120" role="button">
+					<i class="bi bi-file-pdf-fill"></i> ECCC
 				</a>
 			</li>
 			<div class="collapse" id="FOCS2025_abst">
@@ -418,7 +466,7 @@
 
 			<li>
 				Asymptotically Optimal Inapproximability of Maxmin $k$-Cut Reconfiguration.<br>
-				<a href="https://researchmap.jp/shuichi.hirahara">Shuichi Hirahara</a> and
+				<a href="https://researchmap.jp/shuichi.hirahara?lang=en">Shuichi Hirahara</a> and
 				<u>Naoto Ohsaka</u>.<br>
 				<a href="https://conferences.au.dk/icalp2025">52nd EATCS International Colloquium on Automata, Languages, and Programming (ICALP 2025)</a>. <br>
 				<button type="button" class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#ICALP2025_kCutReconf_abst" aria-expanded="false" aria-controls="ICALP2025_kCutReconf_abst">
@@ -547,7 +595,7 @@
 
 			<li>
 				Optimal PSPACE-hardness of Approximating Set Cover Reconfiguration.<br>
-				<a href="https://researchmap.jp/shuichi.hirahara">Shuichi Hirahara</a> and
+				<a href="https://researchmap.jp/shuichi.hirahara?lang=en">Shuichi Hirahara</a> and
 				<u>Naoto Ohsaka</u>.<br>
 				<a href="https://compose.ioc.ee/icalp2024/">51st EATCS International Colloquium on Automata, Languages, and Programming (ICALP 2024)</a>. <br>
 				<button type="button" class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#ICALP2024_SetCoverReconf_abst" aria-expanded="false" aria-controls="ICALP2024_SetCoverReconf_abst">
@@ -626,7 +674,7 @@
 
 			<li>
 				Probabilistically Checkable Reconfiguration Proofs and Inapproximability of Reconfiguration Problems.<br>
-				<a href="https://researchmap.jp/shuichi.hirahara">Shuichi Hirahara</a> and
+				<a href="https://researchmap.jp/shuichi.hirahara?lang=en">Shuichi Hirahara</a> and
 				<u>Naoto Ohsaka</u>.<br>
 				<a href="http://acm-stoc.org/stoc2024/">56th Annual ACM Symposium on Theory of Computing (STOC 2024)</a>. <br>
 				<button type="button" class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#STOC2024_abst" aria-expanded="false" aria-controls="STOC2024_abst">
@@ -1643,7 +1691,7 @@
 		<hr>
 
 		<div class="lead"><a href="./rejections.txt">My Rejection History</a></div>
-		<div class="float-end">Last modified: August 4th, 2025</div>
+		<div class="float-end">Last modified: September 1st, 2025</div>
 	</div>
 
 	<script src="js/bootstrap.bundle.min.js"></script>
