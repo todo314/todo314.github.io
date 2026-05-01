@@ -381,7 +381,7 @@
 
 			<li>
 				<span class="badge text-bg-info">New!!</span> On (In)approximability of MaxMin Independent Set Reconfiguration.<br>
-				<a href="https://pelluceed.github.io/">Hung Hoang</a>,
+				<a href="https://pelluceed.github.io/">Hung P. Hoang</a>,
 				<u>Naoto Ohsaka</u>,
 				<a href="https://srin728.github.io/">Rin Saito</a>,
 				<a href="https://www.ecei.tohoku.ac.jp/alg/tamura/">Yuma Tamura</a>.<br>
@@ -389,10 +389,23 @@
 				<button type="button" class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#ICALP2026_abst" aria-expanded="false" aria-controls="ICALP2026_abst">
 					<i class="bi bi-chevron-expand"></i> Abstract
 				</button>
+				<a class="btn btn-primary" href="https://arxiv.org/abs/2604.26714" role="button">
+					<i class="ai ai-arxiv"></i> arXiv
+				</a>
 			</li>
 			<div class="collapse" id="ICALP2026_abst">
 				<p>
-					Coming soon...
+					In the <span class="small-caps">Independent Set Reconfiguration</span> problem under the Token Addition/Removal rule,
+					given a graph $G$ and two independent sets $I$ and $J$ of $G$,
+					we want to transform $I$ into $J$ by adding and removing vertices,
+					such that all the sets throughout the process are independent sets.
+					Its approximate version called <span class="small-caps">MaxMin Independent Set Reconfiguration</span> aims to maximise the minimum size of the independent sets in the process above.
+					We study the (in)approximability of this problem for general graphs as well as restricted graph classes.
+					Firstly, on general graphs, we obtain a polynomial-time $(n/\log n)$-factor approximation algorithm,
+					complementing the $\mathsf{PSPACE}$-hardness of $n^{\Omega(1)}$-factor approximation due to Hirahara and Ohsaka [STOC 2024, ICALP 2024]
+					and the $\mathsf{NP}$-hardness of $n^{1-\varepsilon}$-factor approximation due to Ito, Demaine, Harvey, Papadimitriou, Sideri, Uehara, and Uno [TCS 2011].
+					Secondly, we present a polynomial-time approximation algorithm for degenerate graphs as well as $\mathsf{FPT}$-approximation schemes for bounded-treewidth graphs and $H$-minor-free graphs.
+					Lastly, we extend the above inapproximability results to bounded-degree graphs, graphs of bandwidth $n^{\frac{1}{2}+\Theta(1)}$, and bipartite graphs.
 				</p>
 			</div>
 
@@ -404,10 +417,13 @@
 				<u>Naoto Ohsaka</u>,
 				<a href="https://mayu-ot.github.io/">Mayu Otani</a>,
 				<a href="https://research.nii.ac.jp/~satoh/">Shin'ichi Satoh</a>.<br>
-				<a href="https://chi2026.acm.org/">2026 ACM CHI Conference on Human Factors in Computing System (CHI 2026)</a> (Posters Track). <br>
+				<a href="https://chi2026.acm.org/">Extended Abstracts of the 2026 ACM CHI Conference on Human Factors in Computing System (CHI EA 2026)</a>. <br>
 				<button type="button" class="btn btn-warning" data-bs-toggle="collapse" data-bs-target="#CHI2026_abst" aria-expanded="false" aria-controls="CHI2026_abst">
 					<i class="bi bi-chevron-expand"></i> Abstract
 				</button>
+				<a class="btn btn-primary" href="https://doi.org/10.1145/3772363.3799327" role="button">
+					<i class="ai ai-open-access ai-lg"></i> Paper
+				</a>
 				<a class="btn btn-primary" href="https://arxiv.org/abs/2603.08584" role="button">
 					<i class="ai ai-arxiv"></i> arXiv
 				</a>
@@ -1829,7 +1845,7 @@
 		<hr>
 
 		<div class="lead"><a href="./rejections.txt">My Rejection History</a></div>
-		<div class="float-end">Last modified: April 21st, 2026</div>
+		<div class="float-end">Last modified: May 1st, 2026</div>
 	</div>
 
 	<script src="js/bootstrap.bundle.min.js"></script>
